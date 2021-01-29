@@ -1,0 +1,576 @@
+@base <https://www.w3id.org/KDSF-FFK/KDSF-FFK/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<> a skos:ConceptScheme ;
+  skos:prefLabel "Interdisziplinäre Forschungsfeldklassifikation"@de ;
+  dct:title "Interdisziplinäre Forschungsfeldklassifikation"@de ;
+  dct:issued "2021-01-29" ;
+  dct:description "Klassifikation für interdisziplinäre Forschungsfelder im Rahmen des Kerndatensatz Forschung"@de ;
+  dct:creator <https://orcid.org/0000-0002-8113-1509> ;
+  dct:creator <https://orcid.org/0000-0001-8184-6187> ;
+  dct:creator <https://orcid.org/0000-0003-4891-762X> ;
+  dct:creator <http://d-nb.info/gnd/141246278> ;
+  dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+  skos:hasTopConcept <ArbeitUndWirtschaft>, <ErdeUndKosmos>, <GlobalisierungUndNachhaltigkeit>, <Industrie>, <Informationstechnologie>, <Infrastruktur>, <KognitionUndWissen>, <Kultur>, <LebenUndWohlergehen>, <Materialien>, <MenschUndGesellschaft>, <NaturUndUmwelt>, <Technologie>, <Wissenschaft> .
+
+<ArbeitUndWirtschaft> a skos:Concept ;
+  skos:prefLabel "Arbeit und Wirtschaft"@de ;
+  skos:narrower <ArbeitUndWirtschaftAllgemein>, <ArbeitsweltUndGestaltung>, <DigitaleWirtschaft> ;
+  skos:topConceptOf <> .
+
+<ErdeUndKosmos> a skos:Concept ;
+  skos:prefLabel "Erde und Kosmos"@de ;
+  skos:narrower <ErdeUndKosmosAllgemein>, <Materie>, <PlanetErde>, <RegionenDerErde>, <Weltraum> ;
+  skos:topConceptOf <> .
+
+<GlobalisierungUndNachhaltigkeit> a skos:Concept ;
+  skos:prefLabel "Globalisierung und Nachhaltigkeit"@de ;
+  skos:narrower <GlobalisierungUndNachhaltigkeitAllgemein>, <Entwicklungszusammenarbeit>, <Migration>, <Nachhaltigkeit> ;
+  skos:topConceptOf <> .
+
+<Industrie> a skos:Concept ;
+  skos:prefLabel "Industrie"@de ;
+  skos:narrower <IndustrieAllgemein>, <EntsorgungUndRecycling>, <IntelligenteProduktion>, <Robotik> ;
+  skos:topConceptOf <> .
+
+<Informationstechnologie> a skos:Concept ;
+  skos:prefLabel "Informationstechnologie"@de ;
+  skos:narrower <InformationstechnologieAllgemein>, <Informationssicherheit>, <Informationssysteme>, <Informationstechnik>, <InternetDerDinge>, <KuenstlicheIntelligenzUndBigData>, <Simulationsforschung> ;
+  skos:topConceptOf <> .
+
+<Infrastruktur> a skos:Concept ;
+  skos:prefLabel "Infrastruktur"@de ;
+  skos:narrower <InfrastrukturAllgemein>, <BallungsraeumeUndStadtentwicklung>, <BauenUndWohnen>, <InfrastrukturUndNetze>, <MobilitaetTransportUndVerkehr>  ;
+  skos:topConceptOf <> .
+
+<KognitionUndWissen> a skos:Concept ;
+  skos:prefLabel "Kognition und Wissen"@de ;
+  skos:narrower <KognitionUndWissenAllgemein>, <Innovation>, <LernenUndLernprozesse>, <MenschlichesGehirn>, <SpracheUndSpracherlernen>, <WissenstransferUndWissensrepraesentation> ;
+  skos:topConceptOf <> .
+
+<Kultur> a skos:Concept ;
+  skos:prefLabel "Kultur"@de ;
+  skos:narrower <KulturAllgemein>, <KreativitaetUndDarbietung>, <KulturgueterUndKulturellesErbe>, <Medien> ;
+  skos:topConceptOf <> .
+
+<LebenUndWohlergehen> a skos:Concept ;
+  skos:prefLabel "Leben und Wohlergehen"@de ;
+  skos:narrower <LebenUndWohlergehenAllgemein>, <KuenstlichesOderSynthetischesLeben>, <Lebewesen>, <PraeventionVonKrankheiten>, <TherapieUndHeilung>, <ZellenUndGene> ;
+  skos:topConceptOf <> .
+
+<Materialien> a skos:Concept ;
+  skos:prefLabel "Materialien"@de ;
+  skos:narrower <MaterialienAllgemein>, <OberflaechenUndGrenzflaechen>, <Polymere>, <Werkstoffe> ;
+  skos:topConceptOf <> .
+
+<MenschUndGesellschaft> a skos:Concept ;
+  skos:prefLabel "Mensch und Gesellschaft"@de ;
+  skos:narrower <MenschUndGesellschaftAllgemein>, <DemographischerWandel>, <GewaltKonflikteUndGefahrenabwehr>, <GleichstellungDiversitaetUndInklusion>, <PolitischeOrdnung>, <TransparenzUndVerantwortung>, <WerteUndWandel> ;
+  skos:topConceptOf <> .
+
+<NaturUndUmwelt> a skos:Concept ;
+  skos:prefLabel "Natur und Umwelt"@de ;
+  skos:narrower <NaturUndUmweltAllgemein>, <Klimaveraenderung>, <NahrungUndVersorgung>, <NatuerlicheRessourcen>, <NutzungUndPflegeVonNaturraeumenUndLandschaften>, <OekosystemeUndBiodiversitaet>, <SchutzUndSicherheitVorNaturgefahrenUndReaktorsicherheit> ;
+  skos:topConceptOf <> .
+
+<Technologie> a skos:Concept ;
+  skos:prefLabel "Technologie"@de ;
+  skos:narrower <TechnologieAllgemein>, <EnergieerzeugungUndEnergieumwandlung>, <Halbleitertechnologie>, <MikroUndNanosysteme>, <OptikUndPhotonik>, <Quantentechnologien> ;
+  skos:topConceptOf <> .
+
+<Wissenschaft> a skos:Concept ;
+  skos:prefLabel "Wissenschaft"@de ;
+  skos:narrower <WissenschaftAllgemein>, <InfrastrukturenDerWissenschaft>, <OpenScience>, <Wissenschaftsforschung> ;
+  skos:topConceptOf <> .
+
+<ArbeitUndWirtschaftAllgemein> a skos:Concept ;
+  skos:prefLabel "Arbeit und Wirtschaft - Allgemein"@de ;
+  skos:broader <ArbeitUndWirtschaft> ;
+  skos:scopeNote "Forschung über Aspekte von Arbeit und Wirtschaft im Allgemeinen"@de ;
+  skos:inScheme <> .
+
+<ArbeitsweltUndGestaltung> a skos:Concept ;
+  skos:prefLabel "Arbeitswelt und -gestaltung"@de ;
+  skos:broader <ArbeitUndWirtschaft> ;
+  skos:scopeNote "Forschung über alle Formen der Arbeit und des Arbeitsmarkts und wie diese sich wandeln; neben Erwerbsarbeit und Nichterwerbsarbeit auch neue Formen der Beschäftigung; Arbeitsteilung; Auswirkungen auf Gesundheit und andere Aspekte des Lebens"@de ;
+  skos:example "Arbeitsbedingungen, Home Office, Bedingungsloses Grundeinkommen, Beschäftigung, Work-Life-Balance"@de ;
+  skos:inScheme <> .
+
+<DigitaleWirtschaft> a skos:Concept ;
+  skos:prefLabel "Digitale Wirtschaft"@de ;
+  skos:broader <ArbeitUndWirtschaft> ;
+  skos:scopeNote "Forschung zu ökonomischen Fragestellungen, die sich mit Digitalisierung und deren Auswirkung beschäftigen; zu Konzepten der Digitalisierung von Wirtschaft"@de ;
+  skos:example "Internetwirtschaft, Digitale Güter, Globales digitales Wirtschaftssystem, Neue Märkte, Digitaler Wirtschaftssektor, Digitale Geschäftsmodelle, Neue Unternehmensformen"@de ;
+  skos:inScheme <> .
+
+<ErdeUndKosmosAllgemein> a skos:Concept ;
+  skos:prefLabel "Erde und Kosmos - Allgemein"@de ;
+  skos:broader <ErdeUndKosmos> ;
+  skos:scopeNote "Forschung über den Planeten Erde und den ihn umgebenden Kosmos im weitesten Sinne sowie Materie"@de ;
+  skos:inScheme <> .
+
+<Materie> a skos:Concept ;
+  skos:prefLabel "Materie"@de ;
+  skos:broader <ErdeUndKosmos> ;
+  skos:scopeNote "Forschung zu Eigenschaften, Verhalten und Nutzung von Materie in unterschiedlichen Aggregatzuständen; zu Teilchen, deren Funktion, Nutzbarmachung und Eigenschaften; zu Teilchengemischen wie Plasma; zu Strukturen von Materie"@de ;
+  skos:example "Photonische Kristalle, Kerne, Felder, Hochenergetische Neutrinos, Dunkle Materie"@de ; 
+  skos:inScheme <> .
+
+<PlanetErde> a skos:Concept ;
+  skos:prefLabel "Planet Erde"@de ;
+  skos:broader <ErdeUndKosmos> ;
+  skos:scopeNote "Forschung zu globalen Phänomenen des Planeten Erde, zu globalen (Stoff-)Kreisläufen, zu Luft, Land, Wasser auf der Erde; zum tiefen Erduntergrund sowie Wetter"@de ;
+  skos:example "Wettervorhersagen, Nährstoffzyklus innerhalb eines Ökosystems, (messbare) Zustände der Atmosphäre bzw. Troposphäre"@de ; 
+  skos:inScheme <> .
+
+<RegionenDerErde> a skos:Concept ;
+  skos:prefLabel "Regionen der Erde"@de ;
+  skos:broader <ErdeUndKosmos> ;
+  skos:scopeNote "Forschung zu wissenschaftlichen Erkundungen von Gebieten der Erde"@de ;
+  skos:example "Küstenforschung, Meeresforschung, Polarforschung, Tiefseeforschung, Bergforschung, Wüstenforschung"@de ; 
+  skos:inScheme <> .
+
+<Weltraum> a skos:Concept ;
+  skos:prefLabel "Weltraum"@de ;
+  skos:broader <ErdeUndKosmos> ;
+  skos:scopeNote "Forschung über den Weltraum sowie Forschung über die Erde vom Weltraum aus"@de ;
+  skos:example "Weltraumforschung, Weltraumtechnik, Forschung unter Weltraumbedingungen; Raumfahrt"@de ; 
+  skos:inScheme <> .
+
+<GlobalisierungUndNachhaltigkeitAllgemein> a skos:Concept ;
+  skos:prefLabel "Globalisierung und Nachhaltigkeit - Allgemein"@de ;
+  skos:broader <GlobalisierungUndNachhaltigkeit> ;
+  skos:scopeNote "Forschung zur Globalisierung  und deren Auswirkung auf Wirtschaft, Gesellschaft und Umwelt sowie zur nachhaltigen Entwicklung dieser Bereiche; regionale Aspekte bzw. Entwicklung verschiedener Regionen der Erde unter internationalen Rahmenbedingungen"@de ;
+  skos:inScheme <> .
+
+<Entwicklungszusammenarbeit> a skos:Concept ;
+  skos:prefLabel "Entwicklungszusammenarbeit"@de ;
+  skos:broader <GlobalisierungUndNachhaltigkeit> ;
+  skos:scopeNote "Forschung zur technischen, finanziellen, personellen, nationalen oder internationalen Zusammenarbeit; zu Bekämpfung von Armut sowie globalen und regionalen Partnerschaften"@de ;
+  skos:example "Ländliche Entwicklung, Entwicklungsländerforschung, Development Studies, Entwicklungstheorie, Regionalstudien, Entwicklungsökonomie, Situation und Sicherstellung der Welternährung in Krisen-/Konfliktregionen"@de ;
+  skos:inScheme <> .
+
+<Migration> a skos:Concept ;
+  skos:prefLabel "Migration"@de ;
+  skos:broader <GlobalisierungUndNachhaltigkeit> ;
+  skos:scopeNote "Forschung zu Migration und deren Auswirkung auf Mensch und Gesellschaft; Fluchtforschung; Flüchtlingsschutz; Asyl und Migration"@de ;
+  skos:example "Migrationstheorie, Migrationsforschung, Immigration, Geflüchtete, Flüchtlinge, Asylrecht, Räumliche Mobilität, Soziale Bewegungen, Wanderungsbewegung, Integration"@de ;
+  skos:inScheme <> .
+
+<Nachhaltigkeit> a skos:Concept ;
+  skos:prefLabel "Nachhaltigkeit"@de ;
+  skos:broader <GlobalisierungUndNachhaltigkeit> ;
+  skos:scopeNote "Forschung zur Nachhaltigkeit im weitesten Sinne und wie diese in verschiedenen Bereichen, Gebieten und Ländern erreicht werden kann; dazu zählt auch verantwortungsbewusstes Handeln und die Forschung zu Prinzipien der langfristigen Nutzung und Wirkung von Aktionen/Projekten; zu nachhaltigem Wirtschaftswachstum, nachhaltigem Konsum und nachhaltiger Produktion"@de ;
+  skos:example "Nachhaltige Entwicklung, Langfristige Entwicklung, Sustainable Development, Dauerhafte Entwicklung, Zukunftsfähige Entwicklung, Zukunftsfähige Wirtschaft, Umweltverträgliche Entwicklung, Qualitatives Wachstum, Nachhaltiges Wirtschaften, Nachhaltiges Wachstum"@de ;
+  skos:inScheme <> .
+
+<IndustrieAllgemein> a skos:Concept ;
+  skos:prefLabel "Industrie - Allgemein"@de ;
+  skos:broader <Industrie> ;
+  skos:scopeNote "Forschung zu Technologien und Verfahren der gewerblichen Verarbeitung von Rohstoffen im Allgemeinen"@de ;
+  skos:inScheme <> .
+
+<EntsorgungUndRecycling> a skos:Concept ;
+  skos:prefLabel "Entsorgung und Recycling"@de ;
+  skos:broader <Industrie> ;
+  skos:scopeNote "Forschung zu Recyclingprozessen und -verfahren; zu Entsorgung von Abfallprodukten und nuklearem Müll, Stoffkreisläufen und Lebenszyklen von Materialien"@de ;
+  skos:example "Abfallbeseitigung, Altlastensanierung, Gefahrstoff, Sonderabfall, Abfallverwertung, Abfallvermeidung, Abfallwirtschaft, Abfallreduzierung, Kreislaufwirtschaft"@de ;
+  skos:inScheme <> .
+
+<IntelligenteProduktion> a skos:Concept ;
+  skos:prefLabel "Intelligente Produktion"@de ;
+  skos:broader <Industrie> ;
+  skos:scopeNote "Forschung über den gesamten Prozess der Entwicklung, Konstruktion, Fertigung und das Produzieren von Maschinen und Systemen, sowie Entwicklung neuer Prozesse für die Produktion mit modernster Informations- und Kommunikationstechnik, zur Digitalisierung in der industriellen Produktion und deren Prozessen durch intelligente und vernetzte Systeme und die Automatisierung von Prozessen"@de ;
+  skos:example "Vierte industrielle Revolution, Intelligente Fertigung, Digitale Fabrik, Automatisierte Produktion, Industrielle Automatisierung"@de ;
+  skos:inScheme <> .
+
+<Robotik> a skos:Concept ;
+  skos:prefLabel "Robotik"@de ;
+  skos:broader <Industrie> ;
+  skos:scopeNote "Forschung zu Robotern und humanoiden Robotern"@de ;
+  skos:example "Intelligente Roboter, Industrieroboter, Autonome Roboter, Prozessautomation"@de ;
+  skos:inScheme <> .
+
+<InformationstechnologieAllgemein> a skos:Concept ;
+  skos:prefLabel "Informationstechnologie - Allgemein"@de ;
+  skos:broader <Informationstechnologie> ;
+  skos:scopeNote "Forschung zur Technologie und zum Einsatz dieser für die Informationsverarbeitung"@de ;
+  skos:inScheme <> .
+
+<Informationssicherheit> a skos:Concept ;
+  skos:prefLabel "Informationssicherheit"@de ;
+  skos:broader <Informationstechnologie> ;
+  skos:scopeNote "Forschung zu Sicherheit im digitalen Raum, Schutz vor Kriminalität im Internet, Hacking, Verteidigung gegen Angriffe auf digitale Systeme, Cybersicherheit"@de ;
+  skos:example "Datensicherung, Sicherheitssysteme, Datenverschlüsselung, Computersicherheit, Kryptoverfahren, Kryptosysteme, Datenschutz"@de ;
+  skos:inScheme <> .
+
+<Informationssysteme> a skos:Concept ;
+  skos:prefLabel "Informationssysteme"@de ;
+  skos:broader <Informationstechnologie> ;
+  skos:scopeNote "Forschung über Systeme zur Informationsgenerierung und -verarbeitung, auch im Hinblick auf die Schnittstelle zum Menschen und darauf bezogene Geschäftsprozesse; Cloud-Systeme und verteilte Systeme"@de ;
+  skos:example "Datenverarbeitung, Kommunikationssysteme, Datenstrukturen, Algorithmen, Benutzerschnittstelle, Mensch-Maschine-Interaktion, Wissenstechnologien, Softwaresysteme"@de ;
+  skos:inScheme <> .
+
+<Informationstechnik> a skos:Concept ;
+  skos:prefLabel "Informationstechnik"@de ;
+  skos:broader <Informationstechnologie> ;
+  skos:scopeNote "Forschung zu Technik und Hardware für die Datenverarbeitung"@de ;
+  skos:example "IuK-Technologie, Kommunikationstechnik, Informations- und Kommunikationstechnik, Informationstechnik"@de ;
+  skos:inScheme <> .
+
+<InternetDerDinge> a skos:Concept ;
+  skos:prefLabel "Internet der Dinge"@de ;
+  skos:broader <Informationstechnologie> ;
+  skos:scopeNote "Forschung zur Vernetzung von Gegenständen im analogen und virtuellen Raum mit dem Ziel des Informationsaustauschs zwischen den Gegenständen; nicht industrielle Produktion"@de ;
+  skos:example "Internet der Dienste, Internet der Energie, Autonome Agenten, Multiagenten Systeme, Allgegenwärtige Datenverarbeitung"@de ;
+  skos:inScheme <> .
+
+<KuenstlicheIntelligenzUndBigData> a skos:Concept ;
+  skos:prefLabel "Künstliche Intelligenz und Big Data"@de ;
+  skos:broader <Informationstechnologie> ;
+  skos:scopeNote "Forschung zur Verarbeitung großer Mengen an und/oder wenig strukturierter Daten zur automatisierten Entscheidungsfindung sowie der dafür benötigten Technologien und Algorithmen"@de ;
+  skos:example "Expertensystem, Maschinelles Lernen, Datenanalyse, Deep Learning, Neuronale Netze, Datenintensive Wissenschaft, Automatisierung intelligenten Verhaltens, Massendaten, Text- und Data Mining, Recommender-Systeme"@de ;
+  skos:inScheme <> .
+
+<Simulationsforschung> a skos:Concept ;
+  skos:prefLabel "Simulationsforschung"@de ;
+  skos:broader <Informationstechnologie> ;
+  skos:scopeNote "Forschung zur Abbildung komplexer Systeme oder Prozesse in Modellen und Vorhersagen über die Zukunft mit dem Ziel des Erkenntnisgewinns über reale Systeme mit Mitteln der Informationstechnologie; simulationsbasierte Optimierung"@de ;
+  skos:example "Digitale Computersimulation, Simulationstechnik, Systemsimulation, Digitale Simulation, Computermodell, Rechnersimulation, Klimasimulation, multikriterielle Optimierungsmodelle"@de ;
+  skos:inScheme <> .
+
+<InfrastrukturAllgemein> a skos:Concept ;
+  skos:prefLabel "Infrastruktur - Allgemein"@de ;
+  skos:broader <Infrastruktur> ;
+  skos:scopeNote "Forschung zu Infrastrukturen, die zur Versorgung und Nutzung gebraucht werden; zu Nachhaltigkeit und Resilienz kritischer Infrastrukturen"@de ;
+  skos:inScheme <> .
+
+<BallungsraeumeUndStadtentwicklung> a skos:Concept ;
+  skos:prefLabel "Ballungsräume und Stadtentwicklung"@de ;
+  skos:broader <Infrastruktur> ;
+  skos:scopeNote "Forschung zu Stadtentwicklung und Leben in der Stadt und Ballungsräumen; Smart City-Forschung"@de ;
+  skos:example "Stadtplanung, Stadtentwicklungspolitik, Stadtentwicklungsplanung, Stadtentwicklungskonzept, Kommunalplanung, Urbane Räume, Verdichtungsraum, Verdichtungsgebiet, Stadtregion, Metropolregion, Agglomerationsraum"@de ;
+  skos:inScheme <> .
+
+<BauenUndWohnen> a skos:Concept ;
+  skos:prefLabel "Bauen und Wohnen"@de ;
+  skos:broader <Infrastruktur> ;
+  skos:scopeNote "Forschung zu neuen, auch automatisierten, Verfahren- und Techniken für den Bau von Gebäuden und Bauwerken, deren Ausstattung; zum nutzungsgerechten Bauen und das damit verbundene Wohnen in Gebäuden"@de ;
+  skos:example "Energieeffizientes Bauen und Wohnen, Robuste Gebäude, Zukunftsverträgliches Wohnen, Energieoptimierte Verbesserung der Bausubstanz, Multifunktionale Gebäude und Komplexe"@de ;
+  skos:inScheme <> .
+
+<InfrastrukturUndNetze> a skos:Concept ;
+  skos:prefLabel "Infrastruktur und Netze"@de ;
+  skos:broader <Infrastruktur> ;
+  skos:scopeNote "Forschung zu Infrastrukturen der Daseinsvorsorge, wie Stromnetze, Gasnetze, Kommunikationsnetze, Anlagen, Strukturen, Systeme"@de ;
+  skos:example "Mobile Kommunikationsnetze, Gasnetzwerke, Intelligentes Energienetz, Netzinfrastruktur, Versorgungsnetz"@de ;
+  skos:inScheme <> .
+
+<MobilitaetTransportUndVerkehr> a skos:Concept ;
+  skos:prefLabel "Mobilität, Transport und Verkehr"@de ;
+  skos:broader <Infrastruktur> ;
+  skos:scopeNote "Forschung zur Umsetzung von Mobilität im Raum, der Entwicklung von Fortbewegungsmitteln für den Transport von Gütern oder Personen"@de ;
+  skos:example "Intermodaler Verkehr, Logistik, Transportketten, Verkehrstechnologien, Fahrzeugtechnologien, Raumfahrtgestützte Anwendungen für den Verkehr, Assistenzsysteme"@de ;
+  skos:inScheme <> .
+
+<KognitionUndWissenAllgemein> a skos:Concept ;
+  skos:prefLabel "Kognition und Wissen - Allgemein"@de ;
+  skos:broader <KognitionUndWissen> ;
+  skos:scopeNote "Forschung zu Verfahren zur Generierung von Wissen; zum Verständnis, der Wahrnehmung und Funktionsweise von Wissen und Wissenssystemen; auch Bildung zur nachhaltigen Entwicklung"@de ;
+  skos:inScheme <> .
+
+<Innovation> a skos:Concept ;
+  skos:prefLabel "Innovation"@de ;
+  skos:broader <KognitionUndWissen> ;
+  skos:scopeNote "Forschung zu innovationsunterstützenden Maßnahmen und dem Entstehen von Innovationen und neuen Ideen"@de ;
+  skos:example "Innovationsforschung, Innovationstreiber, Innovationsförderung, Innovationsbegleitung, Fortschritt, Entstehung von Ideen, Entstehung von Erfindungen, Innovationsprozess"@de ;
+  skos:inScheme <> .
+
+<LernenUndLernprozesse> a skos:Concept ;
+  skos:prefLabel "Lernen und Lernprozesse"@de ;
+  skos:broader <KognitionUndWissen> ;
+  skos:scopeNote "Forschung zu lebenslangem und zukunftsorientiertem, individuellem und soziologischem Lernen; zu Vermittlung von Wissen und Fähigkeiten mit technologischer Unterstützung; zu neuen Formen des Lernens, zu digitalem Lernen, Kompetenzen und Fähigkeiten"@de ;
+  skos:example "Digitales Lernen, Lebenslanges Lernen, Aus- und Weiterbildung, Lernen in formalen und nicht-formalen Umgebungen, Digitalkompetenz, Game-Based Learning"@de ;
+  skos:inScheme <> .
+
+<MenschlichesGehirn> a skos:Concept ;
+  skos:prefLabel "Menschliches Gehirn"@de ;
+  skos:broader <KognitionUndWissen> ;
+  skos:scopeNote "Forschung zur Verarbeitung von Information, Signalen, Gefühlen, Wahrnehmungen im menschlichen Gehirn"@de ;
+  skos:example "Gehirnfunktion, Neurokognition, Neuronale Informationsverarbeitung, Kognitives Verhalten"@de ;
+  skos:inScheme <> .
+
+<SpracheUndSpracherlernen> a skos:Concept ;
+  skos:prefLabel "Sprache und Spracherlernen"@de ;
+  skos:broader <KognitionUndWissen> ;
+  skos:scopeNote "Forschung zu Sprachen, zur Sprachentwicklung und Spracherkennung, zum Erlernen von Sprachen beim Menschen und Maschinen"@de ;
+  skos:example "Menschliche Sprache, Künstliche Sprache, Sprachsysteme, Sprachverstehen, Spracherkennung, Sprachübersetzung"@de ;
+  skos:inScheme <> .
+
+<WissenstransferUndWissensrepraesentation> a skos:Concept ;
+  skos:prefLabel "Wissenstransfer und Wissensrepräsentation"@de ;
+  skos:broader <KognitionUndWissen> ;
+  skos:scopeNote "Forschung zur Generierung von Wissen; zu Abbildung, Weitergabe und Erhalt von Wissen"@de ;
+  skos:example "Wissenstransfer, Wissensrepräsentation, Reasoning, Wissenserwerb, Erkenntnis, Wissensbewahrung"@de ;
+  skos:inScheme <> .
+
+<KulturAllgemein> a skos:Concept ;
+  skos:prefLabel "Kultur - Allgemein"@de ;
+  skos:broader <Kultur> ;
+  skos:scopeNote "Forschung, die die verschiedenen Gebiete der Kultur zum Gegenstand hat; zu kulturellen Identitäten; zu Regionen in Bezug auf Kultur, deren Entwicklung und Manifestation"@de ;
+  skos:inScheme <> .
+
+<KreativitaetUndDarbietung> a skos:Concept ;
+  skos:prefLabel "Kreativität und Darbietung"@de ;
+  skos:broader <Kultur> ;
+  skos:scopeNote "Forschung zu Ausdruck und Form menschlicher Kreativität, geistiger Anstrengung und ihrer Manifestationen in Werken und Produkten des Alltags; zu ästethischen und gestalterischen Aspekten"@de ;
+  skos:example "Schöpferische Darbietung, Schöpferische Leistung, Kreativitätstechnik, Produktionsästhetik, künstlerisches Schaffen, Darstellende Kunst"@de ;
+  skos:inScheme <> .
+
+<KulturgueterUndKulturellesErbe> a skos:Concept ;
+  skos:prefLabel "Kulturgüter und kulturelles Erbe"@de ;
+  skos:broader <Kultur> ;
+  skos:scopeNote "Forschung zu materiellen und immateriellen kulturellen Objekten (bewegliche und unbewegliche), deren Gebrauch (früher und heute), Erschließung, Interpretation, Aufbewahrung und Dokumentation sowie dem Zugang im physischen als auch im digitalen Raum"@de ;
+  skos:example "Kulturgüterschutz, Denkmalpflege, Bewahrung in Bibliothek, Archiv und Museum, Kulturelles Erbe"@de ;
+  skos:inScheme <> .
+
+<Medien> a skos:Concept ;
+  skos:prefLabel "Medien"@de ;
+  skos:broader <Kultur> ;
+  skos:scopeNote "Forschung zu verschiedenen Medienformen und deren Einsatz als Kommunikationsmittel, deren Erstellung, Nutzung und Anwendung"@de ;
+  skos:example "Analoge Medien, Digitale Medien, Multimedia, Interaktive Medien, Presserzeugnis, Rundfunk, Journalismus, Computerunterstützte Kommunikation, Audiovisuelle Medien, Massenmedien, Neue Medien, Soziale Medien"@de ;
+  skos:inScheme <> .
+
+<LebenUndWohlergehenAllgemein> a skos:Concept ;
+  skos:prefLabel "Leben und Wohlergehen - Allgemein"@de ;
+  skos:broader <LebenUndWohlergehen> ;
+  skos:scopeNote "Forschung zu präventiven Maßnahmen und Lebensqualität, langem Leben durch körperliches und geistiges Wohlbefinden sowie physischer und psychischer Funktions- und Leistungsfähigkeit; zu Leben und Lebewesen im Allgemeinen"@de ;
+  skos:inScheme <> .
+
+<KuenstlichesOderSynthetischesLeben> a skos:Concept ;
+  skos:prefLabel "Künstliches oder synthetisches Leben"@de ;
+  skos:broader <LebenUndWohlergehen> ;
+  skos:scopeNote "Forschung zur Entwicklung neuer Geräte, Bauteile, Systeme aus organischen Stoffen; zur Rekonstruktion bzw. Neugestaltung von in der Natur bereits vorkommenden Systemen"@de ;
+  skos:example "Künstliche Photosynthese, Synthetsiche Zelle, Synthetischer Organismus, Synthetischer Schaltkreis, Biologisches System"@de ;
+  skos:inScheme <> .
+
+<Lebewesen> a skos:Concept ;
+  skos:prefLabel "Lebewesen"@de ;
+  skos:broader <LebenUndWohlergehen> ;
+  skos:scopeNote "Forschung zu Lebewesen und deren Entwicklung"@de ;
+  skos:example "Eukaryoten, Pilze, Pflanzen, Tiere, Menschen, Molekulare Physiologie von Lebewesen oder Organismen, Gefährdete Arten, Biochemische Evolution"@de ;
+  skos:inScheme <> .
+
+<PraeventionVonKrankheiten> a skos:Concept ;
+  skos:prefLabel "Prävention von Krankheiten"@de ;
+  skos:broader <LebenUndWohlergehen> ;
+  skos:scopeNote "Forschung zur Prävention von Krankheiten; zum Erhalt der Lebensqualität über einen langen Zeitraum hinweg"@de ;
+  skos:example "Gesundes Altern, Impfstoff, Präventionsforschung, Verbesserung des Gesundheitszustandes, Untersuchung von Einflussfaktoren, Gesundheitsbewusstsein, Public-Health-Forschung, Lebensqualität"@de ;
+  skos:inScheme <> .
+
+<TherapieUndHeilung> a skos:Concept ;
+  skos:prefLabel "Therapie und Heilung"@de ;
+  skos:broader <LebenUndWohlergehen> ;
+  skos:scopeNote "Forschung zur Heilung; zu verschiedenen Therapieformen für Menschen; zu Medikamenten und ganzheitlichen Ansätzen"@de ;
+  skos:example "Behandlung von Krankheit, Bekämpfung von Krankheit, Medizinische Therapie, Medizinische Behandlung, Krankenbehandlung"@de ;
+  skos:inScheme <> .
+
+<ZellenUndGene> a skos:Concept ;
+  skos:prefLabel "Zellen und Gene"@de ;
+  skos:broader <LebenUndWohlergehen> ;
+  skos:scopeNote "Forschung zu Funktionen der Zelle und ihrer Bestandteile; zur Kommunikation innerhalb und außerhalb der Zelle; zu Genen und Proteinen als besonderer Teil der Zellforschung; zu Reaktionen von zellulären Prozessen auf äußere Einflüsse"@de ;
+  skos:example "Genomforschung, Zellfunktion, Zellentstehung, Zelltheraphie, Genomforschung"@de ;
+  skos:inScheme <> .
+
+<MaterialienAllgemein> a skos:Concept ;
+  skos:prefLabel "Materialien - Allgemein"@de ;
+  skos:broader <Materialien> ;
+  skos:scopeNote "Forschung zu Eigenschaften, Nutzung und Herstellung verschiedener Materialien mit organischen und anorganischen Anteilen; zu hybriden und aktiven Materialien und biofunktionalisierten Materialien"@de ;
+  skos:inScheme <> .
+
+<OberflaechenUndGrenzflaechen> a skos:Concept ;
+  skos:prefLabel "Oberflächen und Grenzflächen"@de ;
+  skos:broader <Materialien> ;
+  skos:scopeNote "Forschung zu Oberflächen von Materialien oder Festkörpern sowie dem Übergang zwischen verschiedenen Festkörpern oder Materialien"@de ;
+  skos:example "Legierung, Biofilm, Antifouling, Beschichtung, Vorbehandlung von Oberflächen, Schichttechnologie, Beschichtung, Verbundwerkstoff, Oberflächentechnik, Grenzflächentechnik"@de ;
+  skos:inScheme <> .
+
+<Polymere> a skos:Concept ;
+  skos:prefLabel "Polymere"@de ;
+  skos:broader <Materialien> ;
+  skos:scopeNote "Forschung zu Eigenschaften und Funktionen von Polymeren und deren Anwendung, zu Entwicklung und Optimierung von Innovativen und nachhaltigen Materialien, Prozesshilfsmitteln, Verfahren und Technologien"@de ;
+  skos:example "Synthetische Polymere, Biopolymere, Chemisch Funktionalisierte Polymere, Physikalisch Funktionalisierte Polymere, Biologisch Funktionalisierte Polymere"@de ;
+  skos:inScheme <> .
+
+<Werkstoffe> a skos:Concept ;
+  skos:prefLabel "Werkstoffe"@de ;
+  skos:broader <Materialien> ;
+  skos:scopeNote "Forschung zu Werkstoffen, deren Herstellung, Verfahren und Techniken im Umgang mit Werkstoffen; zu Fertigungsverfahren wie Bohren, Schweißen, Gießen, etc."@de ;
+  skos:example "Werkstück, Neues Material, Baumaterial, Bauteil, Industriematerial, Werkstoffwissenschaft, Werkstofftechnologie, Werkstofftechnik, Werkstoffkunde, Materials Engineering, Feuerungstechnik, Trenntechnik, Materialprozess, Werkstoffprozess, Werkstofftechnik, Intelligente Werkstoffe"@de ;
+  skos:inScheme <> .
+
+<MenschUndGesellschaftAllgemein> a skos:Concept ;
+  skos:prefLabel "Mensch und Gesellschaft - Allgemein"@de ;
+  skos:broader <MenschUndGesellschaft> ;
+  skos:scopeNote "Forschung zu Aspekten der gesellschaftlichen Struktur und des gesellschaftlichen Zusammenhalts; zur Organisation und Struktur von Institutionen; zum Individuum und seiner persönliche Lebensgestaltung"@de ;
+  skos:inScheme <> .
+
+<DemographischerWandel> a skos:Concept ;
+  skos:prefLabel "Demographischer Wandel"@de ;
+  skos:broader <MenschUndGesellschaft> ;
+  skos:scopeNote "Forschung zu verschiedenen Aspekten des demographischen Wandels (wie Alterung und Zuwanderung), dessen Folgen und Lösungsansätzen"@de ;
+  skos:example "Demographie und ihre (zukünftigen) Folgen, Bevölkerungsentwicklung, Bevölkerungswissenschaft, Bevölkerungslehre, Bevölkerungsgeographie, Altersstruktur"@de ;
+  skos:inScheme <> .
+
+<GewaltKonflikteUndGefahrenabwehr> a skos:Concept ;
+  skos:prefLabel "Gewalt, Konflikte und Gefahrenabwehr"@de ;
+  skos:broader <MenschUndGesellschaft> ;
+  skos:scopeNote "Forschung zur Bekämpfung von Kriminalität und Gewalt; zu Gefahren und Konflikten in einem Land und zwischen Ländern; zu politischer Diplomatie und Lösungen; zu friedliche Gesellschaften"@de ;
+  skos:example "Organisierte Kriminalität, Schutz vor Gewalt, Aufklärung und Überwachung, Resilienz und Schutz kritischer Infrastrukturen, Terrorismus, Zivile Sicherheit"@de ;
+  skos:inScheme <> .
+
+<GleichstellungDiversitaetUndInklusion> a skos:Concept ;
+  skos:prefLabel "Gleichstellung, Diversität und Inklusion"@de ;
+  skos:broader <MenschUndGesellschaft> ;
+  skos:scopeNote "Forschung zu Aspekten von Gleichstellung und Diversität in der Gesellschaft; zur sozialer Ungleichheit; zur Inklusion in Bildung und Gesellschaft; zu Gender und Feminismus"@de ;
+  skos:example "Inklusive Bildung, Vielfalt, Gleichberechtigung, Chancengleichheit, Frauenförderung, Gleichheit"@de ;
+  skos:inScheme <> .
+
+<PolitischeOrdnung> a skos:Concept ;
+  skos:prefLabel "Politische Ordnung"@de ;
+  skos:broader <MenschUndGesellschaft> ;
+  skos:scopeNote "Forschung zu politischen Ordnungen, deren Institutionen und den durch diese ausgeführten Funktionen, die das Zusammenleben von Bürgern in einem Staat gestalten; zu Demokratie, Recht und Gesetz, Verbraucherschutz und Auswirkungen politischer Entscheidungen auf das gesellschaftliche Zusammenleben; zur Förderung von Institutionen"@de ;
+  skos:example "Demokratie, Demokratisierung, Reformprozess, Rechtspraxis, Recht und Gesellschaft und sozio-juristische Forschung, Politisches System"@de ;
+  skos:inScheme <> .
+
+<TransparenzUndVerantwortung> a skos:Concept ;
+  skos:prefLabel "Transparenz und Verantwortung"@de ;
+  skos:broader <MenschUndGesellschaft> ;
+  skos:scopeNote "Forschung zur gesellschaftlichen Verantwortung; zu sittlichen Normen sowie Fragen der Ethik von Funktionsträgern, Personen, Organisationen, Einrichtungen; zu Regelungen und Prozessen in Gesellschaft und Wirtschaft"@de ;
+  skos:example "Fairness, Verantwortlichkeit, Vertrauen, Transparenz in Verknüpfung mit einem Anwendungsgebiet, z.B. neue Technologien, Computersysteme, Biomedizin, Normative Bioethik, Globale Ethik"@de ;
+  skos:inScheme <> .
+
+<WerteUndWandel> a skos:Concept ;
+  skos:prefLabel "Werte und Wandel"@de ;
+  skos:broader <MenschUndGesellschaft> ;
+  skos:scopeNote "Forschung zu Werten und Normen eines Individuums und sozialen Kategorien einer Gesellschaft, sowie deren Wandel; zu zwischenmenschlichen Beziehungen und Kindererziehung"@de ;
+  skos:example "Familie im Digitalen Wandel, Sozialer Wandel, Kinderrecht, Gleichgeschlechtliche Lebensweise, Geschlechtliche Vielfalt, Gerechtigkeit, Soziale Norm"@de ;
+  skos:inScheme <> .
+
+<NaturUndUmweltAllgemein> a skos:Concept ;
+  skos:prefLabel "Natur und Umwelt - Allgemein"@de ;
+  skos:broader <NaturUndUmwelt> ;
+  skos:scopeNote "Forschung zu Umwelt und belebter und unbelebter Natur im weitesten Sinne, deren (Ver-)Änderung und darin enthaltenen Lebewesen"@de ;
+  skos:inScheme <> .
+
+<Klimaveraenderung> a skos:Concept ;
+  skos:prefLabel "Klimaveränderung"@de ;
+  skos:broader <NaturUndUmwelt> ;
+  skos:scopeNote "Forschung zu Auswirkungen der Klimaveränderung auf die Umwelt und die existierende Biodiversität; zur Anpassung der Umwelt und der existierenden Biodiversität"@de ;
+  skos:example "Klimaänderung, Klimaauswirkung, Umweltverträglichkeit, Ökologische Auswirkung des Klimawandels, Ökologische Anpassung durch den Klimawandel, Umweltschutz"@de ;
+  skos:inScheme <> .
+
+<NahrungUndVersorgung> a skos:Concept ;
+  skos:prefLabel "Nahrung und Versorgung"@de ;
+  skos:broader <NaturUndUmwelt> ;
+  skos:scopeNote "Forschung zu Anbau, Produktion und Versorgung von und mit Lebensmitteln"@de ;
+  skos:example "Sicherung der weltweiten Ernährung, Unterversorgung, Unterernährung, Ernährungswissenschaftliche Fragestellungen, Massenproduktion"@de ;
+  skos:inScheme <> .
+
+<NatuerlicheRessourcen> a skos:Concept ;
+  skos:prefLabel "Natürliche Ressourcen"@de ;
+  skos:broader <NaturUndUmwelt> ;
+  skos:scopeNote "Forschung zum Abbau, Nutzung, Wiederverwendung und von Rohstoffen sowie Wasser, Boden, Luft, Biomasse; zum Zugang zu sauberem Wasser"@de ;
+  skos:example "Nutzung von Biomasse, Rohstoffe der Tiefsee, Wasserressourcenmanagement, Erneuerbare Treibstoffe, Biomasse, Neuer Umgang mit Rohstoffen, Ressourceneffizienz, Rohstoffalternativen"@de ;
+  skos:inScheme <> .
+
+<NutzungUndPflegeVonNaturraeumenUndLandschaften> a skos:Concept ;
+  skos:prefLabel "Nutzung und Pflege von Naturräumen und Landschaften"@de ;
+  skos:broader <NaturUndUmwelt> ;
+  skos:scopeNote "Forschung zu Regionalentwicklung, Landnutzung und Entwicklung von Naturräumen sowie dem Schutz, der Pflege und der Entwicklung von Landschaften"@de ;
+  skos:example "Nachhaltige Nutzung von Landschaft und Naturraum, Waldschadenforschung, Landschaftsschutz, Naturlandschaft, Kulturlandschaft"@de ;
+  skos:inScheme <> .
+
+<OekosystemeUndBiodiversitaet> a skos:Concept ;
+  skos:prefLabel "Ökosysteme und Biodiversität"@de ;
+  skos:broader <NaturUndUmwelt> ;
+  skos:scopeNote "Forschung zu Ökosystemen und Biodiversität, deren Rolle, Funktion(sfähigkeit), Veränderung und Erhaltung;  zu Maßnahmen zum Schutz von Ökosystemen und Biodiversität"@de ;
+  skos:example "Erhaltung der menschlichen Lebensgrundlagen, Waldbiodiversität, Komplexes Biosystem, Ökologisches System, Biotop, Artenvielfalt, Artenschutz, Biosystem, Umweltbelastung in Ökosystemen"@de ;
+  skos:inScheme <> .
+
+<SchutzUndSicherheitVorNaturgefahrenUndReaktorsicherheit> a skos:Concept ;
+  skos:prefLabel "Schutz und Sicherheit vor Naturgefahren und Reaktorsicherheit"@de ;
+  skos:broader <NaturUndUmwelt> ;
+  skos:scopeNote "Forschung zur Minimierung von Risiken durch Naturgefahren; zum Umgang mit Naturkatastrophen; zur Reaktorsicherheit"@de ;
+  skos:example "Risikominimierungsstrategie, Naturgefahr, Katastrophenvorsorge, Sicherheitsforschung für Kernreaktoren"@de ;
+  skos:inScheme <> .
+
+<TechnologieAllgemein> a skos:Concept ;
+  skos:prefLabel "Technologie - Allgemein"@de ;
+  skos:broader <Technologie> ;
+  skos:scopeNote "Forschung zu Technologien, die einen wichtigen Fortschritt gegenüber dem Status Quo darstellen; zu verschiedenen Bauteilen und Elementen, zusammengesetzten Werkzeugen oder Maschinen"@de ;
+  skos:inScheme <> .
+
+<EnergieerzeugungUndEnergieumwandlung> a skos:Concept ;
+  skos:prefLabel "Energieerzeugung und Energieumwandlung"@de ;
+  skos:broader <Technologie> ;
+  skos:scopeNote "Forschung zu (neuen) Energieformen und erneuerbaren Energien und ihrer Erzeugung aus verschiedenen Quellen sowie der dazugehörigen Technologie zur Umwandlung und Umformung von Energie"@de ;
+  skos:example "Windenergie, Sonnenergie, Wasserenergie, Alternative Kraftstoffe, Biologische Energiegewinnung, Energiewende, Energieeffizienz, Energieverwendung, Wasserstoffumwandlung, Wasserstoffspeicherung, Wasserstoffenergietechnik, Energiespeichertechnologien, Sektorkopplung, Fahrzeugantrieb, Maschinenantrieb, Hyperschall-Antrieb, Alternative Antriebstechnologie, Emissionsarmer Treibstoff, Antriebssystem,  Antriebstechnologie"@de ;
+  skos:inScheme <> .
+
+<Halbleitertechnologie> a skos:Concept ;
+  skos:prefLabel "Halbleitertechnologie"@de ;
+  skos:broader <Technologie> ;
+  skos:scopeNote "Forschung zur technischen Herstellung mikroelektronischer und lichttechnischer Bauelemente und mikroelektronischer Baugruppen; zu Elementen wie Silizium"@de ;
+  skos:example "Photonische Kristalle, Quantenstrukturbauelemente, Verbindungshalbleiter, Organische Halbleiter, Mikroprozessor, Mikrochip, Integrierter Schaltkreis, Integrierte Schaltung, Computer chips, intelligente Sensoren"@de ;
+  skos:inScheme <> .
+
+<MikroUndNanosysteme> a skos:Concept ;
+  skos:prefLabel "Mikro- und Nanosysteme"@de ;
+  skos:broader <Technologie> ;
+  skos:scopeNote "Forschung zu Technologien bzw. Technik, die sich mit Strukturen und Prozessen im Mikro- und Nanometerbereich befasst"@de ;
+  skos:example "Mikrotechnik, Mikrosystemlösungen, Mikrosystemtechnik, Mikroelektronik, Mikrofertigung, Nanostruktur, Nanomedizin, Nanosicherheit, Nanoskaliges System, Nanowerkstoff, Nanotechnik, Nanomaterials, Submikrometertechnik, Submikron-Technologie, Nanostrukturtechnik"@de ;
+  skos:inScheme <> .
+
+<OptikUndPhotonik> a skos:Concept ;
+  skos:prefLabel "Optik und Photonik"@de ;
+  skos:broader <Technologie> ;
+  skos:scopeNote "Forschung zu Grundlagen und Anwendungen optischer Verfahren und Technologien; zur Photonik, zum Licht als Transportmittel"@de ;
+  skos:example "Optoelektronik, Quantenoptik, Integrierte Optik, Optronik, Optotronik, Optische Elektronik, Mikrooptik"@de ;
+  skos:inScheme <> .
+
+<Quantentechnologien> a skos:Concept ;
+  skos:prefLabel "Quantentechnologien"@de ;
+  skos:broader <Technologie> ;
+  skos:scopeNote "Forschung zu Quanteneffekten, -technologien, -materialien und -anwendungen"@de ;
+  skos:example "Quanteneffekte, Quantenmechanik, Quantencomputing, Quantenprozessor, Quantenkommunikation, Quanteninformatik, Quantensensor, Quantenkryptologie"@de ;
+  skos:inScheme <> .
+
+<WissenschaftAllgemein> a skos:Concept ;
+  skos:prefLabel "Wissenschaft - Allgemein"@de ;
+  skos:broader <Wissenschaft> ;
+  skos:scopeNote "Forschung zur Wissenschaft, deren Prozesse und Akteuren und Veränderungen im Wissenschaftsprozess"@de ;
+  skos:inScheme <> .
+
+<InfrastrukturenDerWissenschaft> a skos:Concept ;
+  skos:prefLabel "Infrastrukturen der Wissenschaft"@de ;
+  skos:broader <Wissenschaft> ;
+  skos:scopeNote "Forschung zur Veränderung (z.B. Ausbau und Verbesserung) von Infrastrukturen zur Informationsversorgung und -verarbeitung für die Wissenschaft"@de ;
+  skos:example "Forschungswerkzeug, Volltextdatenbank, (Digitale) Bibliothek, Forschungsinfrastruktur, Informationsinfrastruktur, Literaturversorgung, Forschungsinformationssysteme"@de ;
+  skos:inScheme <> .
+
+<OpenScience> a skos:Concept ;
+  skos:prefLabel "Open Science"@de ;
+  skos:broader <Wissenschaft> ;
+  skos:scopeNote "Forschung zur Öffnung des Zugangs zu Daten und Forschungsergebnissen; zu Inklusion und Chancengleichheit in der Wissenschaft und die Öffnung des kompletten Forschungsprozesses"@de ;
+  skos:example "Offene Wissenschaft, Open Data, Open Educational Resources, Open Methodology, Open Peer Review, Open Source, Open Access, Citizen Science"@de ;
+  skos:inScheme <> .
+
+<Wissenschaftsforschung> a skos:Concept ;
+  skos:prefLabel "Wissenschaftsforschung"@de ;
+  skos:broader <Wissenschaft> ;
+  skos:scopeNote "Forschung zu den verschiedenen Aspekten von Wissenschaft, deren Funktion, deren Prozesse und Akteure"@de ;
+  skos:example "Wissenschaftstheorie, Hochschulforschung"@de ;
+  skos:inScheme <> .
