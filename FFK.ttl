@@ -6,7 +6,7 @@
 <> a skos:ConceptScheme ;
   skos:prefLabel "Interdisziplinäre Forschungsfeldklassifikation"@de ;
   dct:title "Interdisziplinäre Forschungsfeldklassifikation"@de ;
-  dct:issued "2021-01-29" ;
+  dct:issued "2021-01-30" ;
   dct:description "Klassifikation für interdisziplinäre Forschungsfelder im Rahmen des Kerndatensatz Forschung"@de ;
   dct:creator <https://orcid.org/0000-0002-8113-1509> ;
   dct:creator <https://orcid.org/0000-0001-8184-6187> ;
