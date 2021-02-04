@@ -19,11 +19,9 @@ See [project description at IBI](https://www.ibi.hu-berlin.de/de/forschung/infor
 
 Project timeline: 01.01.2020–31.12.2020
 
-Project management: [Prof. Vivien Petras, PhD](https://www.ibi.hu-berlin.de/de/ueber-uns/personen/petras)
+Project management: [Sophie Biesenbender](https://www.dzhw.eu/gmbh/mitarbeiter?m_id=674), [Vivien Petras](https://www.ibi.hu-berlin.de/de/ueber-uns/personen/petras)
 
-Contact person at IBI: [Prof. Vivien Petras, PhD](https://www.ibi.hu-berlin.de/de/ueber-uns/personen/petras)
-
-Creation of classification: [Dr. Violeta Trkulja](https://www.you-we-digital.com/ueber-uns), [Dr. Juliane Stiller](https://www.you-we-digital.com/ueber-uns), [Prof. Vivien Petras, PhD](https://www.ibi.hu-berlin.de/de/ueber-uns/personen/petras), [Dr. Sophie Biesenbender](https://www.dzhw.eu/gmbh/mitarbeiter?m_id=674)
+Creation of classification: [Violeta Trkulja](https://www.you-we-digital.com/ueber-uns), [Juliane Stiller](https://www.you-we-digital.com/ueber-uns), [Vivien Petras](https://www.ibi.hu-berlin.de/de/ueber-uns/personen/petras), [Sophie Biesenbender](https://www.dzhw.eu/gmbh/mitarbeiter?m_id=674)
 
 Development of SKOS representation: [Sophia Dörner](https://orcid.org/0000-0001-8747-3422)
 
@@ -31,4 +29,4 @@ Funding reference: KDSFF2020B
 
 Funder: [Federal Ministry of Education and Research (BMBF)](https://www.bmbf.de/en/index.html) and all 16 German Federal States
 
-Cooperation partner: [Deutsches Zentrum für Hochschul- und Wissenschaftsforschung GmbH (DZHW)](https://www.dzhw.eu/en/)
+Cooperation partners: [Deutsches Zentrum für Hochschul- und Wissenschaftsforschung GmbH (DZHW)](https://www.dzhw.eu/en/), [Institut für Bibliotheks- und Informationswissenschaft, Humboldt-Universität zu Berlin](https://www.ibi.hu-berlin.de)
