@@ -21,7 +21,7 @@ Project timeline: 01.01.2020–31.12.2020
 
 Project management: [Sophie Biesenbender](https://www.dzhw.eu/gmbh/mitarbeiter?m_id=674), [Vivien Petras](https://www.ibi.hu-berlin.de/de/ueber-uns/personen/petras)
 
-Creation of classification: [Violeta Trkulja](https://www.you-we-digital.com/ueber-uns), [Juliane Stiller](https://www.you-we-digital.com/ueber-uns), [Vivien Petras](https://www.ibi.hu-berlin.de/de/ueber-uns/personen/petras), [Sophie Biesenbender](https://www.dzhw.eu/gmbh/mitarbeiter?m_id=674)
+Creation of classification: [Juliane Stiller](https://www.you-we-digital.com/ueber-uns), [Violeta Trkulja](https://www.you-we-digital.com/ueber-uns), [Vivien Petras](https://www.ibi.hu-berlin.de/de/ueber-uns/personen/petras), [Sophie Biesenbender](https://www.dzhw.eu/gmbh/mitarbeiter?m_id=674)
 
 Development of SKOS representation: [Sophia Dörner](https://orcid.org/0000-0001-8747-3422)
 
