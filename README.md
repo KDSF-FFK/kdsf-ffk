@@ -12,7 +12,7 @@ In 2016, the German Council of Science and Humanities issued [recommendations](h
 
 The project focuses on the intellectual development of such a classification of research fields to be included in the RCD specification. The development process includes the consultation of relevant stakeholders of the German science system and potential users of the classification. In addition, the project develops recommendations for the integration of the classification into the RCD specification. This in includes the formulation of specific classification rules.
 
-See [project description at IBI](https://www.ibi.hu-berlin.de/de/forschung/information_retrieval/projekte-aktivitaeten/kdsff2020) (available in German only) and [project description at DZHW](https://www.dzhw.eu/en/forschung/projekt?pr_id=660) for further details .
+See [project description at IBI](https://www.ibi.hu-berlin.de/de/forschung/information_retrieval/projekte-aktivitaeten/kdsff2020) (available in German only) and [project description at DZHW](https://www.dzhw.eu/en/forschung/projekt?pr_id=660) for further details.
 
 ### Project details
 -------------------
