@@ -85,12 +85,9 @@ skos:ConceptScheme rdf:type owl:Class .
 ###  https://w3id.org/kdsf-ffk/
 <https://w3id.org/kdsf-ffk/> rdf:type owl:NamedIndividual ,
                                       skos:ConceptScheme ;
-                             dct:creator <https://orcid.org/0000-0001-8184-6187> ,
-                                         <https://orcid.org/0000-0001-9415-9263> ,
-                                         <https://orcid.org/0000-0002-8113-1509> ,
-                                         <https://orcid.org/0000-0003-4891-762X> ;
+                             dct:creator <https://orcid.org/0000-0003-4325-5751> ;
                              dct:description "Klassifikation für interdisziplinäre Forschungsfelder im Rahmen des Kerndatensatz Forschung"@de ;
-                             dct:issued "2021-01-30" ;
+                             dct:issued "2022-08-12" ;
                              dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
                              dct:title "Interdisziplinäre Forschungsfeldklassifikation"@de ;
                              skos:hasTopConcept <https://w3id.org/kdsf-ffk/ArbeitUndWirtschaft> ,
