@@ -1,0 +1,16 @@
+# Citation: KDSF-FFK-Translated
+# CFF format (https://citation-file-format.github.io/) cff version 1.0.3
+message: If you use this software, please cite it using these metadata.
+title: 'KDSF-FFK-Translated'
+doi:
+authors:
+- given-names: Rolf
+  family-names: Guescini
+  affiliation: Humboldt-Universität zu Berlin
+version: 1.0
+date-released: 2022-08-12
+repository-code: https://github.com/guescinr/kdsf-ffk_translated/
+license: Apache-2.0
+license-url: https://creativecommons.org/licenses/by-sa/4.0/
+contact: rolf.guescini@hu-berlin.de
+url: https://orcid.org/0000-0003-4325-5751
