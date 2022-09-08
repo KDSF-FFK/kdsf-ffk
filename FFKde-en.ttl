@@ -1,1288 +1,1030 @@
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@base <https://w3id.org/kdsf-ffk/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@base <http://www.w3.org/2002/07/owl#> .
-
-[ rdf:type owl:Ontology
- ] .
-
-#################################################################
-#    Annotation properties
-#################################################################
-
-###  http://purl.org/dc/terms/creator
-dct:creator rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/description
-dct:description rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/issued
-dct:issued rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/license
-dct:license rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/title
-dct:title rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2004/02/skos/core#broader
-skos:broader rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2004/02/skos/core#example
-skos:example rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2004/02/skos/core#hasTopConcept
-skos:hasTopConcept rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2004/02/skos/core#inScheme
-skos:inScheme rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2004/02/skos/core#narrower
-skos:narrower rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2004/02/skos/core#prefLabel
-skos:prefLabel rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2004/02/skos/core#scopeNote
-skos:scopeNote rdf:type owl:AnnotationProperty .
-
-
-###  http://www.w3.org/2004/02/skos/core#topConceptOf
-skos:topConceptOf rdf:type owl:AnnotationProperty .
-
-
-#################################################################
-#    Classes
-#################################################################
-
-###  http://www.w3.org/2004/02/skos/core#Concept
-skos:Concept rdf:type owl:Class .
-
-
-###  http://www.w3.org/2004/02/skos/core#ConceptScheme
-skos:ConceptScheme rdf:type owl:Class .
-
-
-#################################################################
-#    Individuals
-#################################################################
-
-###  https://w3id.org/kdsf-ffk/
-<https://w3id.org/kdsf-ffk/> rdf:type owl:NamedIndividual ,
-                                      skos:ConceptScheme ;
-                             dct:creator <https://orcid.org/0000-0003-4325-5751> ;
-                             dct:description "Klassifikation für interdisziplinäre Forschungsfelder im Rahmen des Kerndatensatz Forschung"@de ;
-                             dct:issued "2022-08-12" ;
-                             dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-                             dct:title "Interdisziplinäre Forschungsfeldklassifikation"@de ;
-                             skos:hasTopConcept <https://w3id.org/kdsf-ffk/ArbeitUndWirtschaft> ,
-                                                <https://w3id.org/kdsf-ffk/ErdeUndKosmos> ,
-                                                <https://w3id.org/kdsf-ffk/GlobalisierungUndNachhaltigkeit> ,
-                                                <https://w3id.org/kdsf-ffk/Industrie> ,
-                                                <https://w3id.org/kdsf-ffk/Informationstechnologie> ,
-                                                <https://w3id.org/kdsf-ffk/Infrastruktur> ,
-                                                <https://w3id.org/kdsf-ffk/KognitionUndWissen> ,
-                                                <https://w3id.org/kdsf-ffk/Kultur> ,
-                                                <https://w3id.org/kdsf-ffk/LebenUndWohlergehen> ,
-                                                <https://w3id.org/kdsf-ffk/Materialien> ,
-                                                <https://w3id.org/kdsf-ffk/MenschUndGesellschaft> ,
-                                                <https://w3id.org/kdsf-ffk/NaturUndUmwelt> ,
-                                                <https://w3id.org/kdsf-ffk/Technologie> ,
-                                                <https://w3id.org/kdsf-ffk/Wissenschaft> ;
-                             skos:prefLabel "Interdisziplinäre Forschungsfeldklassifikation"@de .
-
-
-###  https://w3id.org/kdsf-ffk/ArbeitUndWirtschaft
-<https://w3id.org/kdsf-ffk/ArbeitUndWirtschaft> rdf:type owl:NamedIndividual ,
-                                                         skos:Concept ;
-                                                rdfs:label "Work and Economy"@en ;
-                                                skos:narrower <https://w3id.org/kdsf-ffk/ArbeitUndWirtschaftAllgemein> ,
-                                                              <https://w3id.org/kdsf-ffk/ArbeitsweltUndGestaltung> ,
-                                                              <https://w3id.org/kdsf-ffk/DigitaleWirtschaft> ;
-                                                skos:prefLabel "Arbeit und Wirtschaft"@de ,
-                                                               "Work and Economy"@en ;
-                                                skos:topConceptOf <https://w3id.org/kdsf-ffk/> .
-
-
-###  https://w3id.org/kdsf-ffk/ArbeitUndWirtschaftAllgemein
-<https://w3id.org/kdsf-ffk/ArbeitUndWirtschaftAllgemein> rdf:type owl:NamedIndividual ,
-                                                                  skos:Concept ;
-                                                         rdfs:label "Work and Economy - General"@en ;
-                                                         skos:broader <https://w3id.org/kdsf-ffk/ArbeitUndWirtschaft> ;
-                                                         skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                         skos:prefLabel "Arbeit und Wirtschaft - Allgemein"@de ,
-                                                                        "Work and Economy - General"@en ;
-                                                         skos:scopeNote "Forschung über Aspekte von Arbeit und Wirtschaft im Allgemeinen"@de ,
-                                                                        "Research on aspects of work and the economy in general"@en .
-
-
-###  https://w3id.org/kdsf-ffk/ArbeitsweltUndGestaltung
-<https://w3id.org/kdsf-ffk/ArbeitsweltUndGestaltung> rdf:type owl:NamedIndividual ,
-                                                              skos:Concept ;
-                                                     rdfs:label "Workplace and workplace design"@en ;
-                                                     skos:broader <https://w3id.org/kdsf-ffk/ArbeitUndWirtschaft> ;
-                                                     skos:example "Arbeitsbedingungen, Home Office, Bedingungsloses Grundeinkommen, Beschäftigung, Work-Life-Balance"@de ,
-                                                                  "Working conditions, home office, unconditional basic income, employment, work-life balance"@en ;
-                                                     skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                     skos:prefLabel "Arbeitswelt und -gestaltung"@de ,
-                                                                    "Workplace and workplace design"@en ;
-                                                     skos:scopeNote "Forschung über alle Formen der Arbeit und des Arbeitsmarkts und wie diese sich wandeln; neben Erwerbsarbeit und Nichterwerbsarbeit auch neue Formen der Beschäftigung; Arbeitsteilung; Auswirkungen auf Gesundheit und andere Aspekte des Lebens"@de ,
-                                                                    "Research on all forms of work and the labor market and how these are changing; in addition to gainful employment and non-gainful employment, there are also new forms of employment; division of labor; effects on health and other aspects of life"@en .
-
-
-###  https://w3id.org/kdsf-ffk/BallungsraeumeUndStadtentwicklung
-<https://w3id.org/kdsf-ffk/BallungsraeumeUndStadtentwicklung> rdf:type owl:NamedIndividual ,
-                                                                       skos:Concept ;
-                                                              rdfs:label "Metropolitan areas and urban development"@en ;
-                                                              skos:broader <https://w3id.org/kdsf-ffk/Infrastruktur> ;
-                                                              skos:example "Stadtplanung, Stadtentwicklungspolitik, Stadtentwicklungsplanung, Stadtentwicklungskonzept, Kommunalplanung, Urbane Räume, Verdichtungsraum, Verdichtungsgebiet, Stadtregion, Metropolregion, Agglomerationsraum"@de ,
-                                                                           "Urban planning, urban development policy, urban development planning, urban development concept, municipal planning, urban areas, agglomeration, agglomeration area, urban region, metropolitan area"@en ;
-                                                              skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                              skos:prefLabel "Ballungsräume und Stadtentwicklung"@de ,
-                                                                             "Metropolitan areas and urban development"@en ;
-                                                              skos:scopeNote "Forschung zu Stadtentwicklung und Leben in der Stadt und Ballungsräumen; Smart City-Forschung"@de ,
-                                                                             "Research on urban development and life in the city and metropolitan areas; Smart City Research"@en .
-
-
-###  https://w3id.org/kdsf-ffk/BauenUndWohnen
-<https://w3id.org/kdsf-ffk/BauenUndWohnen> rdf:type owl:NamedIndividual ,
-                                                    skos:Concept ;
-                                           rdfs:label "Building and living"@en ;
-                                           skos:broader <https://w3id.org/kdsf-ffk/Infrastruktur> ;
-                                           skos:example "Energieeffizientes Bauen und Wohnen, Robuste Gebäude, Zukunftsverträgliches Wohnen, Energieoptimierte Verbesserung der Bausubstanz, Multifunktionale Gebäude und Komplexe"@de ,
-                                                        "Energy-efficient building and living, robust buildings, sustainable living, energy-optimized improvement of the building fabric, multifunctional buildings and complexes"@en ;
-                                           skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                           skos:prefLabel "Bauen und Wohnen"@de ,
-                                                          "Building and living"@en ;
-                                           skos:scopeNote "Forschung zu neuen, auch automatisierten, Verfahren- und Techniken für den Bau von Gebäuden und Bauwerken, deren Ausstattung; zum nutzungsgerechten Bauen und das damit verbundene Wohnen in Gebäuden"@de ,
-                                                          "Research on new, also automated, processes and techniques for the construction of buildings and structures, their equipment; for user-friendly construction and the associated living in buildings"@en .
-
-
-###  https://w3id.org/kdsf-ffk/DemographischerWandel
-<https://w3id.org/kdsf-ffk/DemographischerWandel> rdf:type owl:NamedIndividual ,
-                                                           skos:Concept ;
-                                                  rdfs:label "Demographic change"@en ;
-                                                  skos:broader <https://w3id.org/kdsf-ffk/MenschUndGesellschaft> ;
-                                                  skos:example "Demographie und ihre (zukünftigen) Folgen, Bevölkerungsentwicklung, Bevölkerungswissenschaft, Bevölkerungslehre, Bevölkerungsgeographie, Altersstruktur"@de ,
-                                                               "Demography and its (future) consequences, population development, population science, population theory, population geography, age structure"@en ;
-                                                  skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                  skos:prefLabel "Demographic change"@en ,
-                                                                 "Demographischer Wandel"@de ;
-                                                  skos:scopeNote "Forschung zu verschiedenen Aspekten des demographischen Wandels (wie Alterung und Zuwanderung), dessen Folgen und Lösungsansätzen"@de ,
-                                                                 "Research on various aspects of demographic change (such as aging and immigration), its consequences and possible solutions"@en .
-
-
-###  https://w3id.org/kdsf-ffk/DigitaleWirtschaft
-<https://w3id.org/kdsf-ffk/DigitaleWirtschaft> rdf:type owl:NamedIndividual ,
-                                                        skos:Concept ;
-                                               rdfs:label "Digital Economy"@en ;
-                                               skos:broader <https://w3id.org/kdsf-ffk/ArbeitUndWirtschaft> ;
-                                               skos:example "Internet economy, digital goods, global digital economic system, new markets, digital economic sector, digital business models, new forms of business"@en ,
-                                                            "Internetwirtschaft, Digitale Güter, Globales digitales Wirtschaftssystem, Neue Märkte, Digitaler Wirtschaftssektor, Digitale Geschäftsmodelle, Neue Unternehmensformen"@de ;
-                                               skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                               skos:prefLabel "Digital Economy"@en ,
-                                                              "Digitale Wirtschaft"@de ;
-                                               skos:scopeNote "Forschung zu ökonomischen Fragestellungen, die sich mit Digitalisierung und deren Auswirkung beschäftigen; zu Konzepten der Digitalisierung von Wirtschaft"@de ,
-                                                              "Research on economic issues that deal with digitization and its effects; on concepts of digitization of the economy"@en .
-
-
-###  https://w3id.org/kdsf-ffk/EnergieerzeugungUndEnergieumwandlung
-<https://w3id.org/kdsf-ffk/EnergieerzeugungUndEnergieumwandlung> rdf:type owl:NamedIndividual ,
-                                                                          skos:Concept ;
-                                                                 rdfs:label "Energy generation and energy conversion"@en ;
-                                                                 skos:broader <https://w3id.org/kdsf-ffk/Technologie> ;
-                                                                 skos:example "Wind energy, solar energy, water energy, alternative fuels, biological energy generation, energy transition, energy efficiency, energy use, hydrogen conversion, hydrogen storage, hydrogen energy technology, energy storage technologies, sector coupling, vehicle propulsion, machine propulsion, hypersonic propulsion, alternative propulsion technology, low-emission fuel, propulsion system, propulsion technology"@en ,
-                                                                              "Windenergie, Sonnenergie, Wasserenergie, Alternative Kraftstoffe, Biologische Energiegewinnung, Energiewende, Energieeffizienz, Energieverwendung, Wasserstoffumwandlung, Wasserstoffspeicherung, Wasserstoffenergietechnik, Energiespeichertechnologien, Sektorkopplung, Fahrzeugantrieb, Maschinenantrieb, Hyperschall-Antrieb, Alternative Antriebstechnologie, Emissionsarmer Treibstoff, Antriebssystem,  Antriebstechnologie"@de ;
-                                                                 skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                                 skos:prefLabel "Energieerzeugung und Energieumwandlung"@de ,
-                                                                                "Energy generation and energy conversion"@en ;
-                                                                 skos:scopeNote "Forschung zu (neuen) Energieformen und erneuerbaren Energien und ihrer Erzeugung aus verschiedenen Quellen sowie der dazugehörigen Technologie zur Umwandlung und Umformung von Energie"@de ,
-                                                                                "Research on (new) forms of energy and renewable energies and their generation from various sources as well as the associated technology for converting and converting energy"@en .
-
-
-###  https://w3id.org/kdsf-ffk/EntsorgungUndRecycling
-<https://w3id.org/kdsf-ffk/EntsorgungUndRecycling> rdf:type owl:NamedIndividual ,
-                                                            skos:Concept ;
-                                                   owl:priorVersion "Waste Disposal and recycling"@en ;
-                                                   skos:broader <https://w3id.org/kdsf-ffk/Industrie> ;
-                                                   skos:example "Abfallbeseitigung, Altlastensanierung, Gefahrstoff, Sonderabfall, Abfallverwertung, Abfallvermeidung, Abfallwirtschaft, Abfallreduzierung, Kreislaufwirtschaft"@de ,
-                                                                "Waste disposal, remediation of contaminated sites, hazardous materials, hazardous waste, waste recycling, waste avoidance, waste management, waste reduction, recycling management"@en ;
-                                                   skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                   skos:prefLabel "Entsorgung und Recycling"@de ,
-                                                                  "Waste Disposal and recycling"@en ;
-                                                   skos:scopeNote "Forschung zu Recyclingprozessen und -verfahren; zu Entsorgung von Abfallprodukten und nuklearem Müll, Stoffkreisläufen und Lebenszyklen von Materialien"@de ,
-                                                                  "Research on recycling processes and procedures; on the disposal of waste products and nuclear waste, material cycles and life cycles of materials"@en .
-
-
-###  https://w3id.org/kdsf-ffk/Entwicklungszusammenarbeit
-<https://w3id.org/kdsf-ffk/Entwicklungszusammenarbeit> rdf:type owl:NamedIndividual ,
-                                                                skos:Concept ;
-                                                       rdfs:label "Development Cooperation"@en ;
-                                                       skos:broader <https://w3id.org/kdsf-ffk/GlobalisierungUndNachhaltigkeit> ;
-                                                       skos:example "Ländliche Entwicklung, Entwicklungsländerforschung, Development Studies, Entwicklungstheorie, Regionalstudien, Entwicklungsökonomie, Situation und Sicherstellung der Welternährung in Krisen-/Konfliktregionen"@de ,
-                                                                    "Rural development, developing country research, development studies, development theory, regional studies, development economics, situation and securing world food in crisis / conflict regions"@en ;
-                                                       skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                       skos:prefLabel "Development Cooperation"@en ,
-                                                                      "Entwicklungszusammenarbeit"@de ;
-                                                       skos:scopeNote "Forschung zur technischen, finanziellen, personellen, nationalen oder internationalen Zusammenarbeit; zu Bekämpfung von Armut sowie globalen und regionalen Partnerschaften"@de ,
-                                                                      "Research on technical, financial, personal, national or international cooperation; on combating poverty as well as global and regional partnerships"@en .
-
-
-###  https://w3id.org/kdsf-ffk/ErdeUndKosmos
-<https://w3id.org/kdsf-ffk/ErdeUndKosmos> rdf:type owl:NamedIndividual ,
-                                                   skos:Concept ;
-                                          rdfs:label "Earth and cosmos"@en ;
-                                          skos:narrower <https://w3id.org/kdsf-ffk/ErdeUndKosmosAllgemein> ,
-                                                        <https://w3id.org/kdsf-ffk/Materie> ,
-                                                        <https://w3id.org/kdsf-ffk/PlanetErde> ,
-                                                        <https://w3id.org/kdsf-ffk/RegionenDerErde> ,
-                                                        <https://w3id.org/kdsf-ffk/Weltraum> ;
-                                          skos:prefLabel "Earth and cosmos"@en ,
-                                                         "Erde und Kosmos"@de ;
-                                          skos:topConceptOf <https://w3id.org/kdsf-ffk/> .
-
-
-###  https://w3id.org/kdsf-ffk/ErdeUndKosmosAllgemein
-<https://w3id.org/kdsf-ffk/ErdeUndKosmosAllgemein> rdf:type owl:NamedIndividual ,
-                                                            skos:Concept ;
-                                                   rdfs:label "Earth and cosmos - General"@en ;
-                                                   skos:broader <https://w3id.org/kdsf-ffk/ErdeUndKosmos> ;
-                                                   skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                   skos:prefLabel "Earth and cosmos - General"@en ,
-                                                                  "Erde und Kosmos - Allgemein"@de ;
-                                                   skos:scopeNote "Forschung über den Planeten Erde und den ihn umgebenden Kosmos im weitesten Sinne sowie Materie"@de ,
-                                                                  "Research on the planet earth and the surrounding cosmos in the broadest sense as well as matter"@en .
-
-
-###  https://w3id.org/kdsf-ffk/GewaltKonflikteUndGefahrenabwehr
-<https://w3id.org/kdsf-ffk/GewaltKonflikteUndGefahrenabwehr> rdf:type owl:NamedIndividual ,
-                                                                      skos:Concept ;
-                                                             rdfs:label "Violence, conflicts and crisis prevention"@en ;
-                                                             skos:broader <https://w3id.org/kdsf-ffk/MenschUndGesellschaft> ;
-                                                             skos:example "Organisierte Kriminalität, Schutz vor Gewalt, Aufklärung und Überwachung, Resilienz und Schutz kritischer Infrastrukturen, Terrorismus, Zivile Sicherheit"@de ,
-                                                                          "Organized crime, protection from violence, education and surveillance, resilience and protection of critical infrastructures, terrorism, civil security"@en ;
-                                                             skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                             skos:prefLabel "Gewalt, Konflikte und Gefahrenabwehr"@de ,
-                                                                            "Violence, conflicts and crisis prevention"@en ;
-                                                             skos:scopeNote "Forschung zur Bekämpfung von Kriminalität und Gewalt; zu Gefahren und Konflikten in einem Land und zwischen Ländern; zu politischer Diplomatie und Lösungen; zu friedliche Gesellschaften"@de ,
-                                                                            "Research on combating crime and violence; on dangers and conflicts in a country and between countries; on political diplomacy and solutions; on peaceful societies"@en .
-
-
-###  https://w3id.org/kdsf-ffk/GleichstellungDiversitaetUndInklusion
-<https://w3id.org/kdsf-ffk/GleichstellungDiversitaetUndInklusion> rdf:type owl:NamedIndividual ,
-                                                                           skos:Concept ;
-                                                                  rdfs:label "Equality, Diversity and Inclusion"@en ;
-                                                                  skos:broader <https://w3id.org/kdsf-ffk/MenschUndGesellschaft> ;
-                                                                  skos:example "Inclusive education, diversity, equality, equal opportunities, advancement of women, equality"@en ,
-                                                                               "Inklusive Bildung, Vielfalt, Gleichberechtigung, Chancengleichheit, Frauenförderung, Gleichheit"@de ;
-                                                                  skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                                  skos:prefLabel "Equality, Diversity and Inclusion"@en ,
-                                                                                 "Gleichstellung, Diversität und Inklusion"@de ;
-                                                                  skos:scopeNote "Forschung zu Aspekten von Gleichstellung und Diversität in der Gesellschaft; zur sozialer Ungleichheit; zur Inklusion in Bildung und Gesellschaft; zu Gender und Feminismus"@de ,
-                                                                                 "Research on aspects of equality and diversity in society; on social inequality; on inclusion in education and society; on gender and feminism"@en .
-
-
-###  https://w3id.org/kdsf-ffk/GlobalisierungUndNachhaltigkeit
-<https://w3id.org/kdsf-ffk/GlobalisierungUndNachhaltigkeit> rdf:type owl:NamedIndividual ,
-                                                                     skos:Concept ;
-                                                            rdfs:label "Globalization and sustainablility"@en ;
-                                                            skos:narrower <https://w3id.org/kdsf-ffk/Entwicklungszusammenarbeit> ,
-                                                                          <https://w3id.org/kdsf-ffk/GlobalisierungUndNachhaltigkeitAllgemein> ,
-                                                                          <https://w3id.org/kdsf-ffk/Migration> ,
-                                                                          <https://w3id.org/kdsf-ffk/Nachhaltigkeit> ;
-                                                            skos:prefLabel "Globalisierung und Nachhaltigkeit"@de ,
-                                                                           "Globalization and sustainablility"@en ;
-                                                            skos:topConceptOf <https://w3id.org/kdsf-ffk/> .
-
-
-###  https://w3id.org/kdsf-ffk/GlobalisierungUndNachhaltigkeitAllgemein
-<https://w3id.org/kdsf-ffk/GlobalisierungUndNachhaltigkeitAllgemein> rdf:type owl:NamedIndividual ,
-                                                                              skos:Concept ;
-                                                                     rdfs:label "Globalization and Sustainability - General"@en ;
-                                                                     skos:broader <https://w3id.org/kdsf-ffk/GlobalisierungUndNachhaltigkeit> ;
-                                                                     skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                                     skos:prefLabel "Globalisierung und Nachhaltigkeit - Allgemein"@de ,
-                                                                                    "Globalization and Sustainability - General"@en ;
-                                                                     skos:scopeNote "Forschung zur Globalisierung  und deren Auswirkung auf Wirtschaft, Gesellschaft und Umwelt sowie zur nachhaltigen Entwicklung dieser Bereiche; regionale Aspekte bzw. Entwicklung verschiedener Regionen der Erde unter internationalen Rahmenbedingungen"@de ,
-                                                                                    "Research on globalization and its effects on economy, society and the environment as well as on the sustainable development of these areas; regional aspects and development of different regions of the world under international framework conditions"@en .
-
-
-###  https://w3id.org/kdsf-ffk/Halbleitertechnologie
-<https://w3id.org/kdsf-ffk/Halbleitertechnologie> rdf:type owl:NamedIndividual ,
-                                                           skos:Concept ;
-                                                  rdfs:label "Semiconductor technology"@en ;
-                                                  skos:broader <https://w3id.org/kdsf-ffk/Technologie> ;
-                                                  skos:example "Photonic crystals, quantum structure components, compound semiconductors, organic semiconductors, microprocessors, microchips, integrated circuits, integrated circuits, computer chips, intelligent sensors"@en ,
-                                                               "Photonische Kristalle, Quantenstrukturbauelemente, Verbindungshalbleiter, Organische Halbleiter, Mikroprozessor, Mikrochip, Integrierter Schaltkreis, Integrierte Schaltung, Computer chips, intelligente Sensoren"@de ;
-                                                  skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                  skos:prefLabel "Halbleitertechnologie"@de ,
-                                                                 "Semiconductor technology"@en ;
-                                                  skos:scopeNote "Forschung zur technischen Herstellung mikroelektronischer und lichttechnischer Bauelemente und mikroelektronischer Baugruppen; zu Elementen wie Silizium"@de ,
-                                                                 "Research on the technical production of microelectronic and lighting components and microelectronic assemblies; on elements such as silicon"@en .
-
-
-###  https://w3id.org/kdsf-ffk/Industrie
-<https://w3id.org/kdsf-ffk/Industrie> rdf:type owl:NamedIndividual ,
-                                               skos:Concept ;
-                                      rdfs:label "Industry"@en ;
-                                      skos:narrower <https://w3id.org/kdsf-ffk/EntsorgungUndRecycling> ,
-                                                    <https://w3id.org/kdsf-ffk/IndustrieAllgemein> ,
-                                                    <https://w3id.org/kdsf-ffk/IntelligenteProduktion> ,
-                                                    <https://w3id.org/kdsf-ffk/Robotik> ;
-                                      skos:prefLabel "Industrie"@de ,
-                                                     "Industry"@en ;
-                                      skos:topConceptOf <https://w3id.org/kdsf-ffk/> .
-
-
-###  https://w3id.org/kdsf-ffk/IndustrieAllgemein
-<https://w3id.org/kdsf-ffk/IndustrieAllgemein> rdf:type owl:NamedIndividual ,
-                                                        skos:Concept ;
-                                               rdfs:label "Industry - general"@en ;
-                                               skos:broader <https://w3id.org/kdsf-ffk/Industrie> ;
-                                               skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                               skos:prefLabel "Industrie - Allgemein"@de ,
-                                                              "Industry - general"@en ;
-                                               skos:scopeNote "Forschung zu Technologien und Verfahren der gewerblichen Verarbeitung von Rohstoffen im Allgemeinen"@de ,
-                                                              "Research on technologies and processes for the commercial processing of raw materials in general"@en .
-
-
-###  https://w3id.org/kdsf-ffk/Informationssicherheit
-<https://w3id.org/kdsf-ffk/Informationssicherheit> rdf:type owl:NamedIndividual ,
-                                                            skos:Concept ;
-                                                   rdfs:label "Information security"@en ;
-                                                   skos:broader <https://w3id.org/kdsf-ffk/Informationstechnologie> ;
-                                                   skos:example "Data backup, security systems, data encryption, computer security, crypto procedures, cryptosystems, data protection"@en ,
-                                                                "Datensicherung, Sicherheitssysteme, Datenverschlüsselung, Computersicherheit, Kryptoverfahren, Kryptosysteme, Datenschutz"@de ;
-                                                   skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                   skos:prefLabel "Information security"@en ,
-                                                                  "Informationssicherheit"@de ;
-                                                   skos:scopeNote "Forschung zu Sicherheit im digitalen Raum, Schutz vor Kriminalität im Internet, Hacking, Verteidigung gegen Angriffe auf digitale Systeme, Cybersicherheit"@de ,
-                                                                  "Research on security in the digital space, protection against crime on the Internet, hacking, defense against attacks on digital systems, cybersecurity"@en .
-
-
-###  https://w3id.org/kdsf-ffk/Informationssysteme
-<https://w3id.org/kdsf-ffk/Informationssysteme> rdf:type owl:NamedIndividual ,
-                                                         skos:Concept ;
-                                                rdfs:label "Information systems"@en ;
-                                                skos:broader <https://w3id.org/kdsf-ffk/Informationstechnologie> ;
-                                                skos:example "Data processing, communication systems, data structures, algorithms, user interfaces, human-machine interaction, knowledge technologies, software systems"@en ,
-                                                             "Datenverarbeitung, Kommunikationssysteme, Datenstrukturen, Algorithmen, Benutzerschnittstelle, Mensch-Maschine-Interaktion, Wissenstechnologien, Softwaresysteme"@de ;
-                                                skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                skos:prefLabel "Information systems"@en ,
-                                                               "Informationssysteme"@de ;
-                                                skos:scopeNote "Forschung über Systeme zur Informationsgenerierung und -verarbeitung, auch im Hinblick auf die Schnittstelle zum Menschen und darauf bezogene Geschäftsprozesse; Cloud-Systeme und verteilte Systeme"@de ,
-                                                               "Research on systems for generating and processing information, also with regard to the human interface and related business processes; cloud systems and distributed systems"@en .
-
-
-###  https://w3id.org/kdsf-ffk/Informationstechnik
-<https://w3id.org/kdsf-ffk/Informationstechnik> rdf:type owl:NamedIndividual ,
-                                                         skos:Concept ;
-                                                rdfs:label "Information technology engineering"@en ;
-                                                skos:broader <https://w3id.org/kdsf-ffk/Informationstechnologie> ;
-                                                skos:example "ICT technology, communication technology, information and communication technology, information technology"@en ,
-                                                             "IuK-Technologie, Kommunikationstechnik, Informations- und Kommunikationstechnik, Informationstechnik"@de ;
-                                                skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                skos:prefLabel "Information technology engineering"@en ,
-                                                               "Informationstechnik"@de ;
-                                                skos:scopeNote "Forschung zu Technik und Hardware für die Datenverarbeitung"@de ,
-                                                               "Research on technology and hardware for data processing"@en .
-
-
-###  https://w3id.org/kdsf-ffk/Informationstechnologie
-<https://w3id.org/kdsf-ffk/Informationstechnologie> rdf:type owl:NamedIndividual ,
-                                                             skos:Concept ;
-                                                    rdfs:label "Information technology"@en ;
-                                                    skos:narrower <https://w3id.org/kdsf-ffk/Informationssicherheit> ,
-                                                                  <https://w3id.org/kdsf-ffk/Informationssysteme> ,
-                                                                  <https://w3id.org/kdsf-ffk/Informationstechnik> ,
-                                                                  <https://w3id.org/kdsf-ffk/InformationstechnologieAllgemein> ,
-                                                                  <https://w3id.org/kdsf-ffk/InternetDerDinge> ,
-                                                                  <https://w3id.org/kdsf-ffk/KuenstlicheIntelligenzUndBigData> ,
-                                                                  <https://w3id.org/kdsf-ffk/Simulationsforschung> ;
-                                                    skos:prefLabel "Information technology"@en ,
-                                                                   "Informationstechnologie"@de ;
-                                                    skos:topConceptOf <https://w3id.org/kdsf-ffk/> .
-
-
-###  https://w3id.org/kdsf-ffk/InformationstechnologieAllgemein
-<https://w3id.org/kdsf-ffk/InformationstechnologieAllgemein> rdf:type owl:NamedIndividual ,
-                                                                      skos:Concept ;
-                                                             rdfs:label "Information technology - general"@en ;
-                                                             skos:broader <https://w3id.org/kdsf-ffk/Informationstechnologie> ;
-                                                             skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                             skos:prefLabel "Information technology - general"@en ,
-                                                                            "Informationstechnologie - Allgemein"@de ;
-                                                             skos:scopeNote "Forschung zur Technologie und zum Einsatz dieser für die Informationsverarbeitung"@de ,
-                                                                            "Research on technology and its use for information processing"@en .
-
-
-###  https://w3id.org/kdsf-ffk/Infrastruktur
-<https://w3id.org/kdsf-ffk/Infrastruktur> rdf:type owl:NamedIndividual ,
-                                                   skos:Concept ;
-                                          rdfs:label "Infrastructure"@en ;
-                                          skos:narrower <https://w3id.org/kdsf-ffk/BallungsraeumeUndStadtentwicklung> ,
-                                                        <https://w3id.org/kdsf-ffk/BauenUndWohnen> ,
-                                                        <https://w3id.org/kdsf-ffk/InfrastrukturAllgemein> ,
-                                                        <https://w3id.org/kdsf-ffk/InfrastrukturUndNetze> ,
-                                                        <https://w3id.org/kdsf-ffk/MobilitaetTransportUndVerkehr> ;
-                                          skos:prefLabel "Infrastructure"@en ,
-                                                         "Infrastruktur"@de ;
-                                          skos:topConceptOf <https://w3id.org/kdsf-ffk/> .
-
-
-###  https://w3id.org/kdsf-ffk/InfrastrukturAllgemein
-<https://w3id.org/kdsf-ffk/InfrastrukturAllgemein> rdf:type owl:NamedIndividual ,
-                                                            skos:Concept ;
-                                                   rdfs:label "Infrastructure - general"@en ;
-                                                   skos:broader <https://w3id.org/kdsf-ffk/Infrastruktur> ;
-                                                   skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                   skos:prefLabel "Infrastructure - general"@en ,
-                                                                  "Infrastruktur - Allgemein"@de ;
-                                                   skos:scopeNote "Forschung zu Infrastrukturen, die zur Versorgung und Nutzung gebraucht werden; zu Nachhaltigkeit und Resilienz kritischer Infrastrukturen"@de ,
-                                                                  "Research on infrastructures that are needed for supply and use; on sustainability and resilience of critical infrastructures"@en .
-
-
-###  https://w3id.org/kdsf-ffk/InfrastrukturUndNetze
-<https://w3id.org/kdsf-ffk/InfrastrukturUndNetze> rdf:type owl:NamedIndividual ,
-                                                           skos:Concept ;
-                                                  rdfs:label "Infrastructure and networks"@en ;
-                                                  skos:broader <https://w3id.org/kdsf-ffk/Infrastruktur> ;
-                                                  skos:example "Mobile Kommunikationsnetze, Gasnetzwerke, Intelligentes Energienetz, Netzinfrastruktur, Versorgungsnetz"@de ,
-                                                               "Mobile communication networks, gas networks, intelligent energy networks, network infrastructure, supply networks"@en ;
-                                                  skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                  skos:prefLabel "Infrastructure and networks"@en ,
-                                                                 "Infrastruktur und Netze"@de ;
-                                                  skos:scopeNote "Forschung zu Infrastrukturen der Daseinsvorsorge, wie Stromnetze, Gasnetze, Kommunikationsnetze, Anlagen, Strukturen, Systeme"@de ,
-                                                                 "Research on infrastructures for services of general interest, such as electricity networks, gas networks, communication networks, facilities, structures, systems"@en .
-
-
-###  https://w3id.org/kdsf-ffk/InfrastrukturenDerWissenschaft
-<https://w3id.org/kdsf-ffk/InfrastrukturenDerWissenschaft> rdf:type owl:NamedIndividual ,
-                                                                    skos:Concept ;
-                                                           rdfs:label "Research infrastructures"@en ;
-                                                           skos:broader <https://w3id.org/kdsf-ffk/Wissenschaft> ;
-                                                           skos:example "Forschungswerkzeug, Volltextdatenbank, (Digitale) Bibliothek, Forschungsinfrastruktur, Informationsinfrastruktur, Literaturversorgung, Forschungsinformationssysteme"@de ,
-                                                                        "Research tool, full text database, (digital) library, research infrastructure, information infrastructure, literature supply, research information systems"@en ;
-                                                           skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                           skos:prefLabel "Infrastrukturen der Wissenschaft"@de ,
-                                                                          "Research infrastructures"@en ;
-                                                           skos:scopeNote "Forschung zur Veränderung (z.B. Ausbau und Verbesserung) von Infrastrukturen zur Informationsversorgung und -verarbeitung für die Wissenschaft"@de ,
-                                                                          "Research on the change (e.g. expansion and improvement) of infrastructures for information supply and processing for science"@en .
-
-
-###  https://w3id.org/kdsf-ffk/Innovation
-<https://w3id.org/kdsf-ffk/Innovation> rdf:type owl:NamedIndividual ,
-                                                skos:Concept ;
-                                       rdfs:label "Innovation"@en ;
-                                       skos:broader <https://w3id.org/kdsf-ffk/KognitionUndWissen> ;
-                                       skos:example "Innovation research, innovation drivers, innovation promotion, innovation support, progress, creation of ideas, creation of inventions, innovation process"@en ,
-                                                    "Innovationsforschung, Innovationstreiber, Innovationsförderung, Innovationsbegleitung, Fortschritt, Entstehung von Ideen, Entstehung von Erfindungen, Innovationsprozess"@de ;
-                                       skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                       skos:prefLabel "Innovation"@de ,
-                                                      "Innovation"@en ;
-                                       skos:scopeNote "Forschung zu innovationsunterstützenden Maßnahmen und dem Entstehen von Innovationen und neuen Ideen"@de ,
-                                                      "Research on innovation support measures and the emergence of innovations and new ideas"@en .
-
-
-###  https://w3id.org/kdsf-ffk/IntelligenteProduktion
-<https://w3id.org/kdsf-ffk/IntelligenteProduktion> rdf:type owl:NamedIndividual ,
-                                                            skos:Concept ;
-                                                   rdfs:label "Intelligent manufacturing"@en ;
-                                                   skos:broader <https://w3id.org/kdsf-ffk/Industrie> ;
-                                                   skos:example "Fourth industrial revolution, intelligent manufacturing, digital factory, automated production, industrial automation"@en ,
-                                                                "Vierte industrielle Revolution, Intelligente Fertigung, Digitale Fabrik, Automatisierte Produktion, Industrielle Automatisierung"@de ;
-                                                   skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                   skos:prefLabel "Intelligent manufacturing"@en ,
-                                                                  "Intelligente Produktion"@de ;
-                                                   skos:scopeNote "Forschung über den gesamten Prozess der Entwicklung, Konstruktion, Fertigung und das Produzieren von Maschinen und Systemen, sowie Entwicklung neuer Prozesse für die Produktion mit modernster Informations- und Kommunikationstechnik, zur Digitalisierung in der industriellen Produktion und deren Prozessen durch intelligente und vernetzte Systeme und die Automatisierung von Prozessen"@de ,
-                                                                  "Research on the entire process of development, design, manufacture and production of machines and systems, as well as the development of new processes for production with the latest information and communication technology, for digitization in industrial production and its processes through intelligent and networked Systems and the automation of processes"@en .
-
-
-###  https://w3id.org/kdsf-ffk/InternetDerDinge
-<https://w3id.org/kdsf-ffk/InternetDerDinge> rdf:type owl:NamedIndividual ,
-                                                      skos:Concept ;
-                                             rdfs:label "Internet of things"@en ;
-                                             skos:broader <https://w3id.org/kdsf-ffk/Informationstechnologie> ;
-                                             skos:example "Internet der Dienste, Internet der Energie, Autonome Agenten, Multiagenten Systeme, Allgegenwärtige Datenverarbeitung"@de ,
-                                                          "Internet of Services, Internet of Energy, Autonomous Agents, Multi-Agent Systems, Ubiquitous Data Processing"@en ;
-                                             skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                             skos:prefLabel "Internet der Dinge"@de ,
-                                                            "Internet of things"@en ;
-                                             skos:scopeNote "Forschung zur Vernetzung von Gegenständen im analogen und virtuellen Raum mit dem Ziel des Informationsaustauschs zwischen den Gegenständen; nicht industrielle Produktion"@de ,
-                                                            "Research on the networking of objects in analog and virtual space with the aim of exchanging information between objects; non-industrial production"@en .
-
-
-###  https://w3id.org/kdsf-ffk/Klimaveraenderung
-<https://w3id.org/kdsf-ffk/Klimaveraenderung> rdf:type owl:NamedIndividual ,
-                                                       skos:Concept ;
-                                              rdfs:label "Climate change"@en ;
-                                              skos:broader <https://w3id.org/kdsf-ffk/NaturUndUmwelt> ;
-                                              skos:example "Climate change, climate impact, environmental compatibility, ecological impact of climate change, ecological adaptation through climate change, environmental protection"@en ,
-                                                           "Klimaänderung, Klimaauswirkung, Umweltverträglichkeit, Ökologische Auswirkung des Klimawandels, Ökologische Anpassung durch den Klimawandel, Umweltschutz"@de ;
-                                              skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                              skos:prefLabel "Climate change"@en ,
-                                                             "Klimaveränderung"@de ;
-                                              skos:scopeNote "Forschung zu Auswirkungen der Klimaveränderung auf die Umwelt und die existierende Biodiversität; zur Anpassung der Umwelt und der existierenden Biodiversität"@de ,
-                                                             "Research on the effects of climate change on the environment and the existing biodiversity; on the adaptation of the environment and the existing biodiversity"@en .
-
-
-###  https://w3id.org/kdsf-ffk/KognitionUndWissen
-<https://w3id.org/kdsf-ffk/KognitionUndWissen> rdf:type owl:NamedIndividual ,
-                                                        skos:Concept ;
-                                               rdfs:label "Cognition and knowledge"@en ;
-                                               skos:narrower <https://w3id.org/kdsf-ffk/Innovation> ,
-                                                             <https://w3id.org/kdsf-ffk/KognitionUndWissenAllgemein> ,
-                                                             <https://w3id.org/kdsf-ffk/LernenUndLernprozesse> ,
-                                                             <https://w3id.org/kdsf-ffk/MenschlichesGehirn> ,
-                                                             <https://w3id.org/kdsf-ffk/SpracheUndSpracherlernen> ,
-                                                             <https://w3id.org/kdsf-ffk/WissenstransferUndWissensrepraesentation> ;
-                                               skos:prefLabel "Cognition and knowledge"@en ,
-                                                              "Kognition und Wissen"@de ;
-                                               skos:topConceptOf <https://w3id.org/kdsf-ffk/> .
-
-
-###  https://w3id.org/kdsf-ffk/KognitionUndWissenAllgemein
-<https://w3id.org/kdsf-ffk/KognitionUndWissenAllgemein> rdf:type owl:NamedIndividual ,
-                                                                 skos:Concept ;
-                                                        rdfs:label "Cognition and Knowledge - General"@en ;
-                                                        skos:broader <https://w3id.org/kdsf-ffk/KognitionUndWissen> ;
-                                                        skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                        skos:prefLabel "Cognition and Knowledge - General"@en ,
-                                                                       "Kognition und Wissen - Allgemein"@de ;
-                                                        skos:scopeNote "Forschung zu Verfahren zur Generierung von Wissen; zum Verständnis, der Wahrnehmung und Funktionsweise von Wissen und Wissenssystemen; auch Bildung zur nachhaltigen Entwicklung"@de ,
-                                                                       "Research on processes for generating knowledge; for understanding, perception and functioning of knowledge and knowledge systems; also education for sustainable development"@en .
-
-
-###  https://w3id.org/kdsf-ffk/KreativitaetUndDarbietung
-<https://w3id.org/kdsf-ffk/KreativitaetUndDarbietung> rdf:type owl:NamedIndividual ,
-                                                               skos:Concept ;
-                                                      rdfs:label "Creativity and performance"@en ;
-                                                      skos:broader <https://w3id.org/kdsf-ffk/Kultur> ;
-                                                      skos:example "Creative performance, creative performance, creativity technology, production aesthetics, artistic creation, performing arts"@en ,
-                                                                   "Schöpferische Darbietung, Schöpferische Leistung, Kreativitätstechnik, Produktionsästhetik, künstlerisches Schaffen, Darstellende Kunst"@de ;
-                                                      skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                      skos:prefLabel "Creativity and performance"@en ,
-                                                                     "Kreativität und Darbietung"@de ;
-                                                      skos:scopeNote "Forschung zu Ausdruck und Form menschlicher Kreativität, geistiger Anstrengung und ihrer Manifestationen in Werken und Produkten des Alltags; zu ästethischen und gestalterischen Aspekten"@de ,
-                                                                     "Research on the expression and form of human creativity, intellectual effort and its manifestations in works and products of everyday life; on aesthetic and design aspects"@en .
-
-
-###  https://w3id.org/kdsf-ffk/KuenstlicheIntelligenzUndBigData
-<https://w3id.org/kdsf-ffk/KuenstlicheIntelligenzUndBigData> rdf:type owl:NamedIndividual ,
-                                                                      skos:Concept ;
-                                                             rdfs:label "Artificial intelligence and big data"@en ;
-                                                             skos:broader <https://w3id.org/kdsf-ffk/Informationstechnologie> ;
-                                                             skos:example "Expert system, machine learning, data analysis, deep learning, neural networks, data-intensive science, automation of intelligent behavior, mass data, text and data mining, recommender systems"@en ,
-                                                                          "Expertensystem, Maschinelles Lernen, Datenanalyse, Deep Learning, Neuronale Netze, Datenintensive Wissenschaft, Automatisierung intelligenten Verhaltens, Massendaten, Text- und Data Mining, Recommender-Systeme"@de ;
-                                                             skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                             skos:prefLabel "Artificial intelligence and big data"@en ,
-                                                                            "Künstliche Intelligenz und Big Data"@de ;
-                                                             skos:scopeNote "Forschung zur Verarbeitung großer Mengen an und/oder wenig strukturierter Daten zur automatisierten Entscheidungsfindung sowie der dafür benötigten Technologien und Algorithmen"@de ,
-                                                                            "Research on the processing of large amounts of and / or poorly structured data for automated decision-making as well as the technologies and algorithms required for this"@en .
-
-
-###  https://w3id.org/kdsf-ffk/KuenstlichesOderSynthetischesLeben
-<https://w3id.org/kdsf-ffk/KuenstlichesOderSynthetischesLeben> rdf:type owl:NamedIndividual ,
-                                                                        skos:Concept ;
-                                                               rdfs:label "Artificial or synthetic life"@en ;
-                                                               skos:broader <https://w3id.org/kdsf-ffk/LebenUndWohlergehen> ;
-                                                               skos:example "Artificial Photosynthesis, Synthetic Cell, Synthetic Organism, Synthetic Circuit, Biological System"@en ,
-                                                                            "Künstliche Photosynthese, Synthetsiche Zelle, Synthetischer Organismus, Synthetischer Schaltkreis, Biologisches System"@de ;
-                                                               skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                               skos:prefLabel "Artificial or synthetic life"@en ,
-                                                                              "Künstliches oder synthetisches Leben"@de ;
-                                                               skos:scopeNote "Forschung zur Entwicklung neuer Geräte, Bauteile, Systeme aus organischen Stoffen; zur Rekonstruktion bzw. Neugestaltung von in der Natur bereits vorkommenden Systemen"@de ,
-                                                                              "Research on the development of new devices, components, systems made of organic materials; for the reconstruction or redesign of systems that already occur in nature"@en .
-
-
-###  https://w3id.org/kdsf-ffk/Kultur
-<https://w3id.org/kdsf-ffk/Kultur> rdf:type owl:NamedIndividual ,
-                                            skos:Concept ;
-                                   rdfs:label "Culture"@en ;
-                                   skos:narrower <https://w3id.org/kdsf-ffk/KreativitaetUndDarbietung> ,
-                                                 <https://w3id.org/kdsf-ffk/KulturAllgemein> ,
-                                                 <https://w3id.org/kdsf-ffk/KulturgueterUndKulturellesErbe> ,
-                                                 <https://w3id.org/kdsf-ffk/Medien> ;
-                                   skos:prefLabel "Culture"@en ,
-                                                  "Kultur"@de ;
-                                   skos:topConceptOf <https://w3id.org/kdsf-ffk/> .
-
-
-###  https://w3id.org/kdsf-ffk/KulturAllgemein
-<https://w3id.org/kdsf-ffk/KulturAllgemein> rdf:type owl:NamedIndividual ,
-                                                     skos:Concept ;
-                                            rdfs:label "Culture - general"@en ;
-                                            skos:broader <https://w3id.org/kdsf-ffk/Kultur> ;
-                                            skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                            skos:prefLabel "Culture - general"@en ,
-                                                           "Kultur - Allgemein"@de ;
-                                            skos:scopeNote "Forschung, die die verschiedenen Gebiete der Kultur zum Gegenstand hat; zu kulturellen Identitäten; zu Regionen in Bezug auf Kultur, deren Entwicklung und Manifestation"@de ,
-                                                           "Research on the different areas of culture; on cultural identities; on regions in relation to culture, its development and manifestation"@en .
-
-
-###  https://w3id.org/kdsf-ffk/KulturgueterUndKulturellesErbe
-<https://w3id.org/kdsf-ffk/KulturgueterUndKulturellesErbe> rdf:type owl:NamedIndividual ,
-                                                                    skos:Concept ;
-                                                           rdfs:label "Cultural heritage objects and cultural heritage"@en ;
-                                                           skos:broader <https://w3id.org/kdsf-ffk/Kultur> ;
-                                                           skos:example "Kulturgüterschutz, Denkmalpflege, Bewahrung in Bibliothek, Archiv und Museum, Kulturelles Erbe"@de ,
-                                                                        "Protection of cultural property, preservation of monuments, preservation in the library, archive and museum, cultural heritage"@en ;
-                                                           skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                           skos:prefLabel "Cultural heritage objects and cultural heritage"@en ,
-                                                                          "Kulturgüter und kulturelles Erbe"@de ;
-                                                           skos:scopeNote "Forschung zu materiellen und immateriellen kulturellen Objekten (bewegliche und unbewegliche), deren Gebrauch (früher und heute), Erschließung, Interpretation, Aufbewahrung und Dokumentation sowie dem Zugang im physischen als auch im digitalen Raum"@de ,
-                                                                          "Research on material and immaterial cultural objects (movable and immovable), their use (then and now), development, interpretation, storage and documentation as well as access in physical and digital space"@en .
-
-
-###  https://w3id.org/kdsf-ffk/LebenUndWohlergehen
-<https://w3id.org/kdsf-ffk/LebenUndWohlergehen> rdf:type owl:NamedIndividual ,
-                                                         skos:Concept ;
-                                                rdfs:label "Life and wellbeing"@en ;
-                                                skos:narrower <https://w3id.org/kdsf-ffk/KuenstlichesOderSynthetischesLeben> ,
-                                                              <https://w3id.org/kdsf-ffk/LebenUndWohlergehenAllgemein> ,
-                                                              <https://w3id.org/kdsf-ffk/Lebewesen> ,
-                                                              <https://w3id.org/kdsf-ffk/PraeventionVonKrankheiten> ,
-                                                              <https://w3id.org/kdsf-ffk/TherapieUndHeilung> ,
-                                                              <https://w3id.org/kdsf-ffk/ZellenUndGene> ;
-                                                skos:prefLabel "Leben und Wohlergehen"@de ,
-                                                               "Life and wellbeing"@en ;
-                                                skos:topConceptOf <https://w3id.org/kdsf-ffk/> .
-
-
-###  https://w3id.org/kdsf-ffk/LebenUndWohlergehenAllgemein
-<https://w3id.org/kdsf-ffk/LebenUndWohlergehenAllgemein> rdf:type owl:NamedIndividual ,
-                                                                  skos:Concept ;
-                                                         rdfs:label "Life and Wellbeing - general"@en ;
-                                                         skos:broader <https://w3id.org/kdsf-ffk/LebenUndWohlergehen> ;
-                                                         skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                         skos:prefLabel "Leben und Wohlergehen - Allgemein"@de ,
-                                                                        "Life and Wellbeing - general"@en ;
-                                                         skos:scopeNote "Forschung zu präventiven Maßnahmen und Lebensqualität, langem Leben durch körperliches und geistiges Wohlbefinden sowie physischer und psychischer Funktions- und Leistungsfähigkeit; zu Leben und Lebewesen im Allgemeinen"@de ,
-                                                                        "Research on preventive measures and quality of life, long life through physical and mental well-being as well as physical and psychological functioning and performance; on life and living beings in general"@en .
-
-
-###  https://w3id.org/kdsf-ffk/Lebewesen
-<https://w3id.org/kdsf-ffk/Lebewesen> rdf:type owl:NamedIndividual ,
-                                               skos:Concept ;
-                                      rdfs:label "Living beings"@en ;
-                                      skos:broader <https://w3id.org/kdsf-ffk/LebenUndWohlergehen> ;
-                                      skos:example "Eukaryoten, Pilze, Pflanzen, Tiere, Menschen, Molekulare Physiologie von Lebewesen oder Organismen, Gefährdete Arten, Biochemische Evolution"@de ,
-                                                   "Eukaryotes, fungi, plants, animals, humans, molecular physiology of living beings or organisms, endangered species, biochemical evolution"@en ;
-                                      skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                      skos:prefLabel "Lebewesen"@de ,
-                                                     "Living beings"@en ;
-                                      skos:scopeNote "Forschung zu Lebewesen und deren Entwicklung"@de ,
-                                                     "Research on living things and their development"@en .
-
-
-###  https://w3id.org/kdsf-ffk/LernenUndLernprozesse
-<https://w3id.org/kdsf-ffk/LernenUndLernprozesse> rdf:type owl:NamedIndividual ,
-                                                           skos:Concept ;
-                                                  rdfs:label "Learning and learning processes"@en ;
-                                                  skos:broader <https://w3id.org/kdsf-ffk/KognitionUndWissen> ;
-                                                  skos:example "Digital learning, lifelong learning, training and further education, learning in formal and non-formal environments, digital competence, game-based learning"@en ,
-                                                               "Digitales Lernen, Lebenslanges Lernen, Aus- und Weiterbildung, Lernen in formalen und nicht-formalen Umgebungen, Digitalkompetenz, Game-Based Learning"@de ;
-                                                  skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                  skos:prefLabel "Learning and learning processes"@en ,
-                                                                 "Lernen und Lernprozesse"@de ;
-                                                  skos:scopeNote "Forschung zu lebenslangem und zukunftsorientiertem, individuellem und soziologischem Lernen; zu Vermittlung von Wissen und Fähigkeiten mit technologischer Unterstützung; zu neuen Formen des Lernens, zu digitalem Lernen, Kompetenzen und Fähigkeiten"@de ,
-                                                                 "Research on lifelong and future-oriented, individual and sociological learning; on imparting knowledge and skills with technological support; on new forms of learning, digital learning, skills and abilities"@en .
-
-
-###  https://w3id.org/kdsf-ffk/Materialien
-<https://w3id.org/kdsf-ffk/Materialien> rdf:type owl:NamedIndividual ,
-                                                 skos:Concept ;
-                                        rdfs:label "Materials"@en ;
-                                        skos:narrower <https://w3id.org/kdsf-ffk/MaterialienAllgemein> ,
-                                                      <https://w3id.org/kdsf-ffk/OberflaechenUndGrenzflaechen> ,
-                                                      <https://w3id.org/kdsf-ffk/Polymere> ,
-                                                      <https://w3id.org/kdsf-ffk/Werkstoffe> ;
-                                        skos:prefLabel "Materialien"@de ,
-                                                       "Materials"@en ;
-                                        skos:topConceptOf <https://w3id.org/kdsf-ffk/> .
-
-
-###  https://w3id.org/kdsf-ffk/MaterialienAllgemein
-<https://w3id.org/kdsf-ffk/MaterialienAllgemein> rdf:type owl:NamedIndividual ,
-                                                          skos:Concept ;
-                                                 rdfs:label "Materials - General"@en ;
-                                                 skos:broader <https://w3id.org/kdsf-ffk/Materialien> ;
-                                                 skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                 skos:prefLabel "Materialien - Allgemein"@de ,
-                                                                "Materials - General"@en ;
-                                                 skos:scopeNote "Forschung zu Eigenschaften, Nutzung und Herstellung verschiedener Materialien mit organischen und anorganischen Anteilen; zu hybriden und aktiven Materialien und biofunktionalisierten Materialien"@de ,
-                                                                "Research on the properties, use and production of various materials with organic and inorganic components; on hybrid and active materials and biofunctionalized materials"@en .
-
-
-###  https://w3id.org/kdsf-ffk/Materie
-<https://w3id.org/kdsf-ffk/Materie> rdf:type owl:NamedIndividual ,
-                                             skos:Concept ;
-                                    rdfs:label "Matter"@en ;
-                                    skos:broader <https://w3id.org/kdsf-ffk/ErdeUndKosmos> ;
-                                    skos:example "Photonic crystals, nuclei, fields, high-energy neutrinos, dark matter"@en ,
-                                                 "Photonische Kristalle, Kerne, Felder, Hochenergetische Neutrinos, Dunkle Materie"@de ;
-                                    skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                    skos:prefLabel "Materie"@de ,
-                                                   "Matter"@en ;
-                                    skos:scopeNote "Forschung zu Eigenschaften, Verhalten und Nutzung von Materie in unterschiedlichen Aggregatzuständen; zu Teilchen, deren Funktion, Nutzbarmachung und Eigenschaften; zu Teilchengemischen wie Plasma; zu Strukturen von Materie"@de ,
-                                                   "Research on the properties, behavior and use of matter in different aggregate states; on particles, their function, utilization and properties; on particle mixtures such as plasma; on the structures of matter"@en .
-
-
-###  https://w3id.org/kdsf-ffk/Medien
-<https://w3id.org/kdsf-ffk/Medien> rdf:type owl:NamedIndividual ,
-                                            skos:Concept ;
-                                   rdfs:label "Media"@en ;
-                                   skos:broader <https://w3id.org/kdsf-ffk/Kultur> ;
-                                   skos:example "Analog media, digital media, multimedia, interactive media, press products, broadcasting, journalism, computer-aided communication, audiovisual media, mass media, new media, social media"@en ,
-                                                "Analoge Medien, Digitale Medien, Multimedia, Interaktive Medien, Presserzeugnis, Rundfunk, Journalismus, Computerunterstützte Kommunikation, Audiovisuelle Medien, Massenmedien, Neue Medien, Soziale Medien"@de ;
-                                   skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                   skos:prefLabel "Media"@en ,
-                                                  "Medien"@de ;
-                                   skos:scopeNote "Forschung zu verschiedenen Medienformen und deren Einsatz als Kommunikationsmittel, deren Erstellung, Nutzung und Anwendung"@de ,
-                                                  "Research on various forms of media and their use as means of communication, their creation, use and application"@en .
-
-
-###  https://w3id.org/kdsf-ffk/MenschUndGesellschaft
-<https://w3id.org/kdsf-ffk/MenschUndGesellschaft> rdf:type owl:NamedIndividual ,
-                                                           skos:Concept ;
-                                                  rdfs:label "People and Society"@en ;
-                                                  skos:narrower <https://w3id.org/kdsf-ffk/DemographischerWandel> ,
-                                                                <https://w3id.org/kdsf-ffk/GewaltKonflikteUndGefahrenabwehr> ,
-                                                                <https://w3id.org/kdsf-ffk/GleichstellungDiversitaetUndInklusion> ,
-                                                                <https://w3id.org/kdsf-ffk/MenschUndGesellschaftAllgemein> ,
-                                                                <https://w3id.org/kdsf-ffk/PolitischeOrdnung> ,
-                                                                <https://w3id.org/kdsf-ffk/TransparenzUndVerantwortung> ,
-                                                                <https://w3id.org/kdsf-ffk/WerteUndWandel> ;
-                                                  skos:prefLabel "Mensch und Gesellschaft"@de ,
-                                                                 "People and Society"@en ;
-                                                  skos:topConceptOf <https://w3id.org/kdsf-ffk/> .
-
-
-###  https://w3id.org/kdsf-ffk/MenschUndGesellschaftAllgemein
-<https://w3id.org/kdsf-ffk/MenschUndGesellschaftAllgemein> rdf:type owl:NamedIndividual ,
-                                                                    skos:Concept ;
-                                                           rdfs:label "People and society - general"@en ;
-                                                           skos:broader <https://w3id.org/kdsf-ffk/MenschUndGesellschaft> ;
-                                                           skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                           skos:prefLabel "Mensch und Gesellschaft - Allgemein"@de ,
-                                                                          "People and society - general"@en ;
-                                                           skos:scopeNote "Forschung zu Aspekten der gesellschaftlichen Struktur und des gesellschaftlichen Zusammenhalts; zur Organisation und Struktur von Institutionen; zum Individuum und seiner persönliche Lebensgestaltung"@de ,
-                                                                          "Research on aspects of social structure and social cohesion; on the organization and structure of institutions; on the individual and his or her personal lifestyle"@en .
-
-
-###  https://w3id.org/kdsf-ffk/MenschlichesGehirn
-<https://w3id.org/kdsf-ffk/MenschlichesGehirn> rdf:type owl:NamedIndividual ,
-                                                        skos:Concept ;
-                                               rdfs:label "Human brain"@en ;
-                                               skos:broader <https://w3id.org/kdsf-ffk/KognitionUndWissen> ;
-                                               skos:example "Brain function, neurocognition, neural information processing, cognitive behavior"@en ,
-                                                            "Gehirnfunktion, Neurokognition, Neuronale Informationsverarbeitung, Kognitives Verhalten"@de ;
-                                               skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                               skos:prefLabel "Human brain"@en ,
-                                                              "Menschliches Gehirn"@de ;
-                                               skos:scopeNote "Forschung zur Verarbeitung von Information, Signalen, Gefühlen, Wahrnehmungen im menschlichen Gehirn"@de ,
-                                                              "Research on the processing of information, signals, feelings, perceptions in the human brain"@en .
-
-
-###  https://w3id.org/kdsf-ffk/Migration
-<https://w3id.org/kdsf-ffk/Migration> rdf:type owl:NamedIndividual ,
-                                               skos:Concept ;
-                                      rdfs:label "Migration"@en ;
-                                      skos:broader <https://w3id.org/kdsf-ffk/GlobalisierungUndNachhaltigkeit> ;
-                                      skos:example "Migration Theory, Migration Research, Immigration, Refugees, Refugees, Asylum Law, Spatial Mobility, Social Movements, Migration, Integration"@en ,
-                                                   "Migrationstheorie, Migrationsforschung, Immigration, Geflüchtete, Flüchtlinge, Asylrecht, Räumliche Mobilität, Soziale Bewegungen, Wanderungsbewegung, Integration"@de ;
-                                      skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                      skos:prefLabel "Migration"@de ,
-                                                     "Migration"@en ;
-                                      skos:scopeNote "Forschung zu Migration und deren Auswirkung auf Mensch und Gesellschaft; Fluchtforschung; Flüchtlingsschutz; Asyl und Migration"@de ,
-                                                     "Research on migration and its impact on people and society; refugee research; refugee protection; asylum and migration"@en .
-
-
-###  https://w3id.org/kdsf-ffk/MikroUndNanosysteme
-<https://w3id.org/kdsf-ffk/MikroUndNanosysteme> rdf:type owl:NamedIndividual ,
-                                                         skos:Concept ;
-                                                rdfs:label "Micro and nano systems"@en ;
-                                                skos:broader <https://w3id.org/kdsf-ffk/Technologie> ;
-                                                skos:example "Microtechnology, microsystem solutions, microsystem technology, microelectronics, microfabrication, nanostructure, nanomedicine, nanosecurity, nanoscale system, nanomaterials, nanotechnology, nanomaterials, submicrometer technology, submicron technology, nanostructure technology"@en ,
-                                                             "Mikrotechnik, Mikrosystemlösungen, Mikrosystemtechnik, Mikroelektronik, Mikrofertigung, Nanostruktur, Nanomedizin, Nanosicherheit, Nanoskaliges System, Nanowerkstoff, Nanotechnik, Nanomaterials, Submikrometertechnik, Submikron-Technologie, Nanostrukturtechnik"@de ;
-                                                skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                skos:prefLabel "Micro and nano systems"@en ,
-                                                               "Mikro- und Nanosysteme"@de ;
-                                                skos:scopeNote "Forschung zu Technologien bzw. Technik, die sich mit Strukturen und Prozessen im Mikro- und Nanometerbereich befasst"@de ,
-                                                               "Research on technologies or technology that deals with structures and processes in the micro and nanometer range"@en .
-
-
-###  https://w3id.org/kdsf-ffk/MobilitaetTransportUndVerkehr
-<https://w3id.org/kdsf-ffk/MobilitaetTransportUndVerkehr> rdf:type owl:NamedIndividual ,
-                                                                   skos:Concept ;
-                                                          rdfs:label "Mobility, transport and traffic"@en ;
-                                                          skos:broader <https://w3id.org/kdsf-ffk/Infrastruktur> ;
-                                                          skos:example "Intermodal transport, logistics, transport chains, transport technologies, vehicle technologies, space-based applications for transport, assistance systems"@en ,
-                                                                       "Intermodaler Verkehr, Logistik, Transportketten, Verkehrstechnologien, Fahrzeugtechnologien, Raumfahrtgestützte Anwendungen für den Verkehr, Assistenzsysteme"@de ;
-                                                          skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                          skos:prefLabel "Mobility, transport and traffic"@en ,
-                                                                         "Mobilität, Transport und Verkehr"@de ;
-                                                          skos:scopeNote "Forschung zur Umsetzung von Mobilität im Raum, der Entwicklung von Fortbewegungsmitteln für den Transport von Gütern oder Personen"@de ,
-                                                                         "Research on the implementation of mobility in space, the development of means of transport for the transport of goods or people"@en .
-
-
-###  https://w3id.org/kdsf-ffk/Nachhaltigkeit
-<https://w3id.org/kdsf-ffk/Nachhaltigkeit> rdf:type owl:NamedIndividual ,
-                                                    skos:Concept ;
-                                           rdfs:label "Sustainability"@en ;
-                                           skos:broader <https://w3id.org/kdsf-ffk/GlobalisierungUndNachhaltigkeit> ;
-                                           skos:example "Nachhaltige Entwicklung, Langfristige Entwicklung, Sustainable Development, Dauerhafte Entwicklung, Zukunftsfähige Entwicklung, Zukunftsfähige Wirtschaft, Umweltverträgliche Entwicklung, Qualitatives Wachstum, Nachhaltiges Wirtschaften, Nachhaltiges Wachstum"@de ,
-                                                        "Sustainable development, long-term development, sustainable development, permanent development, sustainable development, sustainable economy, environmentally compatible development, qualitative growth, sustainable economic activity, sustainable growth"@en ;
-                                           skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                           skos:prefLabel "Nachhaltigkeit"@de ,
-                                                          "Sustainability"@en ;
-                                           skos:scopeNote "Forschung zur Nachhaltigkeit im weitesten Sinne und wie diese in verschiedenen Bereichen, Gebieten und Ländern erreicht werden kann; dazu zählt auch verantwortungsbewusstes Handeln und die Forschung zu Prinzipien der langfristigen Nutzung und Wirkung von Aktionen/Projekten; zu nachhaltigem Wirtschaftswachstum, nachhaltigem Konsum und nachhaltiger Produktion"@de ,
-                                                          "Research on sustainability in the broadest sense and how this can be achieved in different areas, areas and countries; this also includes responsible action and research on principles of the long-term use and impact of actions / projects; on sustainable economic growth, sustainable consumption and sustainable production"@en .
-
-
-###  https://w3id.org/kdsf-ffk/NahrungUndVersorgung
-<https://w3id.org/kdsf-ffk/NahrungUndVersorgung> rdf:type owl:NamedIndividual ,
-                                                          skos:Concept ;
-                                                 rdfs:label "Food and supply"@en ;
-                                                 skos:broader <https://w3id.org/kdsf-ffk/NaturUndUmwelt> ;
-                                                 skos:example "Securing global nutrition, undersupply, malnutrition, nutritional issues, mass production"@en ,
-                                                              "Sicherung der weltweiten Ernährung, Unterversorgung, Unterernährung, Ernährungswissenschaftliche Fragestellungen, Massenproduktion"@de ;
-                                                 skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                 skos:prefLabel "Food and supply"@en ,
-                                                                "Nahrung und Versorgung"@de ;
-                                                 skos:scopeNote "Forschung zu Anbau, Produktion und Versorgung von und mit Lebensmitteln"@de ,
-                                                                "Research on the cultivation, production and supply of and with food"@en .
-
-
-###  https://w3id.org/kdsf-ffk/NatuerlicheRessourcen
-<https://w3id.org/kdsf-ffk/NatuerlicheRessourcen> rdf:type owl:NamedIndividual ,
-                                                           skos:Concept ;
-                                                  rdfs:label "Natural resources"@en ;
-                                                  skos:broader <https://w3id.org/kdsf-ffk/NaturUndUmwelt> ;
-                                                  skos:example "Nutzung von Biomasse, Rohstoffe der Tiefsee, Wasserressourcenmanagement, Erneuerbare Treibstoffe, Biomasse, Neuer Umgang mit Rohstoffen, Ressourceneffizienz, Rohstoffalternativen"@de ,
-                                                               "Use of biomass, raw materials of the deep sea, water resource management, renewable fuels, biomass, new handling of raw materials, resource efficiency, raw material alternatives"@en ;
-                                                  skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                  skos:prefLabel "Natural resources"@en ,
-                                                                 "Natürliche Ressourcen"@de ;
-                                                  skos:scopeNote "Forschung zum Abbau, Nutzung, Wiederverwendung und von Rohstoffen sowie Wasser, Boden, Luft, Biomasse; zum Zugang zu sauberem Wasser"@de ,
-                                                                 "Research on the extraction, use, reuse and raw materials as well as water, soil, air, biomass; on access to clean water"@en .
-
-
-###  https://w3id.org/kdsf-ffk/NaturUndUmwelt
-<https://w3id.org/kdsf-ffk/NaturUndUmwelt> rdf:type owl:NamedIndividual ,
-                                                    skos:Concept ;
-                                           rdfs:label "Nature and environment"@en ;
-                                           skos:narrower <https://w3id.org/kdsf-ffk/Klimaveraenderung> ,
-                                                         <https://w3id.org/kdsf-ffk/NahrungUndVersorgung> ,
-                                                         <https://w3id.org/kdsf-ffk/NatuerlicheRessourcen> ,
-                                                         <https://w3id.org/kdsf-ffk/NaturUndUmweltAllgemein> ,
-                                                         <https://w3id.org/kdsf-ffk/NutzungUndPflegeVonNaturraeumenUndLandschaften> ,
-                                                         <https://w3id.org/kdsf-ffk/OekosystemeUndBiodiversitaet> ,
-                                                         <https://w3id.org/kdsf-ffk/SchutzUndSicherheitVorNaturgefahrenUndReaktorsicherheit> ;
-                                           skos:prefLabel "Natur und Umwelt"@de ,
-                                                          "Nature and environment"@en ;
-                                           skos:topConceptOf <https://w3id.org/kdsf-ffk/> .
-
-
-###  https://w3id.org/kdsf-ffk/NaturUndUmweltAllgemein
-<https://w3id.org/kdsf-ffk/NaturUndUmweltAllgemein> rdf:type owl:NamedIndividual ,
-                                                             skos:Concept ;
-                                                    rdfs:label "Nature and the environment - general"@en ;
-                                                    skos:broader <https://w3id.org/kdsf-ffk/NaturUndUmwelt> ;
-                                                    skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                    skos:prefLabel "Natur und Umwelt - Allgemein"@de ,
-                                                                   "Nature and the environment - general"@en ;
-                                                    skos:scopeNote "Forschung zu Umwelt und belebter und unbelebter Natur im weitesten Sinne, deren (Ver-)Änderung und darin enthaltenen Lebewesen"@de ,
-                                                                   "Research on the environment and animate and inanimate nature in the broadest sense, their (changing) changes and the living beings they contain"@en .
-
-
-###  https://w3id.org/kdsf-ffk/NutzungUndPflegeVonNaturraeumenUndLandschaften
-<https://w3id.org/kdsf-ffk/NutzungUndPflegeVonNaturraeumenUndLandschaften> rdf:type owl:NamedIndividual ,
-                                                                                    skos:Concept ;
-                                                                           rdfs:label "Use and maintenance of natural spaces and landscapes"@en ;
-                                                                           skos:broader <https://w3id.org/kdsf-ffk/NaturUndUmwelt> ;
-                                                                           skos:example "Nachhaltige Nutzung von Landschaft und Naturraum, Waldschadenforschung, Landschaftsschutz, Naturlandschaft, Kulturlandschaft"@de ,
-                                                                                        "Sustainable use of landscape and natural space, forest damage research, landscape protection, natural landscape, cultural landscape"@en ;
-                                                                           skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                                           skos:prefLabel "Nutzung und Pflege von Naturräumen und Landschaften"@de ,
-                                                                                          "Use and maintenance of natural spaces and landscapes"@en ;
-                                                                           skos:scopeNote "Forschung zu Regionalentwicklung, Landnutzung und Entwicklung von Naturräumen sowie dem Schutz, der Pflege und der Entwicklung von Landschaften"@de ,
-                                                                                          "Research on regional development, land use and the development of natural spaces as well as the protection, maintenance and development of landscapes"@en .
-
-
-###  https://w3id.org/kdsf-ffk/OberflaechenUndGrenzflaechen
-<https://w3id.org/kdsf-ffk/OberflaechenUndGrenzflaechen> rdf:type owl:NamedIndividual ,
-                                                                  skos:Concept ;
-                                                         rdfs:label "Surfaces and interfaces"@en ;
-                                                         skos:broader <https://w3id.org/kdsf-ffk/Materialien> ;
-                                                         skos:example "Alloy, biofilm, antifouling, coating, surface pretreatment, layer technology, coating, composite material, surface technology, interface technology"@en ,
-                                                                      "Legierung, Biofilm, Antifouling, Beschichtung, Vorbehandlung von Oberflächen, Schichttechnologie, Beschichtung, Verbundwerkstoff, Oberflächentechnik, Grenzflächentechnik"@de ;
-                                                         skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                         skos:prefLabel "Oberflächen und Grenzflächen"@de ,
-                                                                        "Surfaces and interfaces"@en ;
-                                                         skos:scopeNote "Forschung zu Oberflächen von Materialien oder Festkörpern sowie dem Übergang zwischen verschiedenen Festkörpern oder Materialien"@de ,
-                                                                        "Research on surfaces of materials or solids as well as the transition between different solids or materials"@en .
-
-
-###  https://w3id.org/kdsf-ffk/OekosystemeUndBiodiversitaet
-<https://w3id.org/kdsf-ffk/OekosystemeUndBiodiversitaet> rdf:type owl:NamedIndividual ,
-                                                                  skos:Concept ;
-                                                         rdfs:label "Ecosystems and biodiversity"@en ;
-                                                         skos:broader <https://w3id.org/kdsf-ffk/NaturUndUmwelt> ;
-                                                         skos:example "Erhaltung der menschlichen Lebensgrundlagen, Waldbiodiversität, Komplexes Biosystem, Ökologisches System, Biotop, Artenvielfalt, Artenschutz, Biosystem, Umweltbelastung in Ökosystemen"@de ,
-                                                                      "Preservation of human livelihoods, forest biodiversity, complex biosystem, ecological system, biotope, biodiversity, species protection, biosystem, environmental pollution in ecosystems"@en ;
-                                                         skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                         skos:prefLabel "Ecosystems and biodiversity"@en ,
-                                                                        "Ökosysteme und Biodiversität"@de ;
-                                                         skos:scopeNote "Forschung zu Ökosystemen und Biodiversität, deren Rolle, Funktion(sfähigkeit), Veränderung und Erhaltung;  zu Maßnahmen zum Schutz von Ökosystemen und Biodiversität"@de ,
-                                                                        "Research on ecosystems and biodiversity, their role, function (ability), change and conservation; on measures to protect ecosystems and biodiversity"@en .
-
-
-###  https://w3id.org/kdsf-ffk/OpenScience
-<https://w3id.org/kdsf-ffk/OpenScience> rdf:type owl:NamedIndividual ,
-                                                 skos:Concept ;
-                                        rdfs:label "Open Science"@en ;
-                                        skos:broader <https://w3id.org/kdsf-ffk/Wissenschaft> ;
-                                        skos:example "Offene Wissenschaft, Open Data, Open Educational Resources, Open Methodology, Open Peer Review, Open Source, Open Access, Citizen Science"@de ,
-                                                     "Open Science, Open Data, Open Educational Resources, Open Methodology, Open Peer Review, Open Source, Open Access, Citizen Science"@en ;
-                                        skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                        skos:prefLabel "Open Science"@de ,
-                                                       "Open Science"@en ;
-                                        skos:scopeNote "Forschung zur Öffnung des Zugangs zu Daten und Forschungsergebnissen; zu Inklusion und Chancengleichheit in der Wissenschaft und die Öffnung des kompletten Forschungsprozesses"@de ,
-                                                       "Research on opening up access to data and research results; on inclusion and equal opportunities in science and opening up the entire research process"@en .
-
-
-###  https://w3id.org/kdsf-ffk/OptikUndPhotonik
-<https://w3id.org/kdsf-ffk/OptikUndPhotonik> rdf:type owl:NamedIndividual ,
-                                                      skos:Concept ;
-                                             rdfs:label "Optics and photonics"@en ;
-                                             skos:broader <https://w3id.org/kdsf-ffk/Technologie> ;
-                                             skos:example "Optoelectronics, quantum optics, integrated optics, optronics, optotronics, optical electronics, micro-optics"@en ,
-                                                          "Optoelektronik, Quantenoptik, Integrierte Optik, Optronik, Optotronik, Optische Elektronik, Mikrooptik"@de ;
-                                             skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                             skos:prefLabel "Optics and photonics"@en ,
-                                                            "Optik und Photonik"@de ;
-                                             skos:scopeNote "Forschung zu Grundlagen und Anwendungen optischer Verfahren und Technologien; zur Photonik, zum Licht als Transportmittel"@de ,
-                                                            "Research on the fundamentals and applications of optical processes and technologies; on photonics, on light as a means of transport"@en .
-
-
-###  https://w3id.org/kdsf-ffk/PlanetErde
-<https://w3id.org/kdsf-ffk/PlanetErde> rdf:type owl:NamedIndividual ,
-                                                skos:Concept ;
-                                       rdfs:label "Planet Earth"@en ;
-                                       skos:broader <https://w3id.org/kdsf-ffk/ErdeUndKosmos> ;
-                                       skos:example "Weather forecasts, nutrient cycle within an ecosystem, (measurable) conditions of the atmosphere or troposphere"@en ,
-                                                    "Wettervorhersagen, Nährstoffzyklus innerhalb eines Ökosystems, (messbare) Zustände der Atmosphäre bzw. Troposphäre"@de ;
-                                       skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                       skos:prefLabel "Planet Earth"@en ,
-                                                      "Planet Erde"@de ;
-                                       skos:scopeNote "Forschung zu globalen Phänomenen des Planeten Erde, zu globalen (Stoff-)Kreisläufen, zu Luft, Land, Wasser auf der Erde; zum tiefen Erduntergrund sowie Wetter"@de ,
-                                                      "Research on global phenomena of the planet earth, on global (material) cycles, on air, land, water on earth; on the deep subsurface and weather"@en .
-
-
-###  https://w3id.org/kdsf-ffk/PolitischeOrdnung
-<https://w3id.org/kdsf-ffk/PolitischeOrdnung> rdf:type owl:NamedIndividual ,
-                                                       skos:Concept ;
-                                              rdfs:label "Political order"@en ;
-                                              skos:broader <https://w3id.org/kdsf-ffk/MenschUndGesellschaft> ;
-                                              skos:example "Democracy, Democratization, Reform Process, Legal Practice, Law and Society and Socio-Legal Research, Political System"@en ,
-                                                           "Demokratie, Demokratisierung, Reformprozess, Rechtspraxis, Recht und Gesellschaft und sozio-juristische Forschung, Politisches System"@de ;
-                                              skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                              skos:prefLabel "Political order"@en ,
-                                                             "Politische Ordnung"@de ;
-                                              skos:scopeNote "Forschung zu politischen Ordnungen, deren Institutionen und den durch diese ausgeführten Funktionen, die das Zusammenleben von Bürgern in einem Staat gestalten; zu Demokratie, Recht und Gesetz, Verbraucherschutz und Auswirkungen politischer Entscheidungen auf das gesellschaftliche Zusammenleben; zur Förderung von Institutionen"@de ,
-                                                             "Research on political systems, their institutions and the functions carried out by them that shape the coexistence of citizens in a state; on democracy, law and order, consumer protection and the effects of political decisions on social coexistence; for the promotion of institutions"@en .
-
-
-###  https://w3id.org/kdsf-ffk/Polymere
-<https://w3id.org/kdsf-ffk/Polymere> rdf:type owl:NamedIndividual ,
-                                              skos:Concept ;
-                                     rdfs:label "Polymers"@en ;
-                                     skos:broader <https://w3id.org/kdsf-ffk/Materialien> ;
-                                     skos:example "Synthetic Polymers, Biopolymers, Chemically Functionalized Polymers, Physically Functionalized Polymers, Biologically Functionalized Polymers"@en ,
-                                                  "Synthetische Polymere, Biopolymere, Chemisch Funktionalisierte Polymere, Physikalisch Funktionalisierte Polymere, Biologisch Funktionalisierte Polymere"@de ;
-                                     skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                     skos:prefLabel "Polymere"@de ,
-                                                    "Polymers"@en ;
-                                     skos:scopeNote "Forschung zu Eigenschaften und Funktionen von Polymeren und deren Anwendung, zu Entwicklung und Optimierung von Innovativen und nachhaltigen Materialien, Prozesshilfsmitteln, Verfahren und Technologien"@de ,
-                                                    "Research on the properties and functions of polymers and their application, on the development and optimization of innovative and sustainable materials, process aids, processes and technologies"@en .
-
-
-###  https://w3id.org/kdsf-ffk/PraeventionVonKrankheiten
-<https://w3id.org/kdsf-ffk/PraeventionVonKrankheiten> rdf:type owl:NamedIndividual ,
-                                                               skos:Concept ;
-                                                      rdfs:label "Disease prevention"@en ;
-                                                      skos:broader <https://w3id.org/kdsf-ffk/LebenUndWohlergehen> ;
-                                                      skos:example "Gesundes Altern, Impfstoff, Präventionsforschung, Verbesserung des Gesundheitszustandes, Untersuchung von Einflussfaktoren, Gesundheitsbewusstsein, Public-Health-Forschung, Lebensqualität"@de ,
-                                                                   "Healthy aging, vaccine, prevention research, improvement of the state of health, investigation of influencing factors, health awareness, public health research, quality of life"@en ;
-                                                      skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                      skos:prefLabel "Disease prevention"@en ,
-                                                                     "Prävention von Krankheiten"@de ;
-                                                      skos:scopeNote "Forschung zur Prävention von Krankheiten; zum Erhalt der Lebensqualität über einen langen Zeitraum hinweg"@de ,
-                                                                     "Research on disease prevention; on maintaining quality of life over a long period of time"@en .
-
-
-###  https://w3id.org/kdsf-ffk/Quantentechnologien
-<https://w3id.org/kdsf-ffk/Quantentechnologien> rdf:type owl:NamedIndividual ,
-                                                         skos:Concept ;
-                                                rdfs:label "Quantum technologies"@en ;
-                                                skos:broader <https://w3id.org/kdsf-ffk/Technologie> ;
-                                                skos:example "Quanteneffekte, Quantenmechanik, Quantencomputing, Quantenprozessor, Quantenkommunikation, Quanteninformatik, Quantensensor, Quantenkryptologie"@de ,
-                                                             "Quantum effects, quantum mechanics, quantum computing, quantum processor, quantum communication, quantum informatics, quantum sensors, quantum cryptology"@en ;
-                                                skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                skos:prefLabel "Quantentechnologien"@de ,
-                                                               "Quantum technologies"@en ;
-                                                skos:scopeNote "Forschung zu Quanteneffekten, -technologien, -materialien und -anwendungen"@de ,
-                                                               "Research on quantum effects, technologies, materials and applications"@en .
-
-
-###  https://w3id.org/kdsf-ffk/RegionenDerErde
-<https://w3id.org/kdsf-ffk/RegionenDerErde> rdf:type owl:NamedIndividual ,
-                                                     skos:Concept ;
-                                            rdfs:label "Regions of the Earth"@en ;
-                                            skos:broader <https://w3id.org/kdsf-ffk/ErdeUndKosmos> ;
-                                            skos:example "Coastal research, marine research, polar research, deep sea research, mountain research, desert research"@en ,
-                                                         "Küstenforschung, Meeresforschung, Polarforschung, Tiefseeforschung, Bergforschung, Wüstenforschung"@de ;
-                                            skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                            skos:prefLabel "Regionen der Erde"@de ,
-                                                           "Regions of the Earth"@en ;
-                                            skos:scopeNote "Forschung zu wissenschaftlichen Erkundungen von Gebieten der Erde"@de ,
-                                                           "Research on scientific explorations of areas of the world"@en .
-
-
-###  https://w3id.org/kdsf-ffk/Robotik
-<https://w3id.org/kdsf-ffk/Robotik> rdf:type owl:NamedIndividual ,
-                                             skos:Concept ;
-                                    rdfs:label "Robotics"@en ;
-                                    skos:broader <https://w3id.org/kdsf-ffk/Industrie> ;
-                                    skos:example "Intelligent robots, industrial robots, autonomous robots, process automation"@en ,
-                                                 "Intelligente Roboter, Industrieroboter, Autonome Roboter, Prozessautomation"@de ;
-                                    skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                    skos:prefLabel "Robotics"@en ,
-                                                   "Robotik"@de ;
-                                    skos:scopeNote "Forschung zu Robotern und humanoiden Robotern"@de ,
-                                                   "Research on robots and humanoid robots"@en .
-
-
-###  https://w3id.org/kdsf-ffk/SchutzUndSicherheitVorNaturgefahrenUndReaktorsicherheit
-<https://w3id.org/kdsf-ffk/SchutzUndSicherheitVorNaturgefahrenUndReaktorsicherheit> rdf:type owl:NamedIndividual ,
-                                                                                             skos:Concept ;
-                                                                                    rdfs:label "Protection and hazard safety, reactor security"@en ;
-                                                                                    skos:broader <https://w3id.org/kdsf-ffk/NaturUndUmwelt> ;
-                                                                                    skos:example "Risikominimierungsstrategie, Naturgefahr, Katastrophenvorsorge, Sicherheitsforschung für Kernreaktoren"@de ,
-                                                                                                 "Risk minimization strategy, natural hazard, disaster risk reduction, safety research for nuclear reactors"@en ;
-                                                                                    skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                                                    skos:prefLabel "Protection and hazard safety, reactor security"@en ,
-                                                                                                   "Schutz und Sicherheit vor Naturgefahren und Reaktorsicherheit"@de ;
-                                                                                    skos:scopeNote "Forschung zur Minimierung von Risiken durch Naturgefahren; zum Umgang mit Naturkatastrophen; zur Reaktorsicherheit"@de ,
-                                                                                                   "Research on the minimization of risks from natural hazards; on dealing with natural disasters; on reactor safety"@en .
-
-
-###  https://w3id.org/kdsf-ffk/Simulationsforschung
-<https://w3id.org/kdsf-ffk/Simulationsforschung> rdf:type owl:NamedIndividual ,
-                                                          skos:Concept ;
-                                                 rdfs:label "Simulation research"@en ;
-                                                 skos:broader <https://w3id.org/kdsf-ffk/Informationstechnologie> ;
-                                                 skos:example "Digital computer simulation, simulation technology, system simulation, digital simulation, computer model, computer simulation, climate simulation, multi-criteria optimization models"@en ,
-                                                              "Digitale Computersimulation, Simulationstechnik, Systemsimulation, Digitale Simulation, Computermodell, Rechnersimulation, Klimasimulation, multikriterielle Optimierungsmodelle"@de ;
-                                                 skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                 skos:prefLabel "Simulation research"@en ,
-                                                                "Simulationsforschung"@de ;
-                                                 skos:scopeNote "Forschung zur Abbildung komplexer Systeme oder Prozesse in Modellen und Vorhersagen über die Zukunft mit dem Ziel des Erkenntnisgewinns über reale Systeme mit Mitteln der Informationstechnologie; simulationsbasierte Optimierung"@de ,
-                                                                "Research on the mapping of complex systems or processes in models and predictions about the future with the aim of gaining knowledge about real systems using information technology; simulation-based optimization"@en .
-
-
-###  https://w3id.org/kdsf-ffk/SpracheUndSpracherlernen
-<https://w3id.org/kdsf-ffk/SpracheUndSpracherlernen> rdf:type owl:NamedIndividual ,
-                                                              skos:Concept ;
-                                                     rdfs:label "Language and language learning"@en ;
-                                                     skos:broader <https://w3id.org/kdsf-ffk/KognitionUndWissen> ;
-                                                     skos:example "Human language, artificial language, language systems, language understanding, language recognition, language translation"@en ,
-                                                                  "Menschliche Sprache, Künstliche Sprache, Sprachsysteme, Sprachverstehen, Spracherkennung, Sprachübersetzung"@de ;
-                                                     skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                     skos:prefLabel "Language and language learning"@en ,
-                                                                    "Sprache und Spracherlernen"@de ;
-                                                     skos:scopeNote "Forschung zu Sprachen, zur Sprachentwicklung und Spracherkennung, zum Erlernen von Sprachen beim Menschen und Maschinen"@de ,
-                                                                    "Research on languages, language development and language recognition, on learning languages with humans and machines"@en .
-
-
-###  https://w3id.org/kdsf-ffk/Technologie
-<https://w3id.org/kdsf-ffk/Technologie> rdf:type owl:NamedIndividual ,
-                                                 skos:Concept ;
-                                        rdfs:label "Technology"@en ;
-                                        skos:narrower <https://w3id.org/kdsf-ffk/EnergieerzeugungUndEnergieumwandlung> ,
-                                                      <https://w3id.org/kdsf-ffk/Halbleitertechnologie> ,
-                                                      <https://w3id.org/kdsf-ffk/MikroUndNanosysteme> ,
-                                                      <https://w3id.org/kdsf-ffk/OptikUndPhotonik> ,
-                                                      <https://w3id.org/kdsf-ffk/Quantentechnologien> ,
-                                                      <https://w3id.org/kdsf-ffk/TechnologieAllgemein> ;
-                                        skos:prefLabel "Technologie"@de ,
-                                                       "Technology"@en ;
-                                        skos:topConceptOf <https://w3id.org/kdsf-ffk/> .
-
-
-###  https://w3id.org/kdsf-ffk/TechnologieAllgemein
-<https://w3id.org/kdsf-ffk/TechnologieAllgemein> rdf:type owl:NamedIndividual ,
-                                                          skos:Concept ;
-                                                 rdfs:label "Technology - general"@en ;
-                                                 skos:broader <https://w3id.org/kdsf-ffk/Technologie> ;
-                                                 skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                 skos:prefLabel "Technologie - Allgemein"@de ,
-                                                                "Technology - general"@en ;
-                                                 skos:scopeNote "Forschung zu Technologien, die einen wichtigen Fortschritt gegenüber dem Status Quo darstellen; zu verschiedenen Bauteilen und Elementen, zusammengesetzten Werkzeugen oder Maschinen"@de ,
-                                                                "Research on technologies that represent an important advance compared to the status quo; on various components and elements, composite tools or machines"@en .
-
-
-###  https://w3id.org/kdsf-ffk/TherapieUndHeilung
-<https://w3id.org/kdsf-ffk/TherapieUndHeilung> rdf:type owl:NamedIndividual ,
-                                                        skos:Concept ;
-                                               rdfs:label "Therapy and healing"@en ;
-                                               skos:broader <https://w3id.org/kdsf-ffk/LebenUndWohlergehen> ;
-                                               skos:example "Behandlung von Krankheit, Bekämpfung von Krankheit, Medizinische Therapie, Medizinische Behandlung, Krankenbehandlung"@de ,
-                                                            "Treatment of Illness, Combating Illness, Medical Therapy, Medical Treatment, Treatment of Sickness"@en ;
-                                               skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                               skos:prefLabel "Therapie und Heilung"@de ,
-                                                              "Therapy and healing"@en ;
-                                               skos:scopeNote "Forschung zur Heilung; zu verschiedenen Therapieformen für Menschen; zu Medikamenten und ganzheitlichen Ansätzen"@de ,
-                                                              "Research on healing; on various forms of therapy for people; on drugs and holistic approaches"@en .
-
-
-###  https://w3id.org/kdsf-ffk/TransparenzUndVerantwortung
-<https://w3id.org/kdsf-ffk/TransparenzUndVerantwortung> rdf:type owl:NamedIndividual ,
-                                                                 skos:Concept ;
-                                                        rdfs:label "Transparency and responsibility"@en ;
-                                                        skos:broader <https://w3id.org/kdsf-ffk/MenschUndGesellschaft> ;
-                                                        skos:example "Fairness, Verantwortlichkeit, Vertrauen, Transparenz in Verknüpfung mit einem Anwendungsgebiet, z.B. neue Technologien, Computersysteme, Biomedizin, Normative Bioethik, Globale Ethik"@de ,
-                                                                     "Fairness, responsibility, trust, transparency in connection with an application area, e.g. new technologies, computer systems, biomedicine, normative bioethics, global ethics"@en ;
-                                                        skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                        skos:prefLabel "Transparency and responsibility"@en ,
-                                                                       "Transparenz und Verantwortung"@de ;
-                                                        skos:scopeNote "Forschung zur gesellschaftlichen Verantwortung; zu sittlichen Normen sowie Fragen der Ethik von Funktionsträgern, Personen, Organisationen, Einrichtungen; zu Regelungen und Prozessen in Gesellschaft und Wirtschaft"@de ,
-                                                                       "Research on social responsibility; on moral norms and questions of the ethics of functionaries, people, organizations, institutions; on regulations and processes in society and the economy"@en .
-
-
-###  https://w3id.org/kdsf-ffk/Weltraum
-<https://w3id.org/kdsf-ffk/Weltraum> rdf:type owl:NamedIndividual ,
-                                              skos:Concept ;
-                                     rdfs:label "Space"@en ;
-                                     skos:broader <https://w3id.org/kdsf-ffk/ErdeUndKosmos> ;
-                                     skos:example "Space research, space technology, research under space conditions; space travel"@en ,
-                                                  "Weltraumforschung, Weltraumtechnik, Forschung unter Weltraumbedingungen; Raumfahrt"@de ;
-                                     skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                     skos:prefLabel "Space"@en ,
-                                                    "Weltraum"@de ;
-                                     skos:scopeNote "Forschung über den Weltraum sowie Forschung über die Erde vom Weltraum aus"@de ,
-                                                    "Research on space and research on the earth from space"@en .
-
-
-###  https://w3id.org/kdsf-ffk/Werkstoffe
-<https://w3id.org/kdsf-ffk/Werkstoffe> rdf:type owl:NamedIndividual ,
-                                                skos:Concept ;
-                                       rdfs:label "Engineering materials"@en ;
-                                       skos:broader <https://w3id.org/kdsf-ffk/Materialien> ;
-                                       skos:example "Werkstück, Neues Material, Baumaterial, Bauteil, Industriematerial, Werkstoffwissenschaft, Werkstofftechnologie, Werkstofftechnik, Werkstoffkunde, Materials Engineering, Feuerungstechnik, Trenntechnik, Materialprozess, Werkstoffprozess, Werkstofftechnik, Intelligente Werkstoffe"@de ,
-                                                    "Workpiece, new material, building material, component, industrial material, material science, material technology, material technology, material science, materials engineering, combustion technology, separation technology, material process, material process, material technology, intelligent materials"@en ;
-                                       skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                       skos:prefLabel "Engineering materials"@en ,
-                                                      "Werkstoffe"@de ;
-                                       skos:scopeNote "Forschung zu Werkstoffen, deren Herstellung, Verfahren und Techniken im Umgang mit Werkstoffen; zu Fertigungsverfahren wie Bohren, Schweißen, Gießen, etc."@de ,
-                                                      "Research on materials, their manufacture, processes and techniques in handling materials; on manufacturing processes such as drilling, welding, casting, etc."@en .
-
-
-###  https://w3id.org/kdsf-ffk/WerteUndWandel
-<https://w3id.org/kdsf-ffk/WerteUndWandel> rdf:type owl:NamedIndividual ,
-                                                    skos:Concept ;
-                                           rdfs:label "Values ​​and Change"@en ;
-                                           skos:broader <https://w3id.org/kdsf-ffk/MenschUndGesellschaft> ;
-                                           skos:example "Familie im Digitalen Wandel, Sozialer Wandel, Kinderrecht, Gleichgeschlechtliche Lebensweise, Geschlechtliche Vielfalt, Gerechtigkeit, Soziale Norm"@de ,
-                                                        "Familie im Digitalen Wandel, Sozialer Wandel, Kinderrecht, Gleichgeschlechtliche Lebensweise, Geschlechtliche Vielfalt, Gerechtigkeit, Soziale Norm"@en ;
-                                           skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                           skos:prefLabel "Values ​​and Change"@en ,
-                                                          "Werte und Wandel"@de ;
-                                           skos:scopeNote "Forschung zu Werten und Normen eines Individuums und sozialen Kategorien einer Gesellschaft, sowie deren Wandel; zu zwischenmenschlichen Beziehungen und Kindererziehung"@de ,
-                                                          "Forschung zu Werten und Normen eines Individuums und sozialen Kategorien einer Gesellschaft, sowie deren Wandel; zu zwischenmenschlichen Beziehungen und Kindererziehung"@en .
-
-
-###  https://w3id.org/kdsf-ffk/Wissenschaft
-<https://w3id.org/kdsf-ffk/Wissenschaft> rdf:type owl:NamedIndividual ,
-                                                  skos:Concept ;
-                                         rdfs:label "Science"@en ;
-                                         skos:narrower <https://w3id.org/kdsf-ffk/InfrastrukturenDerWissenschaft> ,
-                                                       <https://w3id.org/kdsf-ffk/OpenScience> ,
-                                                       <https://w3id.org/kdsf-ffk/WissenschaftAllgemein> ,
-                                                       <https://w3id.org/kdsf-ffk/Wissenschaftsforschung> ;
-                                         skos:prefLabel "Science"@en ,
-                                                        "Wissenschaft"@de ;
-                                         skos:topConceptOf <https://w3id.org/kdsf-ffk/> .
-
-
-###  https://w3id.org/kdsf-ffk/WissenschaftAllgemein
-<https://w3id.org/kdsf-ffk/WissenschaftAllgemein> rdf:type owl:NamedIndividual ,
-                                                           skos:Concept ;
-                                                  rdfs:label "Science - General"@en ;
-                                                  skos:broader <https://w3id.org/kdsf-ffk/Wissenschaft> ;
-                                                  skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                  skos:prefLabel "Science - General"@en ,
-                                                                 "Wissenschaft - Allgemein"@de ;
-                                                  skos:scopeNote "Forschung zur Wissenschaft, deren Prozesse und Akteuren und Veränderungen im Wissenschaftsprozess"@de ,
-                                                                 "Research on science, its processes and actors and changes in the scientific process"@en .
-
-
-###  https://w3id.org/kdsf-ffk/Wissenschaftsforschung
-<https://w3id.org/kdsf-ffk/Wissenschaftsforschung> rdf:type owl:NamedIndividual ,
-                                                            skos:Concept ;
-                                                   rdfs:label "Science studies"@en ;
-                                                   skos:broader <https://w3id.org/kdsf-ffk/Wissenschaft> ;
-                                                   skos:example "Philosophy of Science, University Research"@en ,
-                                                                "Wissenschaftstheorie, Hochschulforschung"@de ;
-                                                   skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                   skos:prefLabel "Science studies"@en ,
-                                                                  "Wissenschaftsforschung"@de ;
-                                                   skos:scopeNote "Forschung zu den verschiedenen Aspekten von Wissenschaft, deren Funktion, deren Prozesse und Akteure"@de ,
-                                                                  "Research on the various aspects of science, its function, its processes and actors"@en .
-
-
-###  https://w3id.org/kdsf-ffk/WissenstransferUndWissensrepraesentation
-<https://w3id.org/kdsf-ffk/WissenstransferUndWissensrepraesentation> rdf:type owl:NamedIndividual ,
-                                                                              skos:Concept ;
-                                                                     rdfs:label "Knowledge transfer and knowledge representation"@en ;
-                                                                     skos:broader <https://w3id.org/kdsf-ffk/KognitionUndWissen> ;
-                                                                     skos:example "Knowledge transfer, knowledge representation, reasoning, knowledge acquisition, knowledge, knowledge preservation"@en ,
-                                                                                  "Wissenstransfer, Wissensrepräsentation, Reasoning, Wissenserwerb, Erkenntnis, Wissensbewahrung"@de ;
-                                                                     skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                                                     skos:prefLabel "Knowledge transfer and knowledge representation"@en ,
-                                                                                    "Wissenstransfer und Wissensrepräsentation"@de ;
-                                                                     skos:scopeNote "Forschung zur Generierung von Wissen; zu Abbildung, Weitergabe und Erhalt von Wissen"@de ,
-                                                                                    "Research on the generation of knowledge; on mapping, transferring and preserving knowledge"@en .
-
-
-###  https://w3id.org/kdsf-ffk/ZellenUndGene
-<https://w3id.org/kdsf-ffk/ZellenUndGene> rdf:type owl:NamedIndividual ,
-                                                   skos:Concept ;
-                                          rdfs:label "Cells and genes"@en ;
-                                          skos:broader <https://w3id.org/kdsf-ffk/LebenUndWohlergehen> ;
-                                          skos:example "Genome research, cell function, cell formation, cell therapy, genome research"@en ,
-                                                       "Genomforschung, Zellfunktion, Zellentstehung, Zelltheraphie, Genomforschung"@de ;
-                                          skos:inScheme <https://w3id.org/kdsf-ffk/> ;
-                                          skos:prefLabel "Cells and genes"@en ,
-                                                         "Zellen und Gene"@de ;
-                                          skos:scopeNote "Forschung zu Funktionen der Zelle und ihrer Bestandteile; zur Kommunikation innerhalb und außerhalb der Zelle; zu Genen und Proteinen als besonderer Teil der Zellforschung; zu Reaktionen von zellulären Prozessen auf äußere Einflüsse"@de ,
-                                                         "Research on the functions of the cell and its components; on communication inside and outside the cell; on genes and proteins as a special part of cell research; on reactions of cellular processes to external influences"@en .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+
+###  
+<>  a skos:ConceptScheme ;
+    dct:creator <https://orcid.org/0000-0003-4325-5751> ;
+    dct:description "Klassifikation für interdisziplinäre Forschungsfelder im Rahmen des Kerndatensatz Forschung"@de ;
+    dct:description "Classification for interdisciplinary research fields within the Kerndatensatz Forschung"@en ;
+    dct:issued "2022-09-08" ;
+    dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+    dct:title "Interdisziplinäre Forschungsfeldklassifikation"@de ;
+    dct:title "Interdisciplinary research field classification"@en ;
+    skos:hasTopConcept <ArbeitUndWirtschaft> ,
+                       <ErdeUndKosmos> ,
+                       <GlobalisierungUndNachhaltigkeit> ,
+                       <Industrie> ,
+                       <Informationstechnologie> ,
+                       <Infrastruktur> ,
+                       <KognitionUndWissen> ,
+                       <Kultur> ,
+                       <LebenUndWohlergehen> ,
+                       <Materialien> ,
+                       <MenschUndGesellschaft> ,
+                       <NaturUndUmwelt> ,
+                       <Technologie> ,
+                       <Wissenschaft> ;
+    skos:prefLabel "Interdisziplinäre Forschungsfeldklassifikation"@de .
+
+###  ArbeitUndWirtschaft
+<ArbeitUndWirtschaft> a skos:Concept ;
+    skos:narrower <ArbeitUndWirtschaftAllgemein> ,
+                  <ArbeitsweltUndGestaltung> ,
+                  <DigitaleWirtschaft> ;
+    skos:prefLabel "Arbeit und Wirtschaft"@de ,
+                    "Work and Economy"@en ;
+    skos:topConceptOf <> .
+
+
+###  ArbeitUndWirtschaftAllgemein
+<ArbeitUndWirtschaftAllgemein> a skos:Concept ;
+    skos:broader <ArbeitUndWirtschaft> ;
+    skos:prefLabel "Arbeit und Wirtschaft - Allgemein"@de ,
+                   "Work and Economy - General"@en ;
+    skos:scopeNote "Forschung über Aspekte von Arbeit und Wirtschaft im Allgemeinen"@de ,
+                  "Research on aspects of work and the economy in general"@en .
+    skos:inScheme <> ;
+
+
+###  ArbeitsweltUndGestaltung
+<ArbeitsweltUndGestaltung> a skos:Concept ;
+    skos:broader <ArbeitUndWirtschaft> ;
+    skos:example "Arbeitsbedingungen, Home Office, Bedingungsloses Grundeinkommen, Beschäftigung, Work-Life-Balance"@de ,
+            "Working conditions, home office, unconditional basic income, employment, work-life balance"@en ;
+    skos:prefLabel "Arbeitswelt und -gestaltung"@de ,
+              "Workplace and workplace design"@en ;
+    skos:scopeNote "Forschung über alle Formen der Arbeit und des Arbeitsmarkts und wie diese sich wandeln; neben Erwerbsarbeit und Nichterwerbsarbeit auch neue Formen der Beschäftigung; Arbeitsteilung; Auswirkungen auf Gesundheit und andere Aspekte des Lebens"@de ,
+              "Research on all forms of work and the labor market and how these are changing; in addition to gainful employment and non-gainful employment, there are also new forms of employment; division of labor; effects on health and other aspects of life"@en .
+    skos:inScheme <> ;
+
+
+###  BallungsraeumeUndStadtentwicklung
+<BallungsraeumeUndStadtentwicklung> a skos:Concept ;
+    skos:broader <Infrastruktur> ;
+    skos:example "Stadtplanung, Stadtentwicklungspolitik, Stadtentwicklungsplanung, Stadtentwicklungskonzept, Kommunalplanung, Urbane Räume, Verdichtungsraum, Verdichtungsgebiet, Stadtregion, Metropolregion, Agglomerationsraum"@de ,
+                 "Urban planning, urban development policy, urban development planning, urban development concept, municipal planning, urban areas, agglomeration, agglomeration area, urban region, metropolitan area"@en ;
+    skos:prefLabel "Ballungsräume und Stadtentwicklung"@de ,
+                   "Metropolitan areas and urban development"@en ;
+    skos:scopeNote "Forschung zu Stadtentwicklung und Leben in der Stadt und Ballungsräumen; Smart City-Forschung"@de ,
+                   "Research on urban development and life in the city and metropolitan areas; Smart City Research"@en .
+    skos:inScheme <> ;
+
+
+###  BauenUndWohnen
+<BauenUndWohnen> a skos:Concept ;
+    skos:broader <Infrastruktur> ;
+    skos:example "Energieeffizientes Bauen und Wohnen, Robuste Gebäude, Zukunftsverträgliches Wohnen, Energieoptimierte Verbesserung der Bausubstanz, Multifunktionale Gebäude und Komplexe"@de ,
+               "Energy-efficient building and living, robust buildings, sustainable living, energy-optimized improvement of the building fabric, multifunctional buildings and complexes"@en ;
+    skos:inScheme <> ;
+    skos:prefLabel "Bauen und Wohnen"@de ,
+                   "Building and living"@en ;
+    skos:scopeNote "Forschung zu neuen, auch automatisierten, Verfahren- und Techniken für den Bau von Gebäuden und Bauwerken, deren Ausstattung; zum nutzungsgerechten Bauen und das damit verbundene Wohnen in Gebäuden"@de ,
+"Research on new, also automated, processes and techniques for the construction of buildings and structures, their equipment; for user-friendly construction and the associated living in buildings"@en .
+
+
+###  DemographischerWandel
+<DemographischerWandel> a skos:Concept ;
+    skos:broader <MenschUndGesellschaft> ;
+    skos:example "Demographie und ihre (zukünftigen) Folgen, Bevölkerungsentwicklung, Bevölkerungswissenschaft, Bevölkerungslehre, Bevölkerungsgeographie, Altersstruktur"@de ,
+    "Demography and its (future) consequences, population development, population science, population theory, population geography, age structure"@en ;
+    skos:prefLabel "Demographic change"@en ,
+    "Demographischer Wandel"@de ;
+    skos:scopeNote "Forschung zu verschiedenen Aspekten des demographischen Wandels (wie Alterung und Zuwanderung), dessen Folgen und Lösungsansätzen"@de ,
+    "Research on various aspects of demographic change (such as aging and immigration), its consequences and possible solutions"@en .
+    skos:inScheme <> ;
+
+
+###  DigitaleWirtschaft
+<DigitaleWirtschaft> a skos:Concept ;
+    skos:broader <ArbeitUndWirtschaft> ;
+    skos:example "Internet economy, digital goods, global digital economic system, new markets, digital economic sector, digital business models, new forms of business"@en ,
+    "Internetwirtschaft, Digitale Güter, Globales digitales Wirtschaftssystem, Neue Märkte, Digitaler Wirtschaftssektor, Digitale Geschäftsmodelle, Neue Unternehmensformen"@de ;
+    skos:prefLabel "Digital Economy"@en ,
+    "Digitale Wirtschaft"@de ;
+    skos:scopeNote "Forschung zu ökonomischen Fragestellungen, die sich mit Digitalisierung und deren Auswirkung beschäftigen; zu Konzepten der Digitalisierung von Wirtschaft"@de ,
+    "Research on economic issues that deal with digitization and its effects; on concepts of digitization of the economy"@en .
+    skos:inScheme <> ;
+
+
+###  EnergieerzeugungUndEnergieumwandlung
+<EnergieerzeugungUndEnergieumwandlung> a skos:Concept ;
+    skos:broader <Technologie> ;
+    skos:example "Wind energy, solar energy, water energy, alternative fuels, biological energy generation, energy transition, energy efficiency, energy use, hydrogen conversion, hydrogen storage, hydrogen energy technology, energy storage technologies, sector coupling, vehicle propulsion, machine propulsion, hypersonic propulsion, alternative propulsion technology, low-emission fuel, propulsion system, propulsion technology"@en ,
+                "Windenergie, Sonnenergie, Wasserenergie, Alternative Kraftstoffe, Biologische Energiegewinnung, Energiewende, Energieeffizienz, Energieverwendung, Wasserstoffumwandlung, Wasserstoffspeicherung, Wasserstoffenergietechnik, Energiespeichertechnologien, Sektorkopplung, Fahrzeugantrieb, Maschinenantrieb, Hyperschall-Antrieb, Alternative Antriebstechnologie, Emissionsarmer Treibstoff, Antriebssystem,  Antriebstechnologie"@de ;
+    skos:prefLabel "Energieerzeugung und Energieumwandlung"@de ,
+                  "Energy generation and energy conversion"@en ;
+    skos:scopeNote "Forschung zu (neuen) Energieformen und erneuerbaren Energien und ihrer Erzeugung aus verschiedenen Quellen sowie der dazugehörigen Technologie zur Umwandlung und Umformung von Energie"@de ,
+                  "Research on (new) forms of energy and renewable energies and their generation from various sources as well as the associated technology for converting and converting energy"@en .
+    skos:inScheme <> ;
+
+
+###  EntsorgungUndRecycling
+<EntsorgungUndRecycling> a skos:Concept ;
+    skos:broader <Industrie> ;
+    skos:example "Abfallbeseitigung, Altlastensanierung, Gefahrstoff, Sonderabfall, Abfallverwertung, Abfallvermeidung, Abfallwirtschaft, Abfallreduzierung, Kreislaufwirtschaft"@de ,
+    "Waste disposal, remediation of contaminated sites, hazardous materials, hazardous waste, waste recycling, waste avoidance, waste management, waste reduction, recycling management"@en ;
+    skos:prefLabel "Entsorgung und Recycling"@de ,
+    "Waste Disposal and recycling"@en ;
+    skos:scopeNote "Forschung zu Recyclingprozessen und -verfahren; zu Entsorgung von Abfallprodukten und nuklearem Müll, Stoffkreisläufen und Lebenszyklen von Materialien"@de ,
+    "Research on recycling processes and procedures; on the disposal of waste products and nuclear waste, material cycles and life cycles of materials"@en .
+    skos:inScheme <> ;
+
+
+###  Entwicklungszusammenarbeit
+<Entwicklungszusammenarbeit> a skos:Concept ;
+    skos:broader <GlobalisierungUndNachhaltigkeit> ;
+    skos:example "Ländliche Entwicklung, Entwicklungsländerforschung, Development Studies, Entwicklungstheorie, Regionalstudien, Entwicklungsökonomie, Situation und Sicherstellung der Welternährung in Krisen-/Konfliktregionen"@de ,
+    "Rural development, developing country research, development studies, development theory, regional studies, development economics, situation and securing world food in crisis / conflict regions"@en ;
+    skos:prefLabel "Development Cooperation"@en ,
+    "Entwicklungszusammenarbeit"@de ;
+    skos:scopeNote "Forschung zur technischen, finanziellen, personellen, nationalen oder internationalen Zusammenarbeit; zu Bekämpfung von Armut sowie globalen und regionalen Partnerschaften"@de ,
+    "Research on technical, financial, personal, national or international cooperation; on combating poverty as well as global and regional partnerships"@en .
+    skos:inScheme <> ;
+
+
+###  ErdeUndKosmos
+<ErdeUndKosmos> a skos:Concept ;
+skos:narrower <ErdeUndKosmosAllgemein> ,
+           <Materie> ,
+           <PlanetErde> ,
+           <RegionenDerErde> ,
+           <Weltraum> ;
+skos:prefLabel "Earth and cosmos"@en ,
+            "Erde und Kosmos"@de ;
+skos:topConceptOf <> .
+
+
+###  ErdeUndKosmosAllgemein
+<ErdeUndKosmosAllgemein> a skos:Concept ;
+    skos:broader <ErdeUndKosmos> ;
+    skos:prefLabel "Earth and cosmos - General"@en ,
+    "Erde und Kosmos - Allgemein"@de ;
+    skos:scopeNote "Forschung über den Planeten Erde und den ihn umgebenden Kosmos im weitesten Sinne sowie Materie"@de ,
+    "Research on the planet earth and the surrounding cosmos in the broadest sense as well as matter"@en .
+    skos:inScheme <> ;
+
+
+###  GewaltKonflikteUndGefahrenabwehr
+<GewaltKonflikteUndGefahrenabwehr> a skos:Concept ;
+    skos:broader <MenschUndGesellschaft> ;
+    skos:example "Organisierte Kriminalität, Schutz vor Gewalt, Aufklärung und Überwachung, Resilienz und Schutz kritischer Infrastrukturen, Terrorismus, Zivile Sicherheit"@de ,
+                "Organized crime, protection from violence, education and surveillance, resilience and protection of critical infrastructures, terrorism, civil security"@en ;
+    skos:prefLabel "Gewalt, Konflikte und Gefahrenabwehr"@de ,
+                  "Violence, conflicts and crisis prevention"@en ;
+    skos:scopeNote "Forschung zur Bekämpfung von Kriminalität und Gewalt; zu Gefahren und Konflikten in einem Land und zwischen Ländern; zu politischer Diplomatie und Lösungen; zu friedliche Gesellschaften"@de ,
+                  "Research on combating crime and violence; on dangers and conflicts in a country and between countries; on political diplomacy and solutions; on peaceful societies"@en .
+    skos:inScheme <> ;
+
+
+###  GleichstellungDiversitaetUndInklusion
+<GleichstellungDiversitaetUndInklusion> a skos:Concept ;
+    skos:broader <MenschUndGesellschaft> ;
+    skos:example "Inclusive education, diversity, equality, equal opportunities, advancement of women, equality"@en ,
+                 "Inklusive Bildung, Vielfalt, Gleichberechtigung, Chancengleichheit, Frauenförderung, Gleichheit"@de ;
+    skos:prefLabel "Equality, Diversity and Inclusion"@en ,
+                   "Gleichstellung, Diversität und Inklusion"@de ;
+    skos:scopeNote "Forschung zu Aspekten von Gleichstellung und Diversität in der Gesellschaft; zur sozialer Ungleichheit; zur Inklusion in Bildung und Gesellschaft; zu Gender und Feminismus"@de ,
+                   "Research on aspects of equality and diversity in society; on social inequality; on inclusion in education and society; on gender and feminism"@en .
+    skos:inScheme <> ;
+
+###  GlobalisierungUndNachhaltigkeit
+<GlobalisierungUndNachhaltigkeit> a   skos:Concept ;
+    skos:narrower <Entwicklungszusammenarbeit> ,
+                <GlobalisierungUndNachhaltigkeitAllgemein> ,
+                <Migration> ,
+                <Nachhaltigkeit> ;
+    skos:prefLabel "Globalisierung und Nachhaltigkeit"@de ,
+                 "Globalization and sustainablility"@en ;
+    skos:topConceptOf <> .
+
+
+###  GlobalisierungUndNachhaltigkeitAllgemein
+<GlobalisierungUndNachhaltigkeitAllgemein> a   skos:Concept ;
+    skos:broader <GlobalisierungUndNachhaltigkeit> ;
+    skos:prefLabel "Globalisierung und Nachhaltigkeit - Allgemein"@de ,
+                  "Globalization and Sustainability - General"@en ;
+    skos:scopeNote "Forschung zur Globalisierung  und deren Auswirkung auf Wirtschaft, Gesellschaft und Umwelt sowie zur nachhaltigen Entwicklung dieser Bereiche; regionale Aspekte bzw. Entwicklung verschiedener Regionen der Erde unter internationalen Rahmenbedingungen"@de ,
+                  "Research on globalization and its effects on economy, society and the environment as well as on the sustainable development of these areas; regional aspects and development of different regions of the world under international framework conditions"@en .
+    skos:inScheme <> ;
+
+###  Halbleitertechnologie
+<Halbleitertechnologie> a skos:Concept ;
+    skos:broader <Technologie> ;
+    skos:example "Photonic crystals, quantum structure components, compound semiconductors, organic semiconductors, microprocessors, microchips, integrated circuits, integrated circuits, computer chips, intelligent sensors"@en ,
+    "Photonische Kristalle, Quantenstrukturbauelemente, Verbindungshalbleiter, Organische Halbleiter, Mikroprozessor, Mikrochip, Integrierter Schaltkreis, Integrierte Schaltung, Computer chips, intelligente Sensoren"@de ;
+    skos:prefLabel "Halbleitertechnologie"@de ,
+    "Semiconductor technology"@en ;
+    skos:scopeNote "Forschung zur technischen Herstellung mikroelektronischer und lichttechnischer Bauelemente und mikroelektronischer Baugruppen; zu Elementen wie Silizium"@de ,
+    "Research on the technical production of microelectronic and lighting components and microelectronic assemblies; on elements such as silicon"@en .
+    skos:inScheme <> ;
+
+###  Industrie
+<Industrie> a skos:Concept ;
+    skos:narrower <EntsorgungUndRecycling> ,
+               <IndustrieAllgemein> ,
+               <IntelligenteProduktion> ,
+               <Robotik> ;
+    skos:prefLabel "Industrie"@de ,
+                "Industry"@en ;
+    skos:topConceptOf <> .
+
+
+###  IndustrieAllgemein
+<IndustrieAllgemein> s kos:Concept ;
+    skos:broader <Industrie> ;
+    skos:prefLabel "Industrie - Allgemein"@de ,
+    "Industry - general"@en ;
+    skos:scopeNote "Forschung zu Technologien und Verfahren der gewerblichen Verarbeitung von Rohstoffen im Allgemeinen"@de ,
+    "Research on technologies and processes for the commercial processing of raw materials in general"@en .
+    skos:inScheme <> ;
+
+###  Informationssicherheit
+<Informationssicherheit> a skos:Concept ;
+    skos:broader <Informationstechnologie> ;
+    skos:example "Data backup, security systems, data encryption, computer security, crypto procedures, cryptosystems, data protection"@en ,
+    "Datensicherung, Sicherheitssysteme, Datenverschlüsselung, Computersicherheit, Kryptoverfahren, Kryptosysteme, Datenschutz"@de ;
+    skos:prefLabel "Information security"@en ,
+    "Informationssicherheit"@de ;
+    skos:scopeNote "Forschung zu Sicherheit im digitalen Raum, Schutz vor Kriminalität im Internet, Hacking, Verteidigung gegen Angriffe auf digitale Systeme, Cybersicherheit"@de ,
+    "Research on security in the digital space, protection against crime on the Internet, hacking, defense against attacks on digital systems, cybersecurity"@en .
+    skos:inScheme <> ;
+
+###  Informationssysteme
+<Informationssysteme> a skos:Concept ;
+    skos:broader <Informationstechnologie> ;
+    skos:example "Data processing, communication systems, data structures, algorithms, user interfaces, human-machine interaction, knowledge technologies, software systems"@en ,
+    "Datenverarbeitung, Kommunikationssysteme, Datenstrukturen, Algorithmen, Benutzerschnittstelle, Mensch-Maschine-Interaktion, Wissenstechnologien, Softwaresysteme"@de ;
+    skos:prefLabel "Information systems"@en ,
+    "Informationssysteme"@de ;
+    skos:scopeNote "Forschung über Systeme zur Informationsgenerierung und -verarbeitung, auch im Hinblick auf die Schnittstelle zum Menschen und darauf bezogene Geschäftsprozesse; Cloud-Systeme und verteilte Systeme"@de ,
+    "Research on systems for generating and processing information, also with regard to the human interface and related business processes; cloud systems and distributed systems"@en .
+    skos:inScheme <> ;
+
+###  Informationstechnik
+<Informationstechnik> a skos:Concept ;
+    skos:broader <Informationstechnologie> ;
+    skos:example "ICT technology, communication technology, information and communication technology, information technology"@en ,
+    "IuK-Technologie, Kommunikationstechnik, Informations- und Kommunikationstechnik, Informationstechnik"@de ;
+    skos:prefLabel "Information technology engineering"@en ,
+    "Informationstechnik"@de ;
+    skos:scopeNote "Forschung zu Technik und Hardware für die Datenverarbeitung"@de ,
+    "Research on technology and hardware for data processing"@en .
+    skos:inScheme <> ;
+
+###  Informationstechnologie
+<Informationstechnologie> a skos:Concept ;
+    skos:narrower <Informationssicherheit> ,
+    <Informationssysteme> ,
+    <Informationstechnik> ,
+    <InformationstechnologieAllgemein> ,
+    <InternetDerDinge> ,
+    <KuenstlicheIntelligenzUndBigData> ,
+    <Simulationsforschung> ;
+    skos:prefLabel "Information technology"@en ,
+    "Informationstechnologie"@de ;
+    skos:topConceptOf <> .
+
+
+###  InformationstechnologieAllgemein
+<InformationstechnologieAllgemein> a skos:Concept ;
+    skos:broader <Informationstechnologie> ;
+    skos:prefLabel "Information technology - general"@en ,
+                  "Informationstechnologie - Allgemein"@de ;
+    skos:scopeNote "Forschung zur Technologie und zum Einsatz dieser für die Informationsverarbeitung"@de ,
+                  "Research on technology and its use for information processing"@en .
+    skos:inScheme <> ;
+
+###  Infrastruktur
+<Infrastruktur> a kos:Concept ;
+    skos:narrower <BallungsraeumeUndStadtentwicklung> ,
+               <BauenUndWohnen> ,
+               <InfrastrukturAllgemein> ,
+               <InfrastrukturUndNetze> ,
+               <MobilitaetTransportUndVerkehr> ;
+    skos:prefLabel "Infrastructure"@en ,
+                "Infrastruktur"@de ;
+    skos:topConceptOf <> .
+
+
+###  InfrastrukturAllgemein
+<InfrastrukturAllgemein> a skos:Concept ;
+    skos:broader <Infrastruktur> ;
+    skos:inScheme <> ;
+    skos:prefLabel "Infrastructure - general"@en ,
+    "Infrastruktur - Allgemein"@de ;
+    skos:scopeNote "Forschung zu Infrastrukturen, die zur Versorgung und Nutzung gebraucht werden; zu Nachhaltigkeit und Resilienz kritischer Infrastrukturen"@de ,
+    "Research on infrastructures that are needed for supply and use; on sustainability and resilience of critical infrastructures"@en .
+
+
+###  InfrastrukturUndNetze
+<InfrastrukturUndNetze> a skos:Concept ;
+    skos:broader <Infrastruktur> ;
+    skos:example "Mobile Kommunikationsnetze, Gasnetzwerke, Intelligentes Energienetz, Netzinfrastruktur, Versorgungsnetz"@de ,
+    "Mobile communication networks, gas networks, intelligent energy networks, network infrastructure, supply networks"@en ;
+    skos:inScheme <> ;
+    skos:prefLabel "Infrastructure and networks"@en ,
+    "Infrastruktur und Netze"@de ;
+    skos:scopeNote "Forschung zu Infrastrukturen der Daseinsvorsorge, wie Stromnetze, Gasnetze, Kommunikationsnetze, Anlagen, Strukturen, Systeme"@de ,
+    "Research on infrastructures for services of general interest, such as electricity networks, gas networks, communication networks, facilities, structures, systems"@en .
+
+
+###  InfrastrukturenDerWissenschaft
+<InfrastrukturenDerWissenschaft> a skos:Concept ;
+    skos:broader <Wissenschaft> ;
+    skos:example "Forschungswerkzeug, Volltextdatenbank, (Digitale) Bibliothek, Forschungsinfrastruktur, Informationsinfrastruktur, Literaturversorgung, Forschungsinformationssysteme"@de ,
+              "Research tool, full text database, (digital) library, research infrastructure, information infrastructure, literature supply, research information systems"@en ;
+    skos:inScheme <> ;
+    skos:prefLabel "Infrastrukturen der Wissenschaft"@de ,
+                "Research infrastructures"@en ;
+    skos:scopeNote "Forschung zur Veränderung (z.B. Ausbau und Verbesserung) von Infrastrukturen zur Informationsversorgung und -verarbeitung für die Wissenschaft"@de ,
+                "Research on the change (e.g. expansion and improvement) of infrastructures for information supply and processing for science"@en .
+
+
+###  Innovation
+<Innovation> a skos:Concept ;
+    skos:broader <KognitionUndWissen> ;
+    skos:example "Innovation research, innovation drivers, innovation promotion, innovation support, progress, creation of ideas, creation of inventions, innovation process"@en ,
+               "Innovationsforschung, Innovationstreiber, Innovationsförderung, Innovationsbegleitung, Fortschritt, Entstehung von Ideen, Entstehung von Erfindungen, Innovationsprozess"@de ;
+    skos:inScheme <> ;
+    skos:prefLabel "Innovation"@de ,
+                 "Innovation"@en ;
+    skos:scopeNote "Forschung zu innovationsunterstützenden Maßnahmen und dem Entstehen von Innovationen und neuen Ideen"@de ,
+                 "Research on innovation support measures and the emergence of innovations and new ideas"@en .
+
+
+###  IntelligenteProduktion
+<IntelligenteProduktion> a skos:Concept ;
+    skos:broader <Industrie> ;
+    skos:example "Fourth industrial revolution, intelligent manufacturing, digital factory, automated production, industrial automation"@en ,
+    "Vierte industrielle Revolution, Intelligente Fertigung, Digitale Fabrik, Automatisierte Produktion, Industrielle Automatisierung"@de ;
+    skos:inScheme <> ;
+    skos:prefLabel "Intelligent manufacturing"@en ,
+    "Intelligente Produktion"@de ;
+    skos:scopeNote "Forschung über den gesamten Prozess der Entwicklung, Konstruktion, Fertigung und das Produzieren von Maschinen und Systemen, sowie Entwicklung neuer Prozesse für die Produktion mit modernster Informations- und Kommunikationstechnik, zur Digitalisierung in der industriellen Produktion und deren Prozessen durch intelligente und vernetzte Systeme und die Automatisierung von Prozessen"@de ,
+    "Research on the entire process of development, design, manufacture and production of machines and systems, as well as the development of new processes for production with the latest information and communication technology, for digitization in industrial production and its processes through intelligent and networked Systems and the automation of processes"@en .
+
+
+###  InternetDerDinge
+<InternetDerDinge> a skos:Concept ;
+    skos:broader <Informationstechnologie> ;
+    skos:example "Internet der Dienste, Internet der Energie, Autonome Agenten, Multiagenten Systeme, Allgegenwärtige Datenverarbeitung"@de ,
+    "Internet of Services, Internet of Energy, Autonomous Agents, Multi-Agent Systems, Ubiquitous Data Processing"@en ;
+    skos:inScheme <> ;
+    skos:prefLabel "Internet der Dinge"@de ,
+    "Internet of things"@en ;
+    skos:scopeNote "Forschung zur Vernetzung von Gegenständen im analogen und virtuellen Raum mit dem Ziel des Informationsaustauschs zwischen den Gegenständen; nicht industrielle Produktion"@de ,
+    "Research on the networking of objects in analog and virtual space with the aim of exchanging information between objects; non-industrial production"@en .
+
+
+###  Klimaveraenderung
+<Klimaveraenderung> a skos:Concept ;
+    skos:broader <NaturUndUmwelt> ;
+    skos:example "Climate change, climate impact, environmental compatibility, ecological impact of climate change, ecological adaptation through climate change, environmental protection"@en ,
+    "Klimaänderung, Klimaauswirkung, Umweltverträglichkeit, Ökologische Auswirkung des Klimawandels, Ökologische Anpassung durch den Klimawandel, Umweltschutz"@de ;
+    skos:inScheme <> ;
+    skos:prefLabel "Climate change"@en ,
+    "Klimaveränderung"@de ;
+    skos:scopeNote "Forschung zu Auswirkungen der Klimaveränderung auf die Umwelt und die existierende Biodiversität; zur Anpassung der Umwelt und der existierenden Biodiversität"@de ,
+    "Research on the effects of climate change on the environment and the existing biodiversity; on the adaptation of the environment and the existing biodiversity"@en .
+
+
+###  KognitionUndWissen
+<KognitionUndWissen> a skos:Concept ;
+    skos:narrower <Innovation> ,
+    <KognitionUndWissenAllgemein> ,
+    <LernenUndLernprozesse> ,
+    <MenschlichesGehirn> ,
+    <SpracheUndSpracherlernen> ,
+    <WissenstransferUndWissensrepraesentation> ;
+    skos:prefLabel "Cognition and knowledge"@en ,
+    "Kognition und Wissen"@de ;
+    skos:topConceptOf <> .
+
+
+###  KognitionUndWissenAllgemein
+<KognitionUndWissenAllgemein> a skos:Concept ;
+    skos:broader <KognitionUndWissen> ;
+    skos:inScheme <> ;
+    skos:prefLabel "Cognition and Knowledge - General"@en ,
+    "Kognition und Wissen - Allgemein"@de ;
+    skos:scopeNote "Forschung zu Verfahren zur Generierung von Wissen; zum Verständnis, der Wahrnehmung und Funktionsweise von Wissen und Wissenssystemen; auch Bildung zur nachhaltigen Entwicklung"@de ,
+    "Research on processes for generating knowledge; for understanding, perception and functioning of knowledge and knowledge systems; also education for sustainable development"@en .
+
+
+###  KreativitaetUndDarbietung
+<KreativitaetUndDarbietung> a skos:Concept ;
+    skos:broader <Kultur> ;
+    skos:example "Creative performance, creative performance, creativity technology, production aesthetics, artistic creation, performing arts"@en ,
+    "Schöpferische Darbietung, Schöpferische Leistung, Kreativitätstechnik, Produktionsästhetik, künstlerisches Schaffen, Darstellende Kunst"@de ;
+    skos:inScheme <> ;
+    skos:prefLabel "Creativity and performance"@en ,
+    "Kreativität und Darbietung"@de ;
+    skos:scopeNote "Forschung zu Ausdruck und Form menschlicher Kreativität, geistiger Anstrengung und ihrer Manifestationen in Werken und Produkten des Alltags; zu ästethischen und gestalterischen Aspekten"@de ,
+    "Research on the expression and form of human creativity, intellectual effort and its manifestations in works and products of everyday life; on aesthetic and design aspects"@en .
+
+
+###  KuenstlicheIntelligenzUndBigData
+<KuenstlicheIntelligenzUndBigData> a skos:Concept ;
+    skos:broader <Informationstechnologie> ;
+    skos:example "Expert system, machine learning, data analysis, deep learning, neural networks, data-intensive science, automation of intelligent behavior, mass data, text and data mining, recommender systems"@en ,
+                "Expertensystem, Maschinelles Lernen, Datenanalyse, Deep Learning, Neuronale Netze, Datenintensive Wissenschaft, Automatisierung intelligenten Verhaltens, Massendaten, Text- und Data Mining, Recommender-Systeme"@de ;
+    skos:inScheme <> ;
+    skos:prefLabel "Artificial intelligence and big data"@en ,
+                  "Künstliche Intelligenz und Big Data"@de ;
+    skos:scopeNote "Forschung zur Verarbeitung großer Mengen an und/oder wenig strukturierter Daten zur automatisierten Entscheidungsfindung sowie der dafür benötigten Technologien und Algorithmen"@de ,
+                  "Research on the processing of large amounts of and / or poorly structured data for automated decision-making as well as the technologies and algorithms required for this"@en .
+
+
+###  KuenstlichesOderSynthetischesLeben
+<KuenstlichesOderSynthetischesLeben> a skos:Concept ;
+    skos:broader <LebenUndWohlergehen> ;
+    skos:example "Artificial Photosynthesis, Synthetic Cell, Synthetic Organism, Synthetic Circuit, Biological System"@en ,
+              "Künstliche Photosynthese, Synthetsiche Zelle, Synthetischer Organismus, Synthetischer Schaltkreis, Biologisches System"@de ;
+    skos:inScheme <> ;
+    skos:prefLabel "Artificial or synthetic life"@en ,
+                "Künstliches oder synthetisches Leben"@de ;
+    skos:scopeNote "Forschung zur Entwicklung neuer Geräte, Bauteile, Systeme aus organischen Stoffen; zur Rekonstruktion bzw. Neugestaltung von in der Natur bereits vorkommenden Systemen"@de ,
+                "Research on the development of new devices, components, systems made of organic materials; for the reconstruction or redesign of systems that already occur in nature"@en .
+
+
+###  Kultur
+<Kultur> a skos:Concept ;
+    skos:narrower <KreativitaetUndDarbietung> ,
+                <KulturAllgemein> ,
+                <KulturgueterUndKulturellesErbe> ,
+                <Medien> ;
+    skos:prefLabel "Culture"@en ,
+                 "Kultur"@de ;
+    skos:topConceptOf <> .
+
+
+###  KulturAllgemein
+<KulturAllgemein> a kos:Concept ;
+    skos:broader <Kultur> ;
+    skos:inScheme <> ;
+    skos:prefLabel "Culture - general"@en ,
+    "Kultur - Allgemein"@de ;
+    skos:scopeNote "Forschung, die die verschiedenen Gebiete der Kultur zum Gegenstand hat; zu kulturellen Identitäten; zu Regionen in Bezug auf Kultur, deren Entwicklung und Manifestation"@de ,
+    "Research on the different areas of culture; on cultural identities; on regions in relation to culture, its development and manifestation"@en .
+
+
+###  KulturgueterUndKulturellesErbe
+<KulturgueterUndKulturellesErbe> a skos:Concept ;
+    skos:broader <Kultur> ;
+    skos:example "Kulturgüterschutz, Denkmalpflege, Bewahrung in Bibliothek, Archiv und Museum, Kulturelles Erbe"@de ,
+                 "Protection of cultural property, preservation of monuments, preservation in the library, archive and museum, cultural heritage"@en ;
+    skos:inScheme <> ;
+    skos:prefLabel "Cultural heritage objects and cultural heritage"@en ,
+                   "Kulturgüter und kulturelles Erbe"@de ;
+    skos:scopeNote "Forschung zu materiellen und immateriellen kulturellen Objekten (bewegliche und unbewegliche), deren Gebrauch (früher und heute), Erschließung, Interpretation, Aufbewahrung und Dokumentation sowie dem Zugang im physischen als auch im digitalen Raum"@de ,
+                   "Research on material and immaterial cultural objects (movable and immovable), their use (then and now), development, interpretation, storage and documentation as well as access in physical and digital space"@en .
+
+
+###  LebenUndWohlergehen
+<LebenUndWohlergehen> a skos:Concept ;
+    skos:narrower <KuenstlichesOderSynthetischesLeben> ,
+    <LebenUndWohlergehenAllgemein> ,
+    <Lebewesen> ,
+    <PraeventionVonKrankheiten> ,
+    <TherapieUndHeilung> ,
+    <ZellenUndGene> ;
+    skos:prefLabel "Leben und Wohlergehen"@de ,
+    "Life and wellbeing"@en ;
+    skos:topConceptOf <> .
+
+
+###  LebenUndWohlergehenAllgemein
+<LebenUndWohlergehenAllgemein> a skos:Concept ;
+    skos:broader <LebenUndWohlergehen> ;
+    skos:inScheme <> ;
+    skos:prefLabel "Leben und Wohlergehen - Allgemein"@de ,
+    "Life and Wellbeing - general"@en ;
+    skos:scopeNote "Forschung zu präventiven Maßnahmen und Lebensqualität, langem Leben durch körperliches und geistiges Wohlbefinden sowie physischer und psychischer Funktions- und Leistungsfähigkeit; zu Leben und Lebewesen im Allgemeinen"@de ,
+    "Research on preventive measures and quality of life, long life through physical and mental well-being as well as physical and psychological functioning and performance; on life and living beings in general"@en .
+
+
+###  Lebewesen
+<Lebewesen> a skos:Concept ;
+    skos:broader <LebenUndWohlergehen> ;
+    skos:example "Eukaryoten, Pilze, Pflanzen, Tiere, Menschen, Molekulare Physiologie von Lebewesen oder Organismen, Gefährdete Arten, Biochemische Evolution"@de ,
+              "Eukaryotes, fungi, plants, animals, humans, molecular physiology of living beings or organisms, endangered species, biochemical evolution"@en ;
+    skos:inScheme <> ;
+    skos:prefLabel "Lebewesen"@de ,
+                "Living beings"@en ;
+    skos:scopeNote "Forschung zu Lebewesen und deren Entwicklung"@de ,
+                "Research on living things and their development"@en .
+
+
+###  LernenUndLernprozesse
+<LernenUndLernprozesse> a skos:Concept ;
+    skos:broader <KognitionUndWissen> ;
+    skos:example "Digital learning, lifelong learning, training and further education, learning in formal and non-formal environments, digital competence, game-based learning"@en ,
+    "Digitales Lernen, Lebenslanges Lernen, Aus- und Weiterbildung, Lernen in formalen und nicht-formalen Umgebungen, Digitalkompetenz, Game-Based Learning"@de ;
+    skos:inScheme <> ;
+    skos:prefLabel "Learning and learning processes"@en ,
+    "Lernen und Lernprozesse"@de ;
+    skos:scopeNote "Forschung zu lebenslangem und zukunftsorientiertem, individuellem und soziologischem Lernen; zu Vermittlung von Wissen und Fähigkeiten mit technologischer Unterstützung; zu neuen Formen des Lernens, zu digitalem Lernen, Kompetenzen und Fähigkeiten"@de ,
+    "Research on lifelong and future-oriented, individual and sociological learning; on imparting knowledge and skills with technological support; on new forms of learning, digital learning, skills and abilities"@en .
+
+
+###  Materialien
+<Materialien> a skos:Concept ;
+    skos:narrower <MaterialienAllgemein> ,
+                 <OberflaechenUndGrenzflaechen> ,
+                 <Polymere> ,
+                 <Werkstoffe> ;
+    skos:prefLabel "Materialien"@de ,
+                  "Materials"@en ;
+    skos:topConceptOf <> .
+
+
+###  MaterialienAllgemein
+<MaterialienAllgemein> a skos:Concept ;
+    skos:broader <Materialien> ;
+    skos:inScheme <> ;
+    skos:prefLabel "Materialien - Allgemein"@de ,
+    "Materials - General"@en ;
+    skos:scopeNote "Forschung zu Eigenschaften, Nutzung und Herstellung verschiedener Materialien mit organischen und anorganischen Anteilen; zu hybriden und aktiven Materialien und biofunktionalisierten Materialien"@de ,
+    "Research on the properties, use and production of various materials with organic and inorganic components; on hybrid and active materials and biofunctionalized materials"@en .
+
+
+###  Materie
+<Materie> a skos:Concept ;
+    skos:broader <ErdeUndKosmos> ;
+    skos:example "Photonic crystals, nuclei, fields, high-energy neutrinos, dark matter"@en ,
+                "Photonische Kristalle, Kerne, Felder, Hochenergetische Neutrinos, Dunkle Materie"@de ;
+    skos:inScheme <> ;
+    skos:prefLabel "Materie"@de ,
+                  "Matter"@en ;
+    skos:scopeNote "Forschung zu Eigenschaften, Verhalten und Nutzung von Materie in unterschiedlichen Aggregatzuständen; zu Teilchen, deren Funktion, Nutzbarmachung und Eigenschaften; zu Teilchengemischen wie Plasma; zu Strukturen von Materie"@de ,
+                  "Research on the properties, behavior and use of matter in different aggregate states; on particles, their function, utilization and properties; on particle mixtures such as plasma; on the structures of matter"@en .
+
+
+###  Medien
+<Medien> a skos:Concept ;
+    skos:broader <Kultur> ;
+    skos:example "Analog media, digital media, multimedia, interactive media, press products, broadcasting, journalism, computer-aided communication, audiovisual media, mass media, new media, social media"@en ,
+               "Analoge Medien, Digitale Medien, Multimedia, Interaktive Medien, Presserzeugnis, Rundfunk, Journalismus, Computerunterstützte Kommunikation, Audiovisuelle Medien, Massenmedien, Neue Medien, Soziale Medien"@de ;
+    skos:inScheme <> ;
+    skos:prefLabel "Media"@en ,
+                 "Medien"@de ;
+    skos:scopeNote "Forschung zu verschiedenen Medienformen und deren Einsatz als Kommunikationsmittel, deren Erstellung, Nutzung und Anwendung"@de ,
+                 "Research on various forms of media and their use as means of communication, their creation, use and application"@en .
+
+
+###  MenschUndGesellschaft
+<MenschUndGesellschaft> a skos:Concept ;
+    skos:narrower <DemographischerWandel> ,
+    <GewaltKonflikteUndGefahrenabwehr> ,
+    <GleichstellungDiversitaetUndInklusion> ,
+    <MenschUndGesellschaftAllgemein> ,
+    <PolitischeOrdnung> ,
+    <TransparenzUndVerantwortung> ,
+    <WerteUndWandel> ;
+    skos:prefLabel "Mensch und Gesellschaft"@de ,
+    "People and Society"@en ;
+    skos:topConceptOf <> .
+
+
+###  MenschUndGesellschaftAllgemein
+<MenschUndGesellschaftAllgemein> a skos:Concept ;
+    skos:broader <MenschUndGesellschaft> ;
+    skos:inScheme <> ;
+    skos:prefLabel "Mensch und Gesellschaft - Allgemein"@de ,
+                "People and society - general"@en ;
+    skos:scopeNote "Forschung zu Aspekten der gesellschaftlichen Struktur und des gesellschaftlichen Zusammenhalts; zur Organisation und Struktur von Institutionen; zum Individuum und seiner persönliche Lebensgestaltung"@de ,
+                "Research on aspects of social structure and social cohesion; on the organization and structure of institutions; on the individual and his or her personal lifestyle"@en .
+
+
+###  MenschlichesGehirn
+<MenschlichesGehirn> a skos:Concept ;
+    skos:broader <KognitionUndWissen> ;
+    skos:example "Brain function, neurocognition, neural information processing, cognitive behavior"@en ,
+    "Gehirnfunktion, Neurokognition, Neuronale Informationsverarbeitung, Kognitives Verhalten"@de ;
+    skos:inScheme <> ;
+    skos:prefLabel "Human brain"@en ,
+    "Menschliches Gehirn"@de ;
+    skos:scopeNote "Forschung zur Verarbeitung von Information, Signalen, Gefühlen, Wahrnehmungen im menschlichen Gehirn"@de ,
+    "Research on the processing of information, signals, feelings, perceptions in the human brain"@en .
+
+
+###  Migration
+<Migration> a skos:Concept ;
+    skos:broader <GlobalisierungUndNachhaltigkeit> ;
+    skos:example "Migration Theory, Migration Research, Immigration, Refugees, Refugees, Asylum Law, Spatial Mobility, Social Movements, Migration, Integration"@en ,
+              "Migrationstheorie, Migrationsforschung, Immigration, Geflüchtete, Flüchtlinge, Asylrecht, Räumliche Mobilität, Soziale Bewegungen, Wanderungsbewegung, Integration"@de ;
+    skos:inScheme <> ;
+    skos:prefLabel "Migration"@de ,
+                "Migration"@en ;
+    skos:scopeNote "Forschung zu Migration und deren Auswirkung auf Mensch und Gesellschaft; Fluchtforschung; Flüchtlingsschutz; Asyl und Migration"@de ,
+                "Research on migration and its impact on people and society; refugee research; refugee protection; asylum and migration"@en .
+
+
+###  MikroUndNanosysteme
+<MikroUndNanosysteme> a skos:Concept ;
+    skos:broader <Technologie> ;
+    skos:example "Microtechnology, microsystem solutions, microsystem technology, microelectronics, microfabrication, nanostructure, nanomedicine, nanosecurity, nanoscale system, nanomaterials, nanotechnology, nanomaterials, submicrometer technology, submicron technology, nanostructure technology"@en ,
+    "Mikrotechnik, Mikrosystemlösungen, Mikrosystemtechnik, Mikroelektronik, Mikrofertigung, Nanostruktur, Nanomedizin, Nanosicherheit, Nanoskaliges System, Nanowerkstoff, Nanotechnik, Nanomaterials, Submikrometertechnik, Submikron-Technologie, Nanostrukturtechnik"@de ;
+    skos:inScheme <> ;
+    skos:prefLabel "Micro and nano systems"@en ,
+    "Mikro- und Nanosysteme"@de ;
+    skos:scopeNote "Forschung zu Technologien bzw. Technik, die sich mit Strukturen und Prozessen im Mikro- und Nanometerbereich befasst"@de ,
+    "Research on technologies or technology that deals with structures and processes in the micro and nanometer range"@en .
+
+
+###  MobilitaetTransportUndVerkehr
+<MobilitaetTransportUndVerkehr> a skos:Concept ;
+    skos:broader <Infrastruktur> ;
+    skos:example "Intermodal transport, logistics, transport chains, transport technologies, vehicle technologies, space-based applications for transport, assistance systems"@en ,
+             "Intermodaler Verkehr, Logistik, Transportketten, Verkehrstechnologien, Fahrzeugtechnologien, Raumfahrtgestützte Anwendungen für den Verkehr, Assistenzsysteme"@de ;
+    skos:inScheme <> ;
+    skos:prefLabel "Mobility, transport and traffic"@en ,
+               "Mobilität, Transport und Verkehr"@de ;
+    skos:scopeNote "Forschung zur Umsetzung von Mobilität im Raum, der Entwicklung von Fortbewegungsmitteln für den Transport von Gütern oder Personen"@de ,
+               "Research on the implementation of mobility in space, the development of means of transport for the transport of goods or people"@en .
+
+
+###  Nachhaltigkeit
+<Nachhaltigkeit> a skos:Concept ;
+    skos:broader <GlobalisierungUndNachhaltigkeit> ;
+    skos:example "Nachhaltige Entwicklung, Langfristige Entwicklung, Sustainable Development, Dauerhafte Entwicklung, Zukunftsfähige Entwicklung, Zukunftsfähige Wirtschaft, Umweltverträgliche Entwicklung, Qualitatives Wachstum, Nachhaltiges Wirtschaften, Nachhaltiges Wachstum"@de ,
+               "Sustainable development, long-term development, sustainable development, permanent development, sustainable development, sustainable economy, environmentally compatible development, qualitative growth, sustainable economic activity, sustainable growth"@en ;
+    skos:inScheme <> ;
+    skos:prefLabel "Nachhaltigkeit"@de ,
+    "Sustainability"@en ;
+    skos:scopeNote "Forschung zur Nachhaltigkeit im weitesten Sinne und wie diese in verschiedenen Bereichen, Gebieten und Ländern erreicht werden kann; dazu zählt auch verantwortungsbewusstes Handeln und die Forschung zu Prinzipien der langfristigen Nutzung und Wirkung von Aktionen/Projekten; zu nachhaltigem Wirtschaftswachstum, nachhaltigem Konsum und nachhaltiger Produktion"@de ,
+    "Research on sustainability in the broadest sense and how this can be achieved in different areas, areas and countries; this also includes responsible action and research on principles of the long-term use and impact of actions / projects; on sustainable economic growth, sustainable consumption and sustainable production"@en .
+
+
+###  NahrungUndVersorgung
+<NahrungUndVersorgung> a skos:Concept ;
+    skos:broader <NaturUndUmwelt> ;
+    skos:example "Securing global nutrition, undersupply, malnutrition, nutritional issues, mass production"@en ,
+    "Sicherung der weltweiten Ernährung, Unterversorgung, Unterernährung, Ernährungswissenschaftliche Fragestellungen, Massenproduktion"@de ;
+    skos:inScheme <> ;
+    skos:prefLabel "Food and supply"@en ,
+    "Nahrung und Versorgung"@de ;
+    skos:scopeNote "Forschung zu Anbau, Produktion und Versorgung von und mit Lebensmitteln"@de ,
+    "Research on the cultivation, production and supply of and with food"@en .
+
+
+###  NatuerlicheRessourcen
+<NatuerlicheRessourcen> a skos:Concept ;
+    skos:broader <NaturUndUmwelt> ;
+    skos:example "Nutzung von Biomasse, Rohstoffe der Tiefsee, Wasserressourcenmanagement, Erneuerbare Treibstoffe, Biomasse, Neuer Umgang mit Rohstoffen, Ressourceneffizienz, Rohstoffalternativen"@de ,
+    "Use of biomass, raw materials of the deep sea, water resource management, renewable fuels, biomass, new handling of raw materials, resource efficiency, raw material alternatives"@en ;
+    skos:inScheme <> ;
+    skos:prefLabel "Natural resources"@en ,
+    "Natürliche Ressourcen"@de ;
+    skos:scopeNote "Forschung zum Abbau, Nutzung, Wiederverwendung und von Rohstoffen sowie Wasser, Boden, Luft, Biomasse; zum Zugang zu sauberem Wasser"@de ,
+    "Research on the extraction, use, reuse and raw materials as well as water, soil, air, biomass; on access to clean water"@en .
+
+
+###  NaturUndUmwelt
+<NaturUndUmwelt> a skos:Concept ;
+    skos:narrower <Klimaveraenderung> ,
+                <NahrungUndVersorgung> ,
+                <NatuerlicheRessourcen> ,
+                <NaturUndUmweltAllgemein> ,
+                <NutzungUndPflegeVonNaturraeumenUndLandschaften> ,
+                <OekosystemeUndBiodiversitaet> ,
+                <SchutzUndSicherheitVorNaturgefahrenUndReaktorsicherheit> ;
+    skos:prefLabel "Natur und Umwelt"@de ,
+    "Nature and environment"@en ;
+    skos:topConceptOf <> .
+
+
+###  NaturUndUmweltAllgemein
+<NaturUndUmweltAllgemein> a skos:Concept ;
+    skos:broader <NaturUndUmwelt> ;
+    skos:inScheme <> ;
+    skos:prefLabel "Natur und Umwelt - Allgemein"@de ,
+    "Nature and the environment - general"@en ;
+    skos:scopeNote "Forschung zu Umwelt und belebter und unbelebter Natur im weitesten Sinne, deren (Ver-)Änderung und darin enthaltenen Lebewesen"@de ,
+    "Research on the environment and animate and inanimate nature in the broadest sense, their (changing) changes and the living beings they contain"@en .
+
+
+###  NutzungUndPflegeVonNaturraeumenUndLandschaften
+<NutzungUndPflegeVonNaturraeumenUndLandschaften> a skos:Concept ;
+    skos:broader <NaturUndUmwelt> ;
+    skos:example "Nachhaltige Nutzung von Landschaft und Naturraum, Waldschadenforschung, Landschaftsschutz, Naturlandschaft, Kulturlandschaft"@de ,
+    "Sustainable use of landscape and natural space, forest damage research, landscape protection, natural landscape, cultural landscape"@en ;
+    skos:inScheme <> ;
+    skos:prefLabel "Nutzung und Pflege von Naturräumen und Landschaften"@de ,
+    "Use and maintenance of natural spaces and landscapes"@en ;
+    skos:scopeNote "Forschung zu Regionalentwicklung, Landnutzung und Entwicklung von Naturräumen sowie dem Schutz, der Pflege und der Entwicklung von Landschaften"@de ,
+    "Research on regional development, land use and the development of natural spaces as well as the protection, maintenance and development of landscapes"@en .
+
+
+###  OberflaechenUndGrenzflaechen
+<OberflaechenUndGrenzflaechen> a skos:Concept ;
+    skos:broader <Materialien> ;
+    skos:example "Alloy, biofilm, antifouling, coating, surface pretreatment, layer technology, coating, composite material, surface technology, interface technology"@en ,
+    "Legierung, Biofilm, Antifouling, Beschichtung, Vorbehandlung von Oberflächen, Schichttechnologie, Beschichtung, Verbundwerkstoff, Oberflächentechnik, Grenzflächentechnik"@de ;
+    skos:inScheme <> ;
+    skos:prefLabel "Oberflächen und Grenzflächen"@de ,
+    "Surfaces and interfaces"@en ;
+    skos:scopeNote "Forschung zu Oberflächen von Materialien oder Festkörpern sowie dem Übergang zwischen verschiedenen Festkörpern oder Materialien"@de ,
+    "Research on surfaces of materials or solids as well as the transition between different solids or materials"@en .
+
+
+###  OekosystemeUndBiodiversitaet
+<OekosystemeUndBiodiversitaet> a skos:Concept ;
+    skos:broader <NaturUndUmwelt> ;
+    skos:example "Erhaltung der menschlichen Lebensgrundlagen, Waldbiodiversität, Komplexes Biosystem, Ökologisches System, Biotop, Artenvielfalt, Artenschutz, Biosystem, Umweltbelastung in Ökosystemen"@de ,
+    "Preservation of human livelihoods, forest biodiversity, complex biosystem, ecological system, biotope, biodiversity, species protection, biosystem, environmental pollution in ecosystems"@en ;
+    skos:inScheme <> ;
+    skos:prefLabel "Ecosystems and biodiversity"@en ,
+    "Ökosysteme und Biodiversität"@de ;
+    skos:scopeNote "Forschung zu Ökosystemen und Biodiversität, deren Rolle, Funktion(sfähigkeit), Veränderung und Erhaltung;  zu Maßnahmen zum Schutz von Ökosystemen und Biodiversität"@de ,
+    "Research on ecosystems and biodiversity, their role, function (ability), change and conservation; on measures to protect ecosystems and biodiversity"@en .
+
+
+###  OpenScience
+<OpenScience> a skos:Concept ;
+    skos:broader <Wissenschaft> ;
+    skos:example "Offene Wissenschaft, Open Data, Open Educational Resources, Open Methodology, Open Peer Review, Open Source, Open Access, Citizen Science"@de ,
+                "Open Science, Open Data, Open Educational Resources, Open Methodology, Open Peer Review, Open Source, Open Access, Citizen Science"@en ;
+    skos:inScheme <> ;
+    skos:prefLabel "Open Science"@de ,
+                  "Open Science"@en ;
+    skos:scopeNote "Forschung zur Öffnung des Zugangs zu Daten und Forschungsergebnissen; zu Inklusion und Chancengleichheit in der Wissenschaft und die Öffnung des kompletten Forschungsprozesses"@de ,
+                  "Research on opening up access to data and research results; on inclusion and equal opportunities in science and opening up the entire research process"@en .
+
+
+###  OptikUndPhotonik
+<OptikUndPhotonik> a skos:Concept ;
+    skos:broader <Technologie> ;
+    skos:example "Optoelectronics, quantum optics, integrated optics, optronics, optotronics, optical electronics, micro-optics"@en ,
+    "Optoelektronik, Quantenoptik, Integrierte Optik, Optronik, Optotronik, Optische Elektronik, Mikrooptik"@de ;
+    skos:inScheme <> ;
+    skos:prefLabel "Optics and photonics"@en ,
+    "Optik und Photonik"@de ;
+    skos:scopeNote "Forschung zu Grundlagen und Anwendungen optischer Verfahren und Technologien; zur Photonik, zum Licht als Transportmittel"@de ,
+    "Research on the fundamentals and applications of optical processes and technologies; on photonics, on light as a means of transport"@en .
+
+
+###  PlanetErde
+<PlanetErde> a skos:Concept ;
+    skos:broader <ErdeUndKosmos> ;
+    skos:example "Weather forecasts, nutrient cycle within an ecosystem, (measurable) conditions of the atmosphere or troposphere"@en ,
+               "Wettervorhersagen, Nährstoffzyklus innerhalb eines Ökosystems, (messbare) Zustände der Atmosphäre bzw. Troposphäre"@de ;
+    skos:inScheme <> ;
+    skos:prefLabel "Planet Earth"@en ,
+                 "Planet Erde"@de ;
+    skos:scopeNote "Forschung zu globalen Phänomenen des Planeten Erde, zu globalen (Stoff-)Kreisläufen, zu Luft, Land, Wasser auf der Erde; zum tiefen Erduntergrund sowie Wetter"@de ,
+                 "Research on global phenomena of the planet earth, on global (material) cycles, on air, land, water on earth; on the deep subsurface and weather"@en .
+
+
+###  PolitischeOrdnung
+<PolitischeOrdnung> a skos:Concept ;
+    skos:broader <MenschUndGesellschaft> ;
+    skos:example "Democracy, Democratization, Reform Process, Legal Practice, Law and Society and Socio-Legal Research, Political System"@en ,
+    "Demokratie, Demokratisierung, Reformprozess, Rechtspraxis, Recht und Gesellschaft und sozio-juristische Forschung, Politisches System"@de ;
+    skos:inScheme <> ;
+    skos:prefLabel "Political order"@en ,
+    "Politische Ordnung"@de ;
+    skos:scopeNote "Forschung zu politischen Ordnungen, deren Institutionen und den durch diese ausgeführten Funktionen, die das Zusammenleben von Bürgern in einem Staat gestalten; zu Demokratie, Recht und Gesetz, Verbraucherschutz und Auswirkungen politischer Entscheidungen auf das gesellschaftliche Zusammenleben; zur Förderung von Institutionen"@de ,
+    "Research on political systems, their institutions and the functions carried out by them that shape the coexistence of citizens in a state; on democracy, law and order, consumer protection and the effects of political decisions on social coexistence; for the promotion of institutions"@en .
+
+
+###  Polymere
+<Polymere> a skos:Concept ;
+    skos:broader <Materialien> ;
+    skos:example "Synthetic Polymers, Biopolymers, Chemically Functionalized Polymers, Physically Functionalized Polymers, Biologically Functionalized Polymers"@en ,
+                 "Synthetische Polymere, Biopolymere, Chemisch Funktionalisierte Polymere, Physikalisch Funktionalisierte Polymere, Biologisch Funktionalisierte Polymere"@de ;
+    skos:inScheme <> ;
+    skos:prefLabel "Polymere"@de ,
+                   "Polymers"@en ;
+    skos:scopeNote "Forschung zu Eigenschaften und Funktionen von Polymeren und deren Anwendung, zu Entwicklung und Optimierung von Innovativen und nachhaltigen Materialien, Prozesshilfsmitteln, Verfahren und Technologien"@de ,
+                   "Research on the properties and functions of polymers and their application, on the development and optimization of innovative and sustainable materials, process aids, processes and technologies"@en .
+
+
+###  PraeventionVonKrankheiten
+<PraeventionVonKrankheiten> a skos:Concept ;
+    skos:broader <LebenUndWohlergehen> ;
+    skos:example "Gesundes Altern, Impfstoff, Präventionsforschung, Verbesserung des Gesundheitszustandes, Untersuchung von Einflussfaktoren, Gesundheitsbewusstsein, Public-Health-Forschung, Lebensqualität"@de ,
+    "Healthy aging, vaccine, prevention research, improvement of the state of health, investigation of influencing factors, health awareness, public health research, quality of life"@en ;
+    skos:inScheme <> ;
+    skos:prefLabel "Disease prevention"@en ,
+    "Prävention von Krankheiten"@de ;
+    skos:scopeNote "Forschung zur Prävention von Krankheiten; zum Erhalt der Lebensqualität über einen langen Zeitraum hinweg"@de ,
+    "Research on disease prevention; on maintaining quality of life over a long period of time"@en .
+
+
+###  Quantentechnologien
+<Quantentechnologien> a skos:Concept ;
+    skos:broader <Technologie> ;
+    skos:example "Quanteneffekte, Quantenmechanik, Quantencomputing, Quantenprozessor, Quantenkommunikation, Quanteninformatik, Quantensensor, Quantenkryptologie"@de ,
+    "Quantum effects, quantum mechanics, quantum computing, quantum processor, quantum communication, quantum informatics, quantum sensors, quantum cryptology"@en ;
+    skos:inScheme <> ;
+    skos:prefLabel "Quantentechnologien"@de ,
+    "Quantum technologies"@en ;
+    skos:scopeNote "Forschung zu Quanteneffekten, -technologien, -materialien und -anwendungen"@de ,
+    "Research on quantum effects, technologies, materials and applications"@en .
+
+
+###  RegionenDerErde
+<RegionenDerErde> a skos:Concept ;
+    skos:broader <ErdeUndKosmos> ;
+    skos:example "Coastal research, marine research, polar research, deep sea research, mountain research, desert research"@en ,
+                "Küstenforschung, Meeresforschung, Polarforschung, Tiefseeforschung, Bergforschung, Wüstenforschung"@de ;
+    skos:inScheme <> ;
+    skos:prefLabel "Regionen der Erde"@de ,
+    "Regions of the Earth"@en ;
+    skos:scopeNote "Forschung zu wissenschaftlichen Erkundungen von Gebieten der Erde"@de ,
+    "Research on scientific explorations of areas of the world"@en .
+
+
+###  Robotik
+<Robotik> a skos:Concept ;
+    skos:broader <Industrie> ;
+    skos:example "Intelligent robots, industrial robots, autonomous robots, process automation"@en ,
+                "Intelligente Roboter, Industrieroboter, Autonome Roboter, Prozessautomation"@de ;
+    skos:inScheme <> ;
+    skos:prefLabel "Robotics"@en ,
+                  "Robotik"@de ;
+    skos:scopeNote "Forschung zu Robotern und humanoiden Robotern"@de ,
+                  "Research on robots and humanoid robots"@en .
+
+
+###  SchutzUndSicherheitVorNaturgefahrenUndReaktorsicherheit
+<SchutzUndSicherheitVorNaturgefahrenUndReaktorsicherheit> a skos:Concept ;
+    skos:broader <NaturUndUmwelt> ;
+    skos:example "Risikominimierungsstrategie, Naturgefahr, Katastrophenvorsorge, Sicherheitsforschung für Kernreaktoren"@de ,
+    "Risk minimization strategy, natural hazard, disaster risk reduction, safety research for nuclear reactors"@en ;
+    skos:inScheme <> ;
+    skos:prefLabel "Protection and hazard safety, reactor security"@en ,
+    "Schutz und Sicherheit vor Naturgefahren und Reaktorsicherheit"@de ;
+    skos:scopeNote "Forschung zur Minimierung von Risiken durch Naturgefahren; zum Umgang mit Naturkatastrophen; zur Reaktorsicherheit"@de ,
+    "Research on the minimization of risks from natural hazards; on dealing with natural disasters; on reactor safety"@en .
+
+
+###  Simulationsforschung
+<Simulationsforschung> a skos:Concept ;
+    skos:broader <Informationstechnologie> ;
+    skos:example "Digital computer simulation, simulation technology, system simulation, digital simulation, computer model, computer simulation, climate simulation, multi-criteria optimization models"@en ,
+    "Digitale Computersimulation, Simulationstechnik, Systemsimulation, Digitale Simulation, Computermodell, Rechnersimulation, Klimasimulation, multikriterielle Optimierungsmodelle"@de ;
+    skos:inScheme <> ;
+    skos:prefLabel "Simulation research"@en ,
+    "Simulationsforschung"@de ;
+    skos:scopeNote "Forschung zur Abbildung komplexer Systeme oder Prozesse in Modellen und Vorhersagen über die Zukunft mit dem Ziel des Erkenntnisgewinns über reale Systeme mit Mitteln der Informationstechnologie; simulationsbasierte Optimierung"@de ,
+    "Research on the mapping of complex systems or processes in models and predictions about the future with the aim of gaining knowledge about real systems using information technology; simulation-based optimization"@en .
+
+
+###  SpracheUndSpracherlernen
+<SpracheUndSpracherlernen> a skos:Concept ;
+    skos:broader <KognitionUndWissen> ;
+    skos:example "Human language, artificial language, language systems, language understanding, language recognition, language translation"@en ,
+    "Menschliche Sprache, Künstliche Sprache, Sprachsysteme, Sprachverstehen, Spracherkennung, Sprachübersetzung"@de ;
+    skos:inScheme <> ;
+    skos:prefLabel "Language and language learning"@en ,
+    "Sprache und Spracherlernen"@de ;
+    skos:scopeNote "Forschung zu Sprachen, zur Sprachentwicklung und Spracherkennung, zum Erlernen von Sprachen beim Menschen und Maschinen"@de ,
+    "Research on languages, language development and language recognition, on learning languages with humans and machines"@en .
+
+
+###  Technologie
+<Technologie> a skos:Concept ;
+    skos:narrower <EnergieerzeugungUndEnergieumwandlung> ,
+                 <Halbleitertechnologie> ,
+                 <MikroUndNanosysteme> ,
+                 <OptikUndPhotonik> ,
+                 <Quantentechnologien> ,
+                 <TechnologieAllgemein> ;
+    skos:prefLabel "Technologie"@de ,
+                  "Technology"@en ;
+    skos:topConceptOf <> .
+
+
+###  TechnologieAllgemein
+<TechnologieAllgemein> a skos:Concept ;
+    skos:broader <Technologie> ;
+    skos:inScheme <> ;
+    skos:prefLabel "Technologie - Allgemein"@de ,
+    "Technology - general"@en ;
+    skos:scopeNote "Forschung zu Technologien, die einen wichtigen Fortschritt gegenüber dem Status Quo darstellen; zu verschiedenen Bauteilen und Elementen, zusammengesetzten Werkzeugen oder Maschinen"@de ,
+    "Research on technologies that represent an important advance compared to the status quo; on various components and elements, composite tools or machines"@en .
+
+
+###  TherapieUndHeilung
+<TherapieUndHeilung> a skos:Concept ;
+    skos:broader <LebenUndWohlergehen> ;
+    skos:example "Behandlung von Krankheit, Bekämpfung von Krankheit, Medizinische Therapie, Medizinische Behandlung, Krankenbehandlung"@de ,
+    "Treatment of Illness, Combating Illness, Medical Therapy, Medical Treatment, Treatment of Sickness"@en ;
+    skos:inScheme <> ;
+    skos:prefLabel "Therapie und Heilung"@de ,
+    "Therapy and healing"@en ;
+    skos:scopeNote "Forschung zur Heilung; zu verschiedenen Therapieformen für Menschen; zu Medikamenten und ganzheitlichen Ansätzen"@de ,
+    "Research on healing; on various forms of therapy for people; on drugs and holistic approaches"@en .
+
+
+###  TransparenzUndVerantwortung
+<TransparenzUndVerantwortung> a skos:Concept ;
+    skos:broader <MenschUndGesellschaft> ;
+    skos:example "Fairness, Verantwortlichkeit, Vertrauen, Transparenz in Verknüpfung mit einem Anwendungsgebiet, z.B. neue Technologien, Computersysteme, Biomedizin, Normative Bioethik, Globale Ethik"@de ,
+    "Fairness, responsibility, trust, transparency in connection with an application area, e.g. new technologies, computer systems, biomedicine, normative bioethics, global ethics"@en ;
+    skos:inScheme <> ;
+    skos:prefLabel "Transparency and responsibility"@en ,
+    "Transparenz und Verantwortung"@de ;
+    skos:scopeNote "Forschung zur gesellschaftlichen Verantwortung; zu sittlichen Normen sowie Fragen der Ethik von Funktionsträgern, Personen, Organisationen, Einrichtungen; zu Regelungen und Prozessen in Gesellschaft und Wirtschaft"@de ,
+    "Research on social responsibility; on moral norms and questions of the ethics of functionaries, people, organizations, institutions; on regulations and processes in society and the economy"@en .
+
+
+###  Weltraum
+<Weltraum> a skos:Concept ;
+    skos:broader <ErdeUndKosmos> ;
+    skos:example "Space research, space technology, research under space conditions; space travel"@en ,
+                 "Weltraumforschung, Weltraumtechnik, Forschung unter Weltraumbedingungen; Raumfahrt"@de ;
+    skos:inScheme <> ;
+    skos:prefLabel "Space"@en ,
+                   "Weltraum"@de ;
+    skos:scopeNote "Forschung über den Weltraum sowie Forschung über die Erde vom Weltraum aus"@de ,
+                   "Research on space and research on the earth from space"@en .
+
+
+###  Werkstoffe
+<Werkstoffe> a skos:Concept ;
+    skos:broader <Materialien> ;
+    skos:example "Werkstück, Neues Material, Baumaterial, Bauteil, Industriematerial, Werkstoffwissenschaft, Werkstofftechnologie, Werkstofftechnik, Werkstoffkunde, Materials Engineering, Feuerungstechnik, Trenntechnik, Materialprozess, Werkstoffprozess, Werkstofftechnik, Intelligente Werkstoffe"@de ,
+               "Workpiece, new material, building material, component, industrial material, material science, material technology, material technology, material science, materials engineering, combustion technology, separation technology, material process, material process, material technology, intelligent materials"@en ;
+    skos:inScheme <> ;
+    skos:prefLabel "Engineering materials"@en ,
+                 "Werkstoffe"@de ;
+    skos:scopeNote "Forschung zu Werkstoffen, deren Herstellung, Verfahren und Techniken im Umgang mit Werkstoffen; zu Fertigungsverfahren wie Bohren, Schweißen, Gießen, etc."@de ,
+                 "Research on materials, their manufacture, processes and techniques in handling materials; on manufacturing processes such as drilling, welding, casting, etc."@en .
+
+
+###  WerteUndWandel
+<WerteUndWandel> a skos:Concept ;
+    skos:broader <MenschUndGesellschaft> ;
+    skos:example "Familie im Digitalen Wandel, Sozialer Wandel, Kinderrecht, Gleichgeschlechtliche Lebensweise, Geschlechtliche Vielfalt, Gerechtigkeit, Soziale Norm"@de ,
+               "Familie im Digitalen Wandel, Sozialer Wandel, Kinderrecht, Gleichgeschlechtliche Lebensweise, Geschlechtliche Vielfalt, Gerechtigkeit, Soziale Norm"@en ;
+    skos:inScheme <> ;
+    skos:prefLabel "Values ​​and Change"@en ,
+    "Werte und Wandel"@de ;
+    skos:scopeNote "Forschung zu Werten und Normen eines Individuums und sozialen Kategorien einer Gesellschaft, sowie deren Wandel; zu zwischenmenschlichen Beziehungen und Kindererziehung"@de ,
+    "Forschung zu Werten und Normen eines Individuums und sozialen Kategorien einer Gesellschaft, sowie deren Wandel; zu zwischenmenschlichen Beziehungen und Kindererziehung"@en .
+
+
+###  Wissenschaft
+<Wissenschaft> a skos:Concept ;
+    skos:narrower <InfrastrukturenDerWissenschaft> ,
+                  <OpenScience> ,
+                  <WissenschaftAllgemein> ,
+                  <Wissenschaftsforschung> ;
+    skos:prefLabel "Science"@en ,
+                   "Wissenschaft"@de ;
+    skos:topConceptOf <> .
+
+
+###  WissenschaftAllgemein
+<WissenschaftAllgemein> a skos:Concept ;
+    skos:broader <Wissenschaft> ;
+    skos:inScheme <> ;
+    skos:prefLabel "Science - General"@en ,
+    "Wissenschaft - Allgemein"@de ;
+    skos:scopeNote "Forschung zur Wissenschaft, deren Prozesse und Akteuren und Veränderungen im Wissenschaftsprozess"@de ,
+    "Research on science, its processes and actors and changes in the scientific process"@en .
+
+
+###  Wissenschaftsforschung
+<Wissenschaftsforschung> a skos:Concept ;
+    skos:broader <Wissenschaft> ;
+    skos:example "Philosophy of Science, University Research"@en ,
+    "Wissenschaftstheorie, Hochschulforschung"@de ;
+    skos:inScheme <> ;
+    skos:prefLabel "Science studies"@en ,
+    "Wissenschaftsforschung"@de ;
+    skos:scopeNote "Forschung zu den verschiedenen Aspekten von Wissenschaft, deren Funktion, deren Prozesse und Akteure"@de ,
+    "Research on the various aspects of science, its function, its processes and actors"@en .
+
+
+###  WissenstransferUndWissensrepraesentation
+<WissenstransferUndWissensrepraesentation> a skos:Concept ;
+    skos:broader <KognitionUndWissen> ;
+    skos:example "Knowledge transfer, knowledge representation, reasoning, knowledge acquisition, knowledge, knowledge preservation"@en ,
+                "Wissenstransfer, Wissensrepräsentation, Reasoning, Wissenserwerb, Erkenntnis, Wissensbewahrung"@de ;
+    skos:inScheme <> ;
+    skos:prefLabel "Knowledge transfer and knowledge representation"@en ,
+                  "Wissenstransfer und Wissensrepräsentation"@de ;
+    skos:scopeNote "Forschung zur Generierung von Wissen; zu Abbildung, Weitergabe und Erhalt von Wissen"@de ,
+                  "Research on the generation of knowledge; on mapping, transferring and preserving knowledge"@en .
+
+
+###  ZellenUndGene
+<ZellenUndGene> a skos:Concept ;
+    skos:broader <LebenUndWohlergehen> ;
+    skos:example "Genome research, cell function, cell formation, cell therapy, genome research"@en ,
+              "Genomforschung, Zellfunktion, Zellentstehung, Zelltheraphie, Genomforschung"@de ;
+    skos:inScheme <> ;
+    skos:prefLabel "Cells and genes"@en ,
+                "Zellen und Gene"@de ;
+    skos:scopeNote "Forschung zu Funktionen der Zelle und ihrer Bestandteile; zur Kommunikation innerhalb und außerhalb der Zelle; zu Genen und Proteinen als besonderer Teil der Zellforschung; zu Reaktionen von zellulären Prozessen auf äußere Einflüsse"@de ,
+                "Research on the functions of the cell and its components; on communication inside and outside the cell; on genes and proteins as a special part of cell research; on reactions of cellular processes to external influences"@en .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
