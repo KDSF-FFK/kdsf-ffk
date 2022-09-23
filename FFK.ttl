@@ -6,14 +6,14 @@
 <> a skos:ConceptScheme ;
   skos:prefLabel "Interdisziplinäre Forschungsfeldklassifikation"@de ;
   dct:title "Interdisziplinäre Forschungsfeldklassifikation"@de ;
-  dct:issued "2021-01-30" ;
+  dct:issued "2022-09-22" ;
   dct:description "Klassifikation für interdisziplinäre Forschungsfelder im Rahmen des Kerndatensatz Forschung"@de ;
   dct:creator <https://orcid.org/0000-0002-8113-1509> ;
   dct:creator <https://orcid.org/0000-0001-8184-6187> ;
   dct:creator <https://orcid.org/0000-0003-4891-762X> ;
   dct:creator <https://orcid.org/0000-0001-9415-9263> ;
   dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-  skos:hasTopConcept <ArbeitUndWirtschaft>, <ErdeUndKosmos>, <GlobalisierungUndNachhaltigkeit>, <Industrie>, <Informationstechnologie>, <Infrastruktur>, <KognitionUndWissen>, <Kultur>, <LebenUndWohlergehen>, <Materialien>, <MenschUndGesellschaft>, <NaturUndUmwelt>, <Technologie>, <Wissenschaft> .
+  skos:hasTopConcept <ArbeitUndWirtschaft>, <ErdeUndKosmos>, <GlobalisierungUndNachhaltigkeit>, <Industrie>, <Informationstechnologie>, <Infrastruktur>, <KognitionUndWissen>, <Kultur>, <LebenUndWohlergehen>, <Materialien>, <MenschUndGesellschaft>, <NaturUndUmwelt>, <Technologie>, <Wissenschaft>, <KeinesDerGelistetenForschungsfelder>.
 
 <ArbeitUndWirtschaft> a skos:Concept ;
   skos:prefLabel "Arbeit und Wirtschaft"@de ;
@@ -83,6 +83,11 @@
 <Wissenschaft> a skos:Concept ;
   skos:prefLabel "Wissenschaft"@de ;
   skos:narrower <WissenschaftAllgemein>, <InfrastrukturenDerWissenschaft>, <OpenScience>, <Wissenschaftsforschung> ;
+  skos:topConceptOf <> .
+
+<KeinesDerGelistetenForschungsfelder> a skos:Concept ;
+  skos:prefLabel "Keines der gelisteten Forschungsfelder"@de ;
+  skos:narrower <001>, <002> ;
   skos:topConceptOf <> .
 
 <ArbeitUndWirtschaftAllgemein> a skos:Concept ;
@@ -574,3 +579,15 @@
   skos:scopeNote "Forschung zu den verschiedenen Aspekten von Wissenschaft, deren Funktion, deren Prozesse und Akteure"@de ;
   skos:example "Wissenschaftstheorie, Hochschulforschung"@de ;
   skos:inScheme <> .
+
+<001> a skos:Concept ;
+  skos:prefLabel "Anderes Forschungsfeld"@de ;
+  skos:broader <KeinesDerGelistetenForschungsfelder> ;
+  skos:scopeNote "Die Forschungsaktivität lässt sich problemorientiert mit einem thematisch abgrenzbaren Gegenstandsbereich, der quer zu Disziplinen liegt, beschreiben. Es ist jedoch keine Zuordnung zu den aufgeführten Forschungsfeldern möglich. Es wird darum gebeten, in diesem Fall einen Vorschlag für ein neues Forschungsfeld einzureichen. Dieser sollte eine klare und möglichst allgemeine Definition wie auch die Abgrenzung von ähnlichen bereits vorliegenden Forschungsfeldern enthalten."@de ;
+  skos:inScheme <> .
+
+<002> a skos:Concept ;
+  skos:prefLabel "Disziplinäre Forschung"@de ;
+  skos:broader <KeinesDerGelistetenForschungsfelder> ;
+  skos:scopeNote "Die Forschungsaktivität ist über eine disziplinäre Klassifikation passend abgebildet. Eine Zuordnung zu Forschungsfeldern, die quer zu Disziplinen liegen, ist nicht erforderlich."@de ;
+  skos:inScheme <> . 
