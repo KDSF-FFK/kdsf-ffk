@@ -8,9 +8,9 @@
                   "Interdisciplinary Classification of Research Fields"@en ;
   dct:title "Interdisziplinäre Forschungsfeldklassifikation"@de ,
             "Interdisciplinary research field classification"@en ;
-  dct:issued "2022-10-22" ;
-  dct:description "Klassifikation für interdisziplinäre Forschungsfelder im Rahmen des Kerndatensatz Forschung"@de ,
-                  "Classification for interdisciplinary research fields as part of the KDSF - Standard for research information in Germany"@en ;
+  dct:issued "2022-11-10" ;
+  dct:description "Klassifikation für interdisziplinäre Forschungsfelder im Rahmen des Kerndatensatz Forschung (Version 1.0.0)"@de ,
+                  "Classification for interdisciplinary research fields as part of the KDSF - Standard for research information in Germany (Version 1.0.0)"@en ;
   dct:creator <https://orcid.org/0000-0002-8113-1509> ;
   dct:creator <https://orcid.org/0000-0001-8184-6187> ;
   dct:creator <https://orcid.org/0000-0003-4891-762X> ;
@@ -22,85 +22,85 @@
 <ArbeitUndWirtschaft> a skos:Concept ;
   skos:prefLabel "Arbeit und Wirtschaft"@de ,
                   "Work and Economy"@en ;
-  skos:narrower <ArbeitUndWirtschaftAllgemein>, <ArbeitsweltUndGestaltung>, <DigitaleWirtschaft> ;
+  skos:narrower <139>, <111>, <067> ;
   skos:topConceptOf <> .
 
 <ErdeUndKosmos> a skos:Concept ;
   skos:prefLabel "Erde und Kosmos"@de ,
                   "Earth and space"@en ;
-  skos:narrower <ErdeUndKosmosAllgemein>, <Materie>, <PlanetErde>, <RegionenDerErde>, <Weltraum> ;
+  skos:narrower <172>, <366>, <400>, <512>, <417> ;
   skos:topConceptOf <> .
 
 <GlobalisierungUndNachhaltigkeit> a skos:Concept ;
   skos:prefLabel "Globalisierung und Nachhaltigkeit"@de ,
                   "Globalisation and sustainability"@en ;
-  skos:narrower <GlobalisierungUndNachhaltigkeitAllgemein>, <Entwicklungszusammenarbeit>, <Migration>, <Nachhaltigkeit> ;
+  skos:narrower <007>, <728>, <771>, <544> ;
   skos:topConceptOf <> .
 
 <Industrie> a skos:Concept ;
   skos:prefLabel "Industrie"@de ,
                   "Industry"@en ;
-  skos:narrower <IndustrieAllgemein>, <EntsorgungUndRecycling>, <IntelligenteProduktion>, <Robotik> ;
+  skos:narrower <515>, <783>, <091>, <093> ;
   skos:topConceptOf <> .
 
 <Informationstechnologie> a skos:Concept ;
   skos:prefLabel "Informationstechnologie"@de ,
                   "Information technology"@en ;
-  skos:narrower <InformationstechnologieAllgemein>, <Informationssicherheit>, <Informationssysteme>, <Informationstechnik>, <InternetDerDinge>, <KuenstlicheIntelligenzUndBigData>, <Simulationsforschung> ;
+  skos:narrower <080>, <837>, <586>, <434>, <524>, <073>, <336> ;
   skos:topConceptOf <> .
 
 <Infrastruktur> a skos:Concept ;
   skos:prefLabel "Infrastruktur"@de ,
                   "Infrastructure"@en ;
-  skos:narrower <InfrastrukturAllgemein>, <BallungsraeumeUndStadtentwicklung>, <BauenUndWohnen>, <InfrastrukturUndNetze>, <MobilitaetTransportUndVerkehr>  ;
+  skos:narrower <407>, <991>, <360>, <851>, <940>  ;
   skos:topConceptOf <> .
 
 <KognitionUndWissen> a skos:Concept ;
   skos:prefLabel "Kognition und Wissen"@de ,
                   "Cognition and knowledge"@en ;
-  skos:narrower <KognitionUndWissenAllgemein>, <Innovation>, <LernenUndLernprozesse>, <MenschlichesGehirn>, <SpracheUndSpracherlernen>, <WissenstransferUndWissensrepraesentation> ;
+  skos:narrower <558>, <006>, <391>, <444>, <132>, <470> ;
   skos:topConceptOf <> .
 
 <Kultur> a skos:Concept ;
   skos:prefLabel "Kultur"@de ,
                   "Culture"@en ;
-  skos:narrower <KulturAllgemein>, <KreativitaetUndDarbietung>, <KulturgueterUndKulturellesErbe>, <Medien> ;
+  skos:narrower <592>, <209>, <743>, <548> ;
   skos:topConceptOf <> .
 
 <LebenUndWohlergehen> a skos:Concept ;
   skos:prefLabel "Leben und Wohlergehen"@de ,
                   "Life and well-being"@en ;
-  skos:narrower <LebenUndWohlergehenAllgemein>, <KuenstlichesOderSynthetischesLeben>, <Lebewesen>, <PraeventionVonKrankheiten>, <TherapieUndHeilung>, <ZellenUndGene> ;
+  skos:narrower <910>, <169>, <521>, <841>, <530>, <213> ;
   skos:topConceptOf <> .
 
 <Materialien> a skos:Concept ;
   skos:prefLabel "Materialien"@de ,
                   "Materials"@en ;
-  skos:narrower <MaterialienAllgemein>, <OberflaechenUndGrenzflaechen>, <Polymere>, <Werkstoffe> ;
+  skos:narrower <051>, <539>, <508>, <426> ;
   skos:topConceptOf <> .
 
 <MenschUndGesellschaft> a skos:Concept ;
   skos:prefLabel "Mensch und Gesellschaft"@de ,
                   "People and society"@en ;
-  skos:narrower <MenschUndGesellschaftAllgemein>, <DemographischerWandel>, <GewaltKonflikteUndGefahrenabwehr>, <GleichstellungDiversitaetUndInklusion>, <PolitischeOrdnung>, <TransparenzUndVerantwortung>, <WerteUndWandel> ;
+  skos:narrower <101>, <660>, <147>, <687>, <307>, <283>, <488> ;
   skos:topConceptOf <> .
 
 <NaturUndUmwelt> a skos:Concept ;
   skos:prefLabel "Natur und Umwelt"@de ,
                   "Nature and environment"@en ;
-  skos:narrower <NaturUndUmweltAllgemein>, <Klimaveraenderung>, <NahrungUndVersorgung>, <NatuerlicheRessourcen>, <NutzungUndPflegeVonNaturraeumenUndLandschaften>, <OekosystemeUndBiodiversitaet>, <SchutzUndSicherheitVorNaturgefahrenUndReaktorsicherheit> ;
+  skos:narrower <663>, <197>, <240>, <231>, <847>, <196>, <697> ;
   skos:topConceptOf <> .
 
 <Technologie> a skos:Concept ;
   skos:prefLabel "Technologie"@de ,
                   "Technology"@en ;
-  skos:narrower <TechnologieAllgemein>, <EnergieerzeugungUndEnergieumwandlung>, <Halbleitertechnologie>, <MikroUndNanosysteme>, <OptikUndPhotonik>, <Quantentechnologien> ;
+  skos:narrower <578>, <070>, <092>, <476>, <179>, <772> ;
   skos:topConceptOf <> .
 
 <Wissenschaft> a skos:Concept ;
   skos:prefLabel "Wissenschaft"@de ,
                   "Science"@en ;
-  skos:narrower <WissenschaftAllgemein>, <InfrastrukturenDerWissenschaft>, <OpenScience>, <Wissenschaftsforschung> ;
+  skos:narrower <605>, <981>, <459>, <266> ;
   skos:topConceptOf <> .
 
 <KeinesDerGelistetenForschungsfelder> a skos:Concept ;
@@ -109,7 +109,7 @@
   skos:narrower <001>, <002> ;
   skos:topConceptOf <> .
 
-<ArbeitUndWirtschaftAllgemein> a skos:Concept ;
+<139> a skos:Concept ;
   skos:prefLabel "Arbeit und Wirtschaft - Allgemein"@de ,
                   "Work and economy - general"@en ;
   skos:broader <ArbeitUndWirtschaft> ;
@@ -117,7 +117,7 @@
                   "Research on aspects of work and economy in general"@en ;
   skos:inScheme <> .
 
-<ArbeitsweltUndGestaltung> a skos:Concept ;
+<111> a skos:Concept ;
   skos:prefLabel "Arbeitswelt und -gestaltung"@de ,
                   "Workplace and workplace design"@en ;
   skos:broader <ArbeitUndWirtschaft> ;
@@ -127,7 +127,7 @@
                 "Working conditions, working from home, unconditional basic income, employment, work-life balance"@en ;
   skos:inScheme <> .
 
-<DigitaleWirtschaft> a skos:Concept ;
+<067> a skos:Concept ;
   skos:prefLabel "Digitale Wirtschaft"@de ,
                   "Digital economy"@en ;
   skos:broader <ArbeitUndWirtschaft> ;
@@ -137,7 +137,7 @@
                 "Internet economy, digital goods, global digital economy, new markets, digital business sector, digital business models, new types of business organisations"@en ;
   skos:inScheme <> .
 
-<ErdeUndKosmosAllgemein> a skos:Concept ;
+<172> a skos:Concept ;
   skos:prefLabel "Erde und Kosmos - Allgemein"@de ,
                   "Earth and cosmos - general"@en ;
   skos:broader <ErdeUndKosmos> ;
@@ -145,7 +145,7 @@
                   "Research on planet Earth and the cosmos around it in the broadest sense as well as on matter"@en ;
   skos:inScheme <> .
 
-<Materie> a skos:Concept ;
+<366> a skos:Concept ;
   skos:prefLabel "Materie"@de ,
                   "Matter"@en ;
   skos:broader <ErdeUndKosmos> ;
@@ -155,7 +155,7 @@
                 "Photonic crystals, nuclei, fields, high-energy neutrinos, dark matter"@en ;
   skos:inScheme <> .
 
-<PlanetErde> a skos:Concept ;
+<400> a skos:Concept ;
   skos:prefLabel "Planet Erde"@de ,
                   "Planet Earth"@en ;
   skos:broader <ErdeUndKosmos> ;
@@ -165,7 +165,7 @@
                 "Weather forecasts, nutrient cycle within an ecosystem, (measurable) states of the atmosphere or troposphere"@en ;
   skos:inScheme <> .
 
-<RegionenDerErde> a skos:Concept ;
+<512> a skos:Concept ;
   skos:prefLabel "Regionen der Erde"@de ,
                   "Regions of the Earth"@en ;
   skos:broader <ErdeUndKosmos> ;
@@ -175,7 +175,7 @@
                 "Coastal research, marine research, polar research, deep-sea research, mountain research, desert research"@en ; 
   skos:inScheme <> .
 
-<Weltraum> a skos:Concept ;
+<417> a skos:Concept ;
   skos:prefLabel "Weltraum"@de ,
                   "Space"@en ;
   skos:broader <ErdeUndKosmos> ;
@@ -185,7 +185,7 @@
                 "Space research, space technology, research under space conditions; space travel"@en ; 
   skos:inScheme <> .
 
-<GlobalisierungUndNachhaltigkeitAllgemein> a skos:Concept ;
+<007> a skos:Concept ;
   skos:prefLabel "Globalisierung und Nachhaltigkeit - Allgemein"@de ,
                   "Globalisation and sustainability - general"@en ;
   skos:broader <GlobalisierungUndNachhaltigkeit> ;
@@ -193,7 +193,7 @@
                   "Research on globalisation and its impact on the economy, society and environment as well as the sustainable development of these fields; regional aspects and the development of different regions of the world within an international framework"@en ;
   skos:inScheme <> .
 
-<Entwicklungszusammenarbeit> a skos:Concept ;
+<728> a skos:Concept ;
   skos:prefLabel "Entwicklungszusammenarbeit"@de ,
                   "Development cooperation"@en ;
   skos:broader <GlobalisierungUndNachhaltigkeit> ;
@@ -203,7 +203,7 @@
                 "Rural development, research on developing countries, development studies, development theory, regional studies, development economics, situation and security of the global food supply in crisis and conflict regions"@en ;
   skos:inScheme <> .
 
-<Migration> a skos:Concept ;
+<771> a skos:Concept ;
   skos:prefLabel "Migration"@de ,
                   "Migration"@en ;
   skos:broader <GlobalisierungUndNachhaltigkeit> ;
@@ -213,7 +213,7 @@
                 "Migration theory, migration research, immigration, refugees, asylum law, spatial mobility, social movements, migratory movements, integration"@en ;
   skos:inScheme <> .
 
-<Nachhaltigkeit> a skos:Concept ;
+<544> a skos:Concept ;
   skos:prefLabel "Nachhaltigkeit"@de ,
                   "Sustainability"@en ;
   skos:broader <GlobalisierungUndNachhaltigkeit> ;
@@ -223,7 +223,7 @@
                   "Sustainable development, long-term development, permanent development, sustainable economy, environmentally friendly development, qualitative growth, sustainable economic activities/operations, sustainable growth"@en ;
   skos:inScheme <> .
 
-<IndustrieAllgemein> a skos:Concept ;
+<515> a skos:Concept ;
   skos:prefLabel "Industrie - Allgemein"@de ,
                   "Industry - general"@en ;
   skos:broader <Industrie> ;
@@ -231,7 +231,7 @@
                   "Research on technologies and methods of industrial processing of raw materials in general"@en ;
   skos:inScheme <> .
 
-<EntsorgungUndRecycling> a skos:Concept ;
+<783> a skos:Concept ;
   skos:prefLabel "Entsorgung und Recycling"@de ,
                   "Waste disposal and recycling"@en ;
   skos:broader <Industrie> ;
@@ -241,7 +241,7 @@
                  "Waste disposal, restoration of contaminated sites, hazardous substances, hazardous waste, waste recycling, waste prevention, waste management, waste reduction, circular economy"@en ;
   skos:inScheme <> .
 
-<IntelligenteProduktion> a skos:Concept ;
+<091> a skos:Concept ;
   skos:prefLabel "Intelligente Produktion"@de ,
                   "Intelligent manufacturing"@en ;
   skos:broader <Industrie> ;
@@ -251,7 +251,7 @@
                   "Fourth industrial revolution, intelligent manufacturing, digital factory, automated manufacturing, industrial automation"@en ;
   skos:inScheme <> .
 
-<Robotik> a skos:Concept ;
+<093> a skos:Concept ;
   skos:prefLabel "Robotik"@de ,
                   "Robotics"@en ;
   skos:broader <Industrie> ;
@@ -261,7 +261,7 @@
                  "Intelligent robots, industrial robots, autonomous robots, process automation"@en ;
   skos:inScheme <> .
 
-<InformationstechnologieAllgemein> a skos:Concept ;
+<080> a skos:Concept ;
   skos:prefLabel "Informationstechnologie - Allgemein"@de ,
                   "Information technology - general"@en ;
   skos:broader <Informationstechnologie> ;
@@ -269,7 +269,7 @@
                   "Research on technology and its use in information processing"@en ;
   skos:inScheme <> .
 
-<Informationssicherheit> a skos:Concept ;
+<837> a skos:Concept ;
   skos:prefLabel "Informationssicherheit"@de ,
                   "Information security"@en ;
   skos:broader <Informationstechnologie> ;
@@ -279,7 +279,7 @@
                   "Data security, security systems, data encryption, computer security, encryption methods, cryptosystems, data protection"@en ;
   skos:inScheme <> .
 
-<Informationssysteme> a skos:Concept ;
+<586> a skos:Concept ;
   skos:prefLabel "Informationssysteme"@de ,
                   "Information systems"@en ;
   skos:broader <Informationstechnologie> ;
@@ -289,7 +289,7 @@
                   "Data processing, communication systems, data structures, algorithms, user interface, human-machine interaction, knowledge technologies, software systems"@en ;
   skos:inScheme <> .
 
-<Informationstechnik> a skos:Concept ;
+<434> a skos:Concept ;
   skos:prefLabel "Informationstechnik"@de ,
                   "Information technology engineering"@en ;
   skos:broader <Informationstechnologie> ;
@@ -299,7 +299,7 @@
                   "ICT technology, communications systems, information and communication systems, information technology"@en ;
   skos:inScheme <> .
 
-<InternetDerDinge> a skos:Concept ;
+<524> a skos:Concept ;
   skos:prefLabel "Internet der Dinge"@de ,
                   "Internet of things"@en ;
   skos:broader <Informationstechnologie> ;
@@ -309,7 +309,7 @@
                   "Internet of services, internet of energy, autonomous agents, multi-agent systems, ubiquitous computing"@en ;
   skos:inScheme <> .
 
-<KuenstlicheIntelligenzUndBigData> a skos:Concept ;
+<073> a skos:Concept ;
   skos:prefLabel "Künstliche Intelligenz und Big Data"@de ,
                   "Artificial intelligence and big data"@en ;
   skos:broader <Informationstechnologie> ;
@@ -319,7 +319,7 @@
                   "Expert systems, machine learning, data analysis, deep learning, neural networks, data-intensive science, automation of intelligent behaviour, mass data, text and data mining, recommender systems"@en ;
   skos:inScheme <> .
 
-<Simulationsforschung> a skos:Concept ;
+<336> a skos:Concept ;
   skos:prefLabel "Simulationsforschung"@de ,
                   "Simulation research"@en ;
   skos:broader <Informationstechnologie> ;
@@ -329,7 +329,7 @@
                   "Digital computer simulation, simulation technology, system simulation, digital simulation, computer model, computer simulation, climate simulation, multi-criteria optimisation models"@en ;
   skos:inScheme <> .
 
-<InfrastrukturAllgemein> a skos:Concept ;
+<407> a skos:Concept ;
   skos:prefLabel "Infrastruktur - Allgemein"@de ,
                   "Infrastructure - general"@en ;
   skos:broader <Infrastruktur> ;
@@ -337,7 +337,7 @@
                   "Research on infrastructures required for supply and use; on sustainability and resilience of critical infrastructures"@en ;
   skos:inScheme <> .
 
-<BallungsraeumeUndStadtentwicklung> a skos:Concept ;
+<991> a skos:Concept ;
   skos:prefLabel "Ballungsräume und Stadtentwicklung"@de ,
                   "Metropolitan areas and urban development"@en ;
   skos:broader <Infrastruktur> ;
@@ -347,7 +347,7 @@
                   "Urban planning, urban development policy, urban development planning, urban development concept, municipal planning, urban spaces, conurbation, high-density areas, urban region, metropolitan region, agglomeration area"@en ;
   skos:inScheme <> .
 
-<BauenUndWohnen> a skos:Concept ;
+<360> a skos:Concept ;
   skos:prefLabel "Bauen und Wohnen"@de ,
                   "Building and living"@en ;
   skos:broader <Infrastruktur> ;
@@ -357,7 +357,7 @@
                  "Energy efficient building and living, robust buildings, sustainable living, energy-optimised improvement of the fabric of buildings, multifunctional buildings and building complexes"@en ;
   skos:inScheme <> .
 
-<InfrastrukturUndNetze> a skos:Concept ;
+<851> a skos:Concept ;
   skos:prefLabel "Infrastruktur und Netze"@de ,
                   "Infrastructure and networks"@en ;
   skos:broader <Infrastruktur> ;
@@ -367,7 +367,7 @@
                   "Mobile communication networks, gas networks, intelligent energy network, network infrastructure, supply network"@en ;
   skos:inScheme <> .
 
-<MobilitaetTransportUndVerkehr> a skos:Concept ;
+<940> a skos:Concept ;
   skos:prefLabel "Mobilität, Transport und Verkehr"@de ,
                   "Mobility, transport and traffic"@en ;
   skos:broader <Infrastruktur> ;
@@ -377,7 +377,7 @@
                  "Intermodal traffic, logistics, transport chains, transport technologies, vehicle technologies, space-based applications for transport, assistance systems"@en ;
   skos:inScheme <> .
 
-<KognitionUndWissenAllgemein> a skos:Concept ;
+<558> a skos:Concept ;
   skos:prefLabel "Kognition und Wissen - Allgemein"@de ,
                   "Cognition and knowledge - general"@en ;
   skos:broader <KognitionUndWissen> ;
@@ -385,7 +385,7 @@
                   "Research on methods of knowledge generation; on understanding, perception, and the functioning of knowledge and knowledge systems; also education for sustainable development"@en ;
   skos:inScheme <> .
 
-<Innovation> a skos:Concept ;
+<006> a skos:Concept ;
   skos:prefLabel "Innovation"@de ,
                   "Innovation"@en ;
   skos:broader <KognitionUndWissen> ;
@@ -395,7 +395,7 @@
                   "Innovation research, drivers of innovation, promotion of innovation, innovation support, progress, generation of ideas, generation of inventions, innovation process"@en ;
   skos:inScheme <> .
 
-<LernenUndLernprozesse> a skos:Concept ;
+<391> a skos:Concept ;
   skos:prefLabel "Lernen und Lernprozesse"@de ,
                   "Learning and learning processes"@en ;
   skos:broader <KognitionUndWissen> ;
@@ -405,7 +405,7 @@
                  "Digital learning, lifelong learning, education and training, learning in formal and non-formal environments, digital competence, game-based learning"@en ;
   skos:inScheme <> .
 
-<MenschlichesGehirn> a skos:Concept ;
+<444> a skos:Concept ;
   skos:prefLabel "Menschliches Gehirn"@de ,
                   "Human brain"@en ;
   skos:broader <KognitionUndWissen> ;
@@ -415,7 +415,7 @@
                  "Brain function, neurocognition, neural information processing, cognitive behaviour"@en ;
   skos:inScheme <> .
 
-<SpracheUndSpracherlernen> a skos:Concept ;
+<132> a skos:Concept ;
   skos:prefLabel "Sprache und Spracherlernen"@de ,
                   "Language and language learning"@en ;
   skos:broader <KognitionUndWissen> ;
@@ -425,7 +425,7 @@
                  "Human language, artificial language, language systems, speech comprehension, voice recognition, language translation"@en ;
   skos:inScheme <> .
 
-<WissenstransferUndWissensrepraesentation> a skos:Concept ;
+<470> a skos:Concept ;
   skos:prefLabel "Wissenstransfer und Wissensrepräsentation"@de ,
                   "Knowledge transfer and knowledge representation"@en ;
   skos:broader <KognitionUndWissen> ;
@@ -435,7 +435,7 @@
                 "Knowledge transfer, knowledge representation, reasoning, knowledge acquisition, recognition, knowledge preservation"@en ;
   skos:inScheme <> .
 
-<KulturAllgemein> a skos:Concept ;
+<592> a skos:Concept ;
   skos:prefLabel "Kultur - Allgemein"@de ,
                   "Culture - general"@en ;
   skos:broader <Kultur> ;
@@ -443,7 +443,7 @@
                   "Research focusing on various fields of culture; on cultural identities; on regions with regard to culture, their development and manifestation"@en ;
   skos:inScheme <> .
 
-<KreativitaetUndDarbietung> a skos:Concept ;
+<209> a skos:Concept ;
   skos:prefLabel "Kreativität und Darbietung"@de ,
                   "Creativity and performance"@en ;
   skos:broader <Kultur> ;
@@ -453,7 +453,7 @@
                   "Creative performance, creative achievement, creative techniques, production aesthetics, artistic creation, performing arts"@en ;
   skos:inScheme <> .
 
-<KulturgueterUndKulturellesErbe> a skos:Concept ;
+<743> a skos:Concept ;
   skos:prefLabel "Kulturgüter und kulturelles Erbe"@de ,
                   "Cultural heritage objects and cultural heritage"@en ;
   skos:broader <Kultur> ;
@@ -463,7 +463,7 @@
                   "Protection of cultural assets, monument preservation, preservation in libraries, archives, museums, cultural heritage"@en ;
   skos:inScheme <> .
 
-<Medien> a skos:Concept ;
+<548> a skos:Concept ;
   skos:prefLabel "Medien"@de ,
                   "Media"@en ;
   skos:broader <Kultur> ;
@@ -473,7 +473,7 @@
                  "Analogue media, digital media, multimedia, interactive media, print media, radio, journalism, computer-supported communication, audio-visual media, mass media, new media, social media"@en ;
   skos:inScheme <> .
 
-<LebenUndWohlergehenAllgemein> a skos:Concept ;
+<910> a skos:Concept ;
   skos:prefLabel "Leben und Wohlergehen - Allgemein"@de ,
                   "Life and well-being - general"@en ;
   skos:broader <LebenUndWohlergehen> ;
@@ -481,7 +481,7 @@
                   "Research on preventive measures and quality of life, longevity through physical and mental well-being as well as physical and mental function and performance; on life and living creatures in general"@en ;
   skos:inScheme <> .
 
-<KuenstlichesOderSynthetischesLeben> a skos:Concept ;
+<169> a skos:Concept ;
   skos:prefLabel "Künstliches oder synthetisches Leben"@de ,
                   "Artificial and synthetic life"@en ;
   skos:broader <LebenUndWohlergehen> ;
@@ -491,7 +491,7 @@
                   "Artificial photosynthesis, synthetic cells, synthetic organisms, synthetic circuit, biological system"@en ;
   skos:inScheme <> .
 
-<Lebewesen> a skos:Concept ;
+<521> a skos:Concept ;
   skos:prefLabel "Lebewesen"@de ,
                   "Living beings"@en ;
   skos:broader <LebenUndWohlergehen> ;
@@ -501,7 +501,7 @@
                   "Eukaryotes, fungi, plants, animals, humans, molecular physiology of living creatures or organisms, endangered species, biochemical evolution"@en ;
   skos:inScheme <> .
 
-<PraeventionVonKrankheiten> a skos:Concept ;
+<841> a skos:Concept ;
   skos:prefLabel "Prävention von Krankheiten"@de ,
                   "Disease prevention"@en ;
   skos:broader <LebenUndWohlergehen> ;
@@ -511,7 +511,7 @@
                   "Healthy aging, vaccine, prevention research, improving the state of health, examination of influencing factors, health awareness, public health research, quality of life"@en ;
   skos:inScheme <> .
 
-<TherapieUndHeilung> a skos:Concept ;
+<530> a skos:Concept ;
   skos:prefLabel "Therapie und Heilung"@de ,
                   "Therapy and healing"@en ;
   skos:broader <LebenUndWohlergehen> ;
@@ -521,7 +521,7 @@
                   "Treatment of disease, combating/controlling disease, medical therapy, medical treatment, treatment"@en ;
   skos:inScheme <> .
 
-<ZellenUndGene> a skos:Concept ;
+<213> a skos:Concept ;
   skos:prefLabel "Zellen und Gene"@de ,
                   "Cells and genes"@en ;
   skos:broader <LebenUndWohlergehen> ;
@@ -531,7 +531,7 @@
                   "Genome research, cellular function, cell formation, cell therapy"@en ;
   skos:inScheme <> .
 
-<MaterialienAllgemein> a skos:Concept ;
+<051> a skos:Concept ;
   skos:prefLabel "Materialien - Allgemein"@de ,
                   "Materials - general"@en ;
   skos:broader <Materialien> ;
@@ -539,7 +539,7 @@
                   "Research on properties, use and manufacture of different materials with organic and inorganic components; on hybrid and active materials and biofunctionalised materials"@en ;
   skos:inScheme <> .
 
-<OberflaechenUndGrenzflaechen> a skos:Concept ;
+<539> a skos:Concept ;
   skos:prefLabel "Oberflächen und Grenzflächen"@de ,
                   "Surfaces and interfaces"@en ;
   skos:broader <Materialien> ;
@@ -549,7 +549,7 @@
                   "Alloy, biofilm, antifouling, coating, pre-treatment of surfaces, layer technology, coating, composite material, surface technology, interface technology"@en ;
   skos:inScheme <> .
 
-<Polymere> a skos:Concept ;
+<508> a skos:Concept ;
   skos:prefLabel "Polymere"@de ,
                   "Polymers"@en ;
   skos:broader <Materialien> ;
@@ -559,7 +559,7 @@
                   "Synthetic polymers, biopolymers, chemically functionalised polymers, physically functionalised polymers, biologically functionalised polymers"@en ;
   skos:inScheme <> .
 
-<Werkstoffe> a skos:Concept ;
+<426> a skos:Concept ;
   skos:prefLabel "Werkstoffe"@de ,
                   "Engineering materials"@en ;
   skos:broader <Materialien> ;
@@ -569,7 +569,7 @@
                   "Workpiece, new material, building material, component, industrial material, materials science, materials engineering, materials technology, materials, combustion technology, separation technology, material process, materials technology, intelligent materials"@en ;
   skos:inScheme <> .
 
-<MenschUndGesellschaftAllgemein> a skos:Concept ;
+<101> a skos:Concept ;
   skos:prefLabel "Mensch und Gesellschaft - Allgemein"@de ,
                   "People and society - general"@en ;
   skos:broader <MenschUndGesellschaft> ;
@@ -577,7 +577,7 @@
                   "Research on aspects of social structure and social cohesion; on the organisation and structure of institutions; on individuals and their personal lifestyles"@en ;
   skos:inScheme <> .
 
-<DemographischerWandel> a skos:Concept ;
+<660> a skos:Concept ;
   skos:prefLabel "Demographischer Wandel"@de ,
                   "Demographic change"@en ;
   skos:broader <MenschUndGesellschaft> ;
@@ -587,7 +587,7 @@
                   "Demography and its (future) consequences, population development, population science, population theory, population geography, age structure"@en ;
   skos:inScheme <> .
 
-<GewaltKonflikteUndGefahrenabwehr> a skos:Concept ;
+<147> a skos:Concept ;
   skos:prefLabel "Gewalt, Konflikte und Gefahrenabwehr"@de ,
                   "Violence, conflicts and crisis prevention"@en ;
   skos:broader <MenschUndGesellschaft> ;
@@ -597,7 +597,7 @@
                   "Organised crime, protection from violence, reconnaissance and surveillance, resilience and protection of critical infrastructures, terrorism, civil security"@en ;
   skos:inScheme <> .
 
-<GleichstellungDiversitaetUndInklusion> a skos:Concept ;
+<687> a skos:Concept ;
   skos:prefLabel "Gleichstellung, Diversität und Inklusion"@de ,
                   "Equality, diversity and inclusion"@en ;
   skos:broader <MenschUndGesellschaft> ;
@@ -607,7 +607,7 @@
                   "Inclusive education, diversity, equal rights, equal opportunities, promotion of women, equality"@en ;
   skos:inScheme <> .
 
-<PolitischeOrdnung> a skos:Concept ;
+<307> a skos:Concept ;
   skos:prefLabel "Politische Ordnung"@de ,
                   "Political order"@en ;
   skos:broader <MenschUndGesellschaft> ;
@@ -617,7 +617,7 @@
                   "Democracy, democratisation, reform process, legal practice, law and society and socio-legal research, political system"@en ;
   skos:inScheme <> .
 
-<TransparenzUndVerantwortung> a skos:Concept ;
+<283> a skos:Concept ;
   skos:prefLabel "Transparenz und Verantwortung"@de ,
                   "Transparency and responsibility"@en ;
   skos:broader <MenschUndGesellschaft> ;
@@ -627,7 +627,7 @@
                   "Fairness, responsibility, trust, transparency in connection with a field of application, e.g. new technologies, computer systems, biomedicine, normative bioethics, global ethics"@en ;
   skos:inScheme <> .
 
-<WerteUndWandel> a skos:Concept ;
+<488> a skos:Concept ;
   skos:prefLabel "Werte und Wandel"@de ,
                   "Values and change"@en ;
   skos:broader <MenschUndGesellschaft> ;
@@ -637,7 +637,7 @@
                   "Family in the digital transformation, social change, children's rights, same-sex lifestyle, gender diversity, justice, social norm"@en ;
   skos:inScheme <> .
 
-<NaturUndUmweltAllgemein> a skos:Concept ;
+<663> a skos:Concept ;
   skos:prefLabel "Natur und Umwelt - Allgemein"@de ,
                   "Nature and environment - general"@en ;
   skos:broader <NaturUndUmwelt> ;
@@ -645,7 +645,7 @@
                   "Research on the environment and animate and inanimate nature in the broadest sense, their change and living beings contained in them"@en ;
   skos:inScheme <> .
 
-<Klimaveraenderung> a skos:Concept ;
+<197> a skos:Concept ;
   skos:prefLabel "Klimaveränderung"@de ,
                   "Climate change"@en ;
   skos:broader <NaturUndUmwelt> ;
@@ -655,7 +655,7 @@
                   "Climate change, climate impact, environmental sustainability, ecological impact of climate change, ecological adaptation because of climate change, protection of the environment"@en ;
   skos:inScheme <> .
 
-<NahrungUndVersorgung> a skos:Concept ;
+<240> a skos:Concept ;
   skos:prefLabel "Nahrung und Versorgung"@de ,
                   "Food and supply"@en ;
   skos:broader <NaturUndUmwelt> ;
@@ -665,7 +665,7 @@
                   "Global food security, food shortage, malnutrition, nutritional research questions, mass production"@en ;
   skos:inScheme <> .
 
-<NatuerlicheRessourcen> a skos:Concept ;
+<231> a skos:Concept ;
   skos:prefLabel "Natürliche Ressourcen"@de ,
                   "Natural resources"@en ;
   skos:broader <NaturUndUmwelt> ;
@@ -675,7 +675,7 @@
                   "Use of biomass, raw materials of the deep sea, water resource management, renewable fuels, biomass, new approaches to raw materials, resource efficiency, raw material alternatives"@en ;
   skos:inScheme <> .
 
-<NutzungUndPflegeVonNaturraeumenUndLandschaften> a skos:Concept ;
+<847> a skos:Concept ;
   skos:prefLabel "Nutzung und Pflege von Naturräumen und Landschaften"@de ,
                   "Use and management of natural spaces and landscapes"@en ;
   skos:broader <NaturUndUmwelt> ;
@@ -685,7 +685,7 @@
                   "Sustainable use of landscape and natural space, forest damage research, landscape protection, natural landscape, cultural landscape"@en ;
   skos:inScheme <> .
 
-<OekosystemeUndBiodiversitaet> a skos:Concept ;
+<196> a skos:Concept ;
   skos:prefLabel "Ökosysteme und Biodiversität"@de ,
                   "Ecosystems and biodiversity"@en ;
   skos:broader <NaturUndUmwelt> ;
@@ -695,7 +695,7 @@
                   "Preservation of the essential bases of human life, forest biodiversity, complex biosystem, ecological system, biotope, biodiversity, protection of species, biosystem, ecological damage in ecosystems"@en ;
   skos:inScheme <> .
 
-<SchutzUndSicherheitVorNaturgefahrenUndReaktorsicherheit> a skos:Concept ;
+<697> a skos:Concept ;
   skos:prefLabel "Schutz und Sicherheit vor Naturgefahren und Reaktorsicherheit"@de ,
                   "Protection and hazard safety, reactor security"@en ;
   skos:broader <NaturUndUmwelt> ;
@@ -705,7 +705,7 @@
                   "Risk minimisation strategy, natural hazard, disaster preparedness, safety research for nuclear reactors"@en ;
   skos:inScheme <> .
 
-<TechnologieAllgemein> a skos:Concept ;
+<578> a skos:Concept ;
   skos:prefLabel "Technologie - Allgemein"@de ,
                   "Technology - general"@en ;
   skos:broader <Technologie> ;
@@ -713,7 +713,7 @@
                   "Research on technologies which represent an important improvement on the status quo; on different components and elements, composite tools or machines"@en ;
   skos:inScheme <> .
 
-<EnergieerzeugungUndEnergieumwandlung> a skos:Concept ;
+<070> a skos:Concept ;
   skos:prefLabel "Energieerzeugung und Energieumwandlung"@de ,
                   "Energy generation and energy conversion"@en ;
   skos:broader <Technologie> ;
@@ -723,7 +723,7 @@
                   "Wind energy, solar energy, hydroelectric power, alternative fuels, biological energy generation, energy transition, energy efficiency, energy use, hydrogen conversion, hydrogen storage, hydrogen energy technology, energy storage technologies, integrated energy management, vehicle drive, machine drive, alternative drive technology, low-emission fuel, drive system, drive technology"@en ;
   skos:inScheme <> .
 
-<Halbleitertechnologie> a skos:Concept ;
+<092> a skos:Concept ;
   skos:prefLabel "Halbleitertechnologie"@de ,
                   "Semiconductor technology"@en ;
   skos:broader <Technologie> ;
@@ -733,7 +733,7 @@
                   "Photonic crystals, components based on quantum structures, compound semiconductors, organic semiconductors, microprocessor, microchip, integrated circuit, computer chips, intelligent sensors"@en ;
   skos:inScheme <> .
 
-<MikroUndNanosysteme> a skos:Concept ;
+<476> a skos:Concept ;
   skos:prefLabel "Mikro- und Nanosysteme"@de ,
                   "Micro- and nanosystems"@en ;
   skos:broader <Technologie> ;
@@ -743,7 +743,7 @@
                   "Microtechnology, microsystem solutions, microsystem technology, microelectronics, micromanufacturing, nanostructure, nanomedicine, nano safety, nanoscale system, nanomaterial, nanotechnology, submicrometer technology, submicron technology, nanostructure technology"@en ;
   skos:inScheme <> .
 
-<OptikUndPhotonik> a skos:Concept ;
+<179> a skos:Concept ;
   skos:prefLabel "Optik und Photonik"@de ,
                   "Optics and photonics"@en ;
   skos:broader <Technologie> ;
@@ -753,7 +753,7 @@
                   "Optoelectronics, quantum optics, integrated optics, optronics, optotronics, optical electronics, microoptics"@en ;
   skos:inScheme <> .
 
-<Quantentechnologien> a skos:Concept ;
+<772> a skos:Concept ;
   skos:prefLabel "Quantentechnologien"@de ,
                   "Quantum technologies"@en ;
   skos:broader <Technologie> ;
@@ -763,7 +763,7 @@
                   "Quantum effects, quantum mechanics, quantum computing, quantum processor, quantum communication, quantum computer science, quantum sensor, quantum cryptology"@en ;
   skos:inScheme <> .
 
-<WissenschaftAllgemein> a skos:Concept ;
+<605> a skos:Concept ;
   skos:prefLabel "Wissenschaft - Allgemein"@de ,
                   "Science - general"@en ;
   skos:broader <Wissenschaft> ;
@@ -771,7 +771,7 @@
                   "Research on science, its processes and actors and changes in the scientific process"@en ;
   skos:inScheme <> .
 
-<InfrastrukturenDerWissenschaft> a skos:Concept ;
+<981> a skos:Concept ;
   skos:prefLabel "Infrastrukturen der Wissenschaft"@de ,
                   "Research infrastructures"@en ;
   skos:broader <Wissenschaft> ;
@@ -781,7 +781,7 @@
                   "Research tool, full-text database, (digital) library, research infrastructure, information infrastructure, literature supply, research information systems"@en ;
   skos:inScheme <> .
 
-<OpenScience> a skos:Concept ;
+<459> a skos:Concept ;
   skos:prefLabel "Open Science"@de ,
                   "Open science"@en ;
   skos:broader <Wissenschaft> ;
@@ -791,7 +791,7 @@
                   "Open science, open data, open educational resources, open methodology, open peer review, open source, open access, citizen science"@en ;
   skos:inScheme <> .
 
-<Wissenschaftsforschung> a skos:Concept ;
+<266> a skos:Concept ;
   skos:prefLabel "Wissenschaftsforschung"@de ,
                   "Science studies"@en ;
   skos:broader <Wissenschaft> ;
