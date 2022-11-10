@@ -1,32 +1,16 @@
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
-Classification of interdisciplinary research fields for the „Research Core Dataset“ (Kerdatensatz Forschung)
-============================================================================================================
+(English below)
 
-This repository holds the classification for interdisciplinary research fields as a SKOS representation in Turtle syntax. 
+Klassifikation für interdisziplinäre Forschungsfelder im Rahmen des KDSF
+========================================================================
+Der [KDSF](https://kerndatensatz-forschung.de/) ist ein Standard für Forschungsinformationen für das deutsche Wissenschaftssystem. Er stellt ein freiwilliges Regelwerk zur Harmonisierung und Standardisierung der Forschungsberichterstattung an Forschungseinrichtungen dar. In diesem Repositorium ist die interdisziplinäre Forschungsfeldklassifikation (FFK) in SKOS (Turtle Syntax) kodiert. Aus dieser Datei wird eine [navigierbare und durchsuchbare Ansicht der FFK](https://w3id.org/kdsf-ffk/) generiert.
+## Anwendung
+Die Implementierungsregeln für die Zuordnung von Forschungsfeldern finden Sie in der Dokumentation der Spezifikation des KDSF-Standards. 2022 bis 2024 wird eine Prozessvalidierung der FFK durchgeführt. Wenn Sie Interesse an einem Austausch über die Implementierung der FFK haben, wenden Sie sich bitte an die Geschäftsstelle der Kommission für Forschungsinformationen in Deutschland.
+## Hintergrund und Weiterentwicklung
+Die [Version 0.0.0](https://github.com/KDSF-FFK/kdsf-ffk/tree/v0.0.0) der interdisziplinären FFK wurde in einem [Projekt](https://www.ibi.hu-berlin.de/de/forschung/information_retrieval/projekte-aktivitaeten/kdsff2020) erarbeitet. Eine ausführliche Dokumentation des Projekts finden Sie [hier](https://kerndatensatz-forschung.de/index.php?id=forschungsfelder). Diese Version der FFK wurde im Zuge der offiziellen Aufnahme in den KDSF (Version 1.3) im November 2022 überarbeitet (siehe [releases](https://github.com/KDSF-FFK/kdsf-ffk/releases)). In diesem Repositorium befindet sich ein Abgleich der URIs zwischen der initialen Version 0.0.0 und der Version 1.0.0. 
 
-### Project description
------------------------
-
-In 2016, the German Council of Science and Humanities issued [recommendations](https://www.wissenschaftsrat.de/download/archiv/5066-16.html) on the so-called [“Research Core Dataset” (RCD)](https://kerndatensatz-forschung.de/) for the German science system. The RCD is a set of definitions for the standardized reporting and processing of research information by universities and non-university research institutions (i.e. information on research staff, projects, publications etc.). The science council also recommended the development of a so-called list of fields of research to enable the reporting of interdisciplinary, issue- or problem-related research.
-
-The project focuses on the intellectual development of such a classification of research fields to be included in the RCD specification. The development process includes the consultation of relevant stakeholders of the German science system and potential users of the classification. In addition, the project develops recommendations for the integration of the classification into the RCD specification. This in includes the formulation of specific classification rules.
-
-See [project description at IBI](https://www.ibi.hu-berlin.de/de/forschung/information_retrieval/projekte-aktivitaeten/kdsff2020) (available in German only) and [project description at DZHW](https://www.dzhw.eu/en/forschung/projekt?pr_id=660) for further details.
-
-### Project details
--------------------
-
-Project timeline: 01.01.2020–31.12.2020
-
-Project management: [Sophie Biesenbender](https://www.dzhw.eu/gmbh/mitarbeiter?m_id=674), [Vivien Petras](https://www.ibi.hu-berlin.de/de/ueber-uns/personen/petras)
-
-Creation of classification: [Juliane Stiller](https://www.you-we-digital.com/ueber-uns), [Violeta Trkulja](https://www.you-we-digital.com/ueber-uns), [Vivien Petras](https://www.ibi.hu-berlin.de/de/ueber-uns/personen/petras), [Sophie Biesenbender](https://www.dzhw.eu/gmbh/mitarbeiter?m_id=674)
-
-Development of SKOS representation: [Sophia Dörner](https://orcid.org/0000-0001-8747-3422)
-
-Funding reference: KDSFF2020B
-
-Funder: [Federal Ministry of Education and Research (BMBF)](https://www.bmbf.de/en/index.html) and all 16 German Federal States
-
-Cooperation partners: [Deutsches Zentrum für Hochschul- und Wissenschaftsforschung GmbH (DZHW)](https://www.dzhw.eu/en/), [Institut für Bibliotheks- und Informationswissenschaft, Humboldt-Universität zu Berlin](https://www.ibi.hu-berlin.de)
+Eine inhaltliche Aktualisierung der FFK ist ab 2025 vorgesehen.
+# Classification of interdisciplinary research fields for the „Research Core Dataset“
+The KDSF (short for “Kerndatensatz Forschung” – “Research Core Dataset”) is a set of definitions for the standardized reporting and processing of research information by universities and non-university research institutions (i.e. information on research staff, projects, publications etc.) in Germany. This repository holds the classification for interdisciplinary research fields as a SKOS representation in Turtle syntax. You can also [browse and search the English translation of the classification](https://skohub.io/KDSF-FFK/kdsf-ffk/heads/main/w3id.org/kdsf-ffk/index.en.html).
+See [project description](https://www.dzhw.eu/en/forschung/projekt?pr_id=660) at DZHW for further details.
