@@ -8,7 +8,7 @@
                   "Interdisciplinary Classification of Research Fields"@en ;
   dct:title "Interdisziplinäre Forschungsfeldklassifikation"@de ,
             "Interdisciplinary research field classification"@en ;
-  dct:issued "2022-11-10" ;
+  dct:issued "2022-12-07" ;
   dct:description "Klassifikation für interdisziplinäre Forschungsfelder im Rahmen des Kerndatensatz Forschung (Version 1.0.0)"@de ,
                   "Classification for interdisciplinary research fields as part of the KDSF - Standard for research information in Germany (Version 1.0.0)"@en ;
   dct:creator <https://orcid.org/0000-0002-8113-1509> ;
@@ -351,7 +351,7 @@
   skos:prefLabel "Bauen und Wohnen"@de ,
                   "Building and living"@en ;
   skos:broader <Infrastruktur> ;
-  skos:scopeNote "Forschung zu neuen, auch automatisierten, Verfahren- und Techniken für den Bau von Gebäuden und Bauwerken, deren Ausstattung; zum nutzungsgerechten Bauen und das damit verbundene Wohnen in Gebäuden"@de ,
+  skos:scopeNote "Forschung zu neuen, auch automatisierten, Verfahren und Techniken für den Bau von Gebäuden und Bauwerken, deren Ausstattung; zum nutzungsgerechten Bauen und das damit verbundene Wohnen in Gebäuden"@de ,
                   "Research on new, also automated, methods and techniques for the construction of buildings and structures and their equipment; on use-oriented construction and living in buildings"@en ;
   skos:example "Energieeffizientes Bauen und Wohnen, Robuste Gebäude, Zukunftsverträgliches Wohnen, Energieoptimierte Verbesserung der Bausubstanz, Multifunktionale Gebäude und Komplexe"@de ,
                  "Energy efficient building and living, robust buildings, sustainable living, energy-optimised improvement of the fabric of buildings, multifunctional buildings and building complexes"@en ;
