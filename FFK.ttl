@@ -449,7 +449,7 @@
   skos:broader <Kultur> ;
   skos:scopeNote "Forschung zu Ausdruck und Form menschlicher Kreativität, geistiger Anstrengung und ihrer Manifestationen in Werken und Produkten des Alltags; zu ästethischen und gestalterischen Aspekten"@de ,
                   "Research on expressions and forms of human creativity, mental effort and its manifestation in works (of art) and everyday products; on aesthetic and artistic aspects"@en ;
-  skos:example "Schöpferische Darbietung, Schöpferische Leistung, Kreativitätstechnik, Produktionsästhetik, künstlerisches Schaffen, Darstellende Kunst"@de ,
+  skos:example "Schöpferische Darbietung, Schöpferische Leistung, Kreativitätstechnik, Produktionsästhetik, Künstlerisches Schaffen, Darstellende Kunst"@de ,
                   "Creative performance, creative achievement, creative techniques, production aesthetics, artistic creation, performing arts"@en ;
   skos:inScheme <> .
 
@@ -555,7 +555,7 @@
   skos:broader <Materialien> ;
   skos:scopeNote "Forschung zu Eigenschaften und Funktionen von Polymeren und deren Anwendung, zu Entwicklung und Optimierung von Innovativen und nachhaltigen Materialien, Prozesshilfsmitteln, Verfahren und Technologien"@de ,
                   "Research on properties and functions of polymers and their use; on development and optimisation of innovative and sustainable materials, processes and technologies"@en ;
-  skos:example "Synthetische Polymere, Biopolymere, Chemisch Funktionalisierte Polymere, Physikalisch Funktionalisierte Polymere, Biologisch Funktionalisierte Polymere"@de ,
+  skos:example "Synthetische Polymere, Biopolymere, Chemisch funktionalisierte Polymere, Physikalisch funktionalisierte Polymere, Biologisch funktionalisierte Polymere"@de ,
                   "Synthetic polymers, biopolymers, chemically functionalised polymers, physically functionalised polymers, biologically functionalised polymers"@en ;
   skos:inScheme <> .
 
@@ -591,7 +591,7 @@
   skos:prefLabel "Gewalt, Konflikte und Gefahrenabwehr"@de ,
                   "Violence, conflicts and crisis prevention"@en ;
   skos:broader <MenschUndGesellschaft> ;
-  skos:scopeNote "Forschung zur Bekämpfung von Kriminalität und Gewalt; zu Gefahren und Konflikten in einem Land und zwischen Ländern; zu politischer Diplomatie und Lösungen; zu friedliche Gesellschaften"@de ,
+  skos:scopeNote "Forschung zur Bekämpfung von Kriminalität und Gewalt; zu Gefahren und Konflikten in einem Land und zwischen Ländern; zu politischer Diplomatie und Lösungen; zu friedlichen Gesellschaften"@de ,
                   "Research on combating crime and violence; on dangers and conflicts in a country and between nations; on political diplomacy and solutions; on peaceful societies"@en ;
   skos:example "Organisierte Kriminalität, Schutz vor Gewalt, Aufklärung und Überwachung, Resilienz und Schutz kritischer Infrastrukturen, Terrorismus, Zivile Sicherheit"@de ,
                   "Organised crime, protection from violence, reconnaissance and surveillance, resilience and protection of critical infrastructures, terrorism, civil security"@en ;
@@ -729,7 +729,7 @@
   skos:broader <Technologie> ;
   skos:scopeNote "Forschung zur technischen Herstellung mikroelektronischer und lichttechnischer Bauelemente und mikroelektronischer Baugruppen; zu Elementen wie Silizium"@de ,
                   "Research on the technical manufacture of microelectronic and lighting components and microelectronic modules; on elements such as silicon"@en ;
-  skos:example "Photonische Kristalle, Quantenstrukturbauelemente, Verbindungshalbleiter, Organische Halbleiter, Mikroprozessor, Mikrochip, Integrierter Schaltkreis, Integrierte Schaltung, Computer chips, intelligente Sensoren"@de ,
+  skos:example "Photonische Kristalle, Quantenstrukturbauelemente, Verbindungshalbleiter, Organische Halbleiter, Mikroprozessor, Mikrochip, Integrierter Schaltkreis, Integrierte Schaltung, Computer Chips, Intelligente Sensoren"@de ,
                   "Photonic crystals, components based on quantum structures, compound semiconductors, organic semiconductors, microprocessor, microchip, integrated circuit, computer chips, intelligent sensors"@en ;
   skos:inScheme <> .
 
@@ -785,7 +785,7 @@
   skos:prefLabel "Open Science"@de ,
                   "Open science"@en ;
   skos:broader <Wissenschaft> ;
-  skos:scopeNote "Forschung zur Öffnung des Zugangs zu Daten und Forschungsergebnissen; zu Inklusion und Chancengleichheit in der Wissenschaft und die Öffnung des kompletten Forschungsprozesses"@de ,
+  skos:scopeNote "Forschung zur Öffnung des Zugangs zu Daten und Forschungsergebnissen; zu Inklusion und Chancengleichheit in der Wissenschaft und der Öffnung des kompletten Forschungsprozesses"@de ,
                   "Research on Open Access to data and research findings; on inclusion and equal opportunities in science and opening up of the entire research process"@en ;
   skos:example "Offene Wissenschaft, Open Data, Open Educational Resources, Open Methodology, Open Peer Review, Open Source, Open Access, Citizen Science"@de ,
                   "Open science, open data, open educational resources, open methodology, open peer review, open source, open access, citizen science"@en ;
