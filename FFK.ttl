@@ -447,7 +447,7 @@
   skos:prefLabel "Kreativität und Darbietung"@de ,
                   "Creativity and performance"@en ;
   skos:broader <Kultur> ;
-  skos:scopeNote "Forschung zu Ausdruck und Form menschlicher Kreativität, geistiger Anstrengung und ihrer Manifestationen in Werken und Produkten des Alltags; zu ästethischen und gestalterischen Aspekten"@de ,
+  skos:scopeNote "Forschung zu Ausdruck und Form menschlicher Kreativität, geistiger Anstrengung und ihrer Manifestationen in Werken und Produkten des Alltags; zu ästhetischen und gestalterischen Aspekten"@de ,
                   "Research on expressions and forms of human creativity, mental effort and its manifestation in works (of art) and everyday products; on aesthetic and artistic aspects"@en ;
   skos:example "Schöpferische Darbietung, Schöpferische Leistung, Kreativitätstechnik, Produktionsästhetik, Künstlerisches Schaffen, Darstellende Kunst"@de ,
                   "Creative performance, creative achievement, creative techniques, production aesthetics, artistic creation, performing arts"@en ;
