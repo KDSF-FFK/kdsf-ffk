@@ -4,13 +4,13 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 
 <> a skos:ConceptScheme ;
-  skos:prefLabel "Interdisziplinäre Forschungsfeldklassifikation"@de ,
-                  "Interdisciplinary Classification of Research Fields"@en ;
-  dct:title "Interdisziplinäre Forschungsfeldklassifikation"@de ,
-            "Interdisciplinary research field classification"@en ;
-  dct:issued "2022-12-07" ;
-  dct:description "Klassifikation für interdisziplinäre Forschungsfelder im Rahmen des Kerndatensatz Forschung (Version 1.0.0)"@de ,
-                  "Classification for interdisciplinary research fields as part of the KDSF - Standard for research information in Germany (Version 1.0.0)"@en ;
+  skos:prefLabel "Forschungsfeldklassifikation"@de ,
+                  "Classification of Research Fields"@en ;
+  dct:title "Forschungsfeldklassifikation"@de ,
+            "Research Field Classification"@en ;
+  dct:issued "2025-09-01" ;
+  dct:description "Klassifikation für Forschungsfelder im Rahmen des KDSF - Standard für Forschungsinformationen in Deutschland (Version 1.0.1)"@de ,
+                  "Classification for research fields as part of the KDSF - Standard for research information in Germany (Version 1.0.1)"@en ;
   dct:creator <https://orcid.org/0000-0002-8113-1509> ;
   dct:creator <https://orcid.org/0000-0001-8184-6187> ;
   dct:creator <https://orcid.org/0000-0003-4891-762X> ;
@@ -106,7 +106,7 @@
 <KeinesDerGelistetenForschungsfelder> a skos:Concept ;
   skos:prefLabel "Keines der gelisteten Forschungsfelder"@de ,
                   "None of the listed research fields"@en ;
-  skos:narrower <001>, <002> ;
+  skos:narrower <001>;
   skos:topConceptOf <> .
 
 <139> a skos:Concept ;
@@ -805,14 +805,6 @@
   skos:prefLabel "Anderes Forschungsfeld"@de ,
                   "Other research field"@en ;
   skos:broader <KeinesDerGelistetenForschungsfelder> ;
-  skos:scopeNote "Die Forschungsaktivität lässt sich problemorientiert mit einem thematisch abgrenzbaren Gegenstandsbereich, der quer zu Disziplinen liegt, beschreiben. Es ist jedoch keine Zuordnung zu den aufgeführten Forschungsfeldern möglich. Es wird darum gebeten, in diesem Fall einen Vorschlag für ein neues Forschungsfeld einzureichen. Dieser sollte eine klare und möglichst allgemeine Definition wie auch die Abgrenzung von ähnlichen bereits vorliegenden Forschungsfeldern enthalten."@de ,
-                  "The research activity can be described as problem-oriented with a thematically definable subject area that cuts across disciplines. However, no assignment to the listed research fields is possible. In this case, you are asked to submit a proposal for a new research field. This should contain a clear definition that is as general as possible, as well as the demarcation from similar already listed research fields."@en ;
-  skos:inScheme <> .
-
-<002> a skos:Concept ;
-  skos:prefLabel "Disziplinäre Forschung"@de ,
-                  "Disciplinary research"@en ;
-  skos:broader <KeinesDerGelistetenForschungsfelder> ;
-  skos:scopeNote "Die Forschungsaktivität ist über eine disziplinäre Klassifikation passend abgebildet. Eine Zuordnung zu Forschungsfeldern, die quer zu Disziplinen liegen, ist nicht erforderlich."@de ,
-                  "The research activity is suitably mapped by means of a disciplinary classification. An assignment to research fields that cut across disciplines is not necessary."@en ;
+  skos:scopeNote "Ein Forschungsfeld wird definiert durch ein Forschungsthema, welches typischerweise in mehreren Disziplinen bearbeitet wird. Es ist jedoch keine Zuordnung zu den aufgeführten Forschungsfeldern möglich. Es wird darum gebeten, in diesem Fall einen Vorschlag für ein neues Forschungsfeld einzureichen. Dieser sollte eine klare und möglichst allgemeine Definition wie auch die Abgrenzung von ähnlichen bereits vorliegenden Forschungsfeldern enthalten. Eingegangene Vorschläge werden im Rahmen regelmäßiger Aktualisierungen gesichtet."@de ,
+                  "A research field is defined by a research topic, which is typically investigated in several disciplines. However, no assignment to the listed research fields is possible. In this case, you are asked to submit a proposal for a new research field. This should contain a clear definition that is as general as possible, as well as the demarcation from similar already listed research fields. Received proposals will be reviewed as part of routine updates."@en ;
   skos:inScheme <> .
