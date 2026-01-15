@@ -530,7 +530,7 @@
   skos:broader <LebenUndWohlergehen> ;
   skos:scopeNote "Forschung zu Funktionen der Zelle und ihrer Bestandteile; zur Kommunikation innerhalb und außerhalb der Zelle; zu Genen und Proteinen als besonderer Teil der Zellforschung; zu Reaktionen von zellulären Prozessen auf äußere Einflüsse"@de ,
                   "Research on functions of the cell and its components; on communication within and outside the cell; on genes and proteins as a special part of cell research; on reactions of cellular processes to external influences"@en ;
-  skos:example "Genomforschung, Zellfunktion, Zellentstehung, Zelltherapie, Genomforschung"@de ,
+  skos:example "Genomforschung, Zellfunktion, Zellentstehung, Zelltherapie"@de ,
                   "Genome research, cellular function, cell formation, cell therapy"@en ;
   skos:inScheme <> .
 
