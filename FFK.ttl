@@ -9,9 +9,9 @@
                   "Classification of Research Fields"@en ;
   dct:title "Forschungsfeldklassifikation"@de ,
             "Research Field Classification"@en ;
-  dct:issued "2025-09-01" ;
-  dct:description "Klassifikation für Forschungsfelder im Rahmen des KDSF - Standard für Forschungsinformationen in Deutschland (Version 1.0.1)"@de ,
-                  "Classification for research fields as part of the KDSF - Standard for research information in Germany (Version 1.0.1)"@en ;
+  dct:issued "2026-06-17" ;
+  dct:description "Klassifikation für Forschungsfelder im Rahmen des KDSF - Standard für Forschungsinformationen in Deutschland (Version 1.0.2)"@de ,
+                  "Classification for research fields as part of the KDSF - Standard for research information in Germany (Version 1.0.2)"@en ;
   dct:creator <https://orcid.org/0000-0002-8113-1509> ;
   dct:creator <https://orcid.org/0000-0001-8184-6187> ;
   dct:creator <https://orcid.org/0000-0003-4891-762X> ;
@@ -530,7 +530,7 @@
   skos:broader <LebenUndWohlergehen> ;
   skos:scopeNote "Forschung zu Funktionen der Zelle und ihrer Bestandteile; zur Kommunikation innerhalb und außerhalb der Zelle; zu Genen und Proteinen als besonderer Teil der Zellforschung; zu Reaktionen von zellulären Prozessen auf äußere Einflüsse"@de ,
                   "Research on functions of the cell and its components; on communication within and outside the cell; on genes and proteins as a special part of cell research; on reactions of cellular processes to external influences"@en ;
-  skos:example "Genomforschung, Zellfunktion, Zellentstehung, Zelltherapie, Genomforschung"@de ,
+  skos:example "Genomforschung, Zellfunktion, Zellentstehung, Zelltherapie"@de ,
                   "Genome research, cellular function, cell formation, cell therapy"@en ;
   skos:inScheme <> .
 
